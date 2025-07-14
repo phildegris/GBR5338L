@@ -36,7 +36,7 @@ Technical records and Log providing reference material to support operations, ma
 The Skippers logbook providing details of Ragtimes travels. 
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/hopes-dreams.png" >}}
+{{< img src="./img/hopes-dreams.png" >}}
 
 Our plans for future adventures including our entry in the 2027 AZAB race.
 {{< /column >}}
