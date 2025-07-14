@@ -1,5 +1,5 @@
 ---
-title: "Technical Log"
+title: "Engineering Log"
 description: "Journal documenting upgrades, repair, and maintainance work completed"
 ---
 {{< intro >}}
