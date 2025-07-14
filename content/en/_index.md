@@ -17,7 +17,7 @@ She is currnetly gearing up for adventures further afield, to the Azores and Bac
 {{< /column >}}
 {{< column >}}
 {{< spacer >}}
-{{< img src="/img/off-falmouth.jpg" loading="eager" >}}
+{{< img src="./img/off-falmouth.jpg" loading="eager" >}}
 {{< /column >}}
 {{< /columns >}}
 
