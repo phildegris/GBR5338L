@@ -5,6 +5,7 @@ date: 2025-07-10
 author: Phil
 summary: Internet connection via the WiFi network depends on a single device carrying a single newwork sim.  This single point of failure is now obsolete with better 5g networks and Starlink now widely available at reasonalable prices, it is time to upgrade to always on broadband internet capability.
 ---
+
 Internet connection via the WiFi network depends on a single device carrying a single newwork sim.  This single point of failure is now obsolete with better 5g networks and Starlink now widely available at reasonalable prices, it is time to upgrade to always on broadband internet capability.
 
 ## Solution
