@@ -10,12 +10,11 @@ showHeader: false
 {{< img src="./img/off-falmouth.jpg" loading="eager" >}}
 {{< /column >}}
 {{< column >}}
-# GBR5338L
-
-## This is the log of the sailing vessel Ragtime
+## This is the log of the sailing vessel
+# Ragtime
 
 {{< intro >}}
-Ragtime is a privately owned and operated Moody 336, built in 1989 by Marine Projects Ltd in Plymouth, England. She sails mainly in and across the western end of the English channel and the Atlantic coast of France.
+Ragtime is a privately owned and operated Moody 336, built in 1989 by Marine Projects Ltd in Plymouth, England. She is mainly sailed in and across the western end of the English channel, and the Atlantic coast of France.
 
 Ragtime is currnetly gearing up for adventures further afield, to the Azores and Back, in the 2027 edition of this iconic ocean race.
 {{< /intro >}}
