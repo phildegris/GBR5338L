@@ -1,2 +1,2 @@
-[caches.images]
+[images]
   dir = ':cacheDir/images'
