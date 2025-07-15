@@ -1,5 +1,5 @@
 ---
-title: "An example FAQ with a long title to test wrapping"
+title: "Hull Measurements"
 noindex: true
 ---
 

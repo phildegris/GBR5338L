@@ -1,6 +1,4 @@
 ---
-title: "FAQs"
-description: "Frequently Asked Questions"
+title: "Data"
+description: "Frequently referenced data."
 ---
-
-Here are some frequently asked questions.
