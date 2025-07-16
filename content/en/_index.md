@@ -1,33 +1,19 @@
 ---
-title: Dot Org Theme Demo
-description: This is the demo site for Dot Org Theme. The title description and images front matter is required for meta og content.
+title: GBR 5338L - Ragtime
+description: This is the online lug of the sailing vessel Ragtime.
 showHeader: false
 ---
 
+**Ragtime** is a privately owned and operated Moody 336, built in 1989 by Marine Projects Ltd in Plymouth, England. She is mainly sailed in and across the western end of the English channel, and the Atlantic coast of France.
+***
 
+![Ragtime Off Falmouth](/img/off-falmouth.jpg)
 
-
-
-## This is the log of the sailing vessel
-# Ragtime
-
-
-Ragtime is a privately owned and operated Moody 336, built in 1989 by Marine Projects Ltd in Plymouth, England. She is mainly sailed in and across the western end of the English channel, and the Atlantic coast of France.
-
-Ragtime is currnetly gearing up for adventures further afield, to the Azores and Back, in the 2027 edition of this iconic ocean race.
-
-
-
-
-
-
+We are currently preparing ourselves and Ragtime for adventures further afield, to the Azores and Back, in the 2027 edition of this iconic ocean race.
+***
 Technical records and Log providing reference material to support operations, maintainance, and future upgrades.
 
-
-
 The Skippers logbook providing details of Ragtimes travels. 
-
-
 
 Our plans for future adventures including our entry in the 2027 AZAB race.
 

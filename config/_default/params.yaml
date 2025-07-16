@@ -3,6 +3,11 @@
 # Add custom assets relative to /static or via https
 logo_on_white: "/img/logo-b.svg"
 logo_on_black: "/img/logo-w.svg"
+
+logo:
+  title: "GBR 5338L"
+  subtitle: "This is the log of the sailing vessel Ragtime"
+
 custom_js: []
 custom_css: []
 
@@ -12,7 +17,7 @@ custom_css: []
 images: ["/img/social-share.png"]
 
 github:
-  repo_url: "https://https://github.com/phildegris/GBR5338L/main"
+  repo_url: "https://github.com/phildegris/GBR5338L/main"
   show_edit_link: false
 
 social_links:
