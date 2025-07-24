@@ -6,6 +6,8 @@ author: Phil
 summary: Internet connection via the WiFi network depends on a single device carrying a single newwork sim.  This single point of failure is now obsolete with better 5g networks and Starlink now widely available at reasonalable prices, it is time to upgrade to always on broadband internet capability.
 ---
 
+![Ragtime Off Falmouth](./img/off-falmouth.jpg)
+
 ## Situation
 **2025, Early summer in the UK - Glorious**. We are enjoying spending time aboard Ragtime in and around our temporary base at Haslar Marina, Gosport. With our summer cruise with the grandchildren looming and spending much more liesure time, and potentially working more while away on the boat means that we need a more dependable solution for internet access.  Marina wifi does not work well and 4g signal is workable but not relaible for streaming video.
 
