@@ -6,12 +6,15 @@ author: Phil
 summary: Internet connection via the WiFi network depends on a single device carrying a single newwork sim.  This single point of failure is now obsolete with better 5g networks and Starlink now widely available at reasonalable prices, it is time to upgrade to always on broadband internet capability.
 ---
 
+## Situation
+**2025, Early summer in the UK - Glorious**. We are enjoying spending time aboard Ragtime in and around our temporary base at Haslar Marina, Gosport. With our summer cruise with the grandchildren looming and spending much more liesure time, and potentially working more while away on the boat means that we need a more dependable solution for internet access.  Marina wifi does not work well and 4g signal is workable but not relaible for streaming video.
+
 Internet connection via the WiFi network depends on a single device carrying a single newwork sim.  This single point of failure is now obsolete with better 5g networks and Starlink now widely available at reasonalable prices, it is time to upgrade to always on broadband internet capability.
 
 ## Solution
-1. Replaced Digital Yacht 4G Connect with Teltonika RUTX50
-2. Added Teltonika TRB500 for 4/5g Cellular WAN
-2. Added Starlink Mini Dish for Sattellite WAN
+1. Replace the Digital Yacht 4G Connect with Teltonika RUTX50
+2. Add a Teltonika TRB500 for 4/5g Cellular WAN
+2. Add a Starlink Mini Dish for Sattellite WAN
 
 We have upgraded our TCP network components and configuration to provide better WAN connectivity and bandwidth to support working aboard and to enhance the streaming entertainment services we use aboard
 
@@ -47,8 +50,9 @@ We have reconfigured a couple of circuit breakers on the DC distribution panel.
 ## LAN
 This circuit now provides power to:
 
-1. RUTX50
-2. Network Switch
+1. PoE Network Switch
+
+The RUTX50 is powered via the PoE connection to the LAN1 port - Note the RUTX50 seems to need a negative connection for this to work, seems odd.
 
 *TODO:* Add separate fuses for the supply to each of these devices.
 
