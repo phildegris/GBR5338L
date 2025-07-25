@@ -26,9 +26,9 @@ en:
       name: "About"
       url: "/example-page/"
       weight: 1
-    - identifier: "child-1"
-      name: "Example Child Page"
-      url: "/example-page/"
+    - identifier: "data"
+      name: "data"
+      url: "/data/"
       weight: 1
       post: "Nulla consequat massa quis enim. Donec pede justo."
       parent: "about"
@@ -48,10 +48,7 @@ en:
       name: "Demo Page"
       url: "/demo-page/"
       weight: 2
-    - identifier: "faq"
-      name: "FAQs"
-      url: "/faq/"
-      weight: 3
+    - 
     - identifier: "blog"
       name: "Blog"
       url: "/blog/"
