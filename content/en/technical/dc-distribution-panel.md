@@ -25,27 +25,66 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 
 ## DC Device Circuits
 
+### Navigation
 | Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
 |------ | ------ | -------- | ------ | ------ | ------ | ------ 
-| Navigation | Bow Light | Osculati Sphera II Bicolour LED | 166mA | 8m 
-| Navigation | Stern Light | Osculati Sphera II LED Stern Light | 166mA | 4m
-| Navigation | Masthead Tricolour / Anchor | NASA Marine Supernova Combi LED | 200mA | 20m
-| Navigation | Steaming Light | Osculati Navigation and deck LED-light | 370mA | 15m
-| Navigation | Instruments | NMEA 2000 network LEN-30 | 1500mA | 0.2m
-| IP Networks | Router | Teltonika RUTX50 | TBC | 
-| IP Networks | PoE Switch | Linovision 5 Port Gigabit PoE Switch | TBC | 0.3m
-| IP Networks | LTE WAN Gateway | Teltonika TRB500 | TBC | 4m
-| IP Networks | SAT WAN Gateway | Starlink Mini | TBC | 4m
-| Cabin Lighting | Forecabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
-| Cabin Lighting | Saloon Lights A | 3 x Acegoo DC 12v LED Recessed Ceiling Lights | 750mA | 5m |
-| Cabin Lighting | Saloon Lights B | 5 x Acegoo DC 12v LED Recessed Ceiling Lights | 1250mA | 5m |
-| Cabin Lighting | Saloon Lights C | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
-| Cabin Lighting | Saloon Stbd Bunk Reading Light |  | 1000mA | 5m |
-| Cabin Lighting | Saloon Port Bunk Reading Light |  | 1000mA | 5m |
-| Cabin Lighting | Aft Cabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
-| Cabin Lighting | Galley Work Light | | 1000mA | 5m |
-| Cabin Lighting | Chart Table Work Light - White/Red | | 1000mA | 5m |
-| Cabin Lighting | Heads Light | | 1000mA | 5m |
+| Bow Light | Osculati Sphera II Bicolour LED | 166mA | 8m 
+| Stern Light | Osculati Sphera II LED Stern Light | 166mA | 4m
+| Masthead Tricolour / Anchor | NASA Marine Supernova Combi LED | 200mA | 20m
+| Steaming Light | Osculati Navigation and deck LED-light | 370mA | 15m
+| Instruments | NMEA 2000 network LEN-30 | 1500mA | 0.2m |
+| Navigation Computer | Odroid N2 | 1400mA | 0.5m
+| Computer Monitor | Beetronics 15TS7M | 1300mA | 0.5m |
+| Helm Device Charger | HKY C140C PD3.1| 10000ma  | 5m | 
+| Coachroof Charger | HKY C140C PD3.1 | 10000ma | 4m | 
+| Companionway Charger | Dash Mount Dual Charger | 3500mA | 4m |
+
+### Pilot Drive
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+| ------ | -------- | ------ | ------ | ------ | ------ 
+| Pilot Drive | Jeffa DD-1 **or** Raymarine Wheel Piliot | TBC | |
+
+### Communications
+| Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+|------ | ------ | -------- | ------ | ------ | ------ | ------ 
+| VHF Tranciever | iCom M510 | 5000mA | 1m |
+| AIS Transponder | Ocean Signal ATB1 | TBC | 1m |
+| Antenna Splitter | Digital Yacht SPL2000 | TBC | 1m |
+| Handheld VHF Charger | iCom M94DE | 300mA | 1m |
+
+### IT Networks
+| Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+|------ | ------ | -------- | ------ | ------ | ------ | ------ 
+| Router | Teltonika RUTX50 | TBC | 
+| PoE Switch | Linovision 5 Port Gigabit PoE Switch | TBC | 0.3m
+| WAN Gateway | Teltonika TRB500 **Or** Starlink Mini | TBC | 4m
+
+### Cabin Lighting
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+|------ | ------ | -------- | ------ | ------ | ------ 
+| Forecabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m 
+| Saloon Lights A | 3 x Acegoo DC 12v LED Recessed Ceiling Lights | 750mA | 5m |
+| Saloon Lights B | 5 x Acegoo DC 12v LED Recessed Ceiling Lights | 1250mA | 5m |
+| Saloon Lights C | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
+| Saloon Stbd Bunk Reading Light | 12v LED Reading light & USB Charger | 1000mA | 5m |
+| Saloon Port Bunk Reading Light | 12v LED Reading light & USB Charger | 1000mA | 5m |
+| Aft Cabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
+| Galley Work Light | 12V LED Interior Strip Light 770mm | 1400mA | 5m |
+| Chart Table Work Light - White/Red | 12V LED Interior Strip Light 410mm | 1000mA | 5m |
+| Heads Light | 12V LED Interior Strip Light 410mm | 1000mA | 5m |
+
+### Cabin Device Charging
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+| ------ | -------- | ------ | ------ | ------ | ------ 
+
+
+### Domestic Services
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+| ------ | -------- | ------ | ------ | ------ | ------ 
+| Fresh Water Pump | Jabsco Par Max 3 |  | 2m
+| Shower Discharge Pump | Jabsco Par Max 3 |  | 2m
+| Fridge | Isotherm Cruise 35 | 2700mA | 2m
+| TV | LG 24TN510S | 2300mA | 4m
 
 
 
