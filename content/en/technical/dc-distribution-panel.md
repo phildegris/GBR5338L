@@ -26,8 +26,8 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 ## DC Device Circuits
 
 ### Navigation
-| Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
-|------ | ------ | -------- | ------ | ------ | ------ | ------ 
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+|------ | ------ | -------- | ------ | ------ | ------  
 | Bow Light | Osculati Sphera II Bicolour LED | 166mA | 8m 
 | Stern Light | Osculati Sphera II LED Stern Light | 166mA | 4m
 | Masthead Tricolour / Anchor | NASA Marine Supernova Combi LED | 200mA | 20m
@@ -44,8 +44,8 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 | Drive | Jeffa DD-1 **or** Raymarine Wheel Piliot | TBC | |
 
 ### Communications
-| Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
-|------ | ------ | -------- | ------ | ------ | ------ | ------ 
+| Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
+|------ | ------ | -------- | ------ | ------ | ------ 
 | VHF Tranciever | iCom M510 | 5000mA | 1m |
 | AIS Transponder | Ocean Signal ATB1 | TBC | 1m |
 | Antenna Splitter | Digital Yacht SPL2000 | TBC | 1m |
