@@ -30,11 +30,35 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 | Navigation | Bow Light | Osculati Sphera II Bicolour LED | 166mA | 8m 
 | Navigation | Stern Light | Osculati Sphera II LED Stern Light | 166mA | 4m
 | Navigation | Masthead Tricolour / Anchor | NASA Marine Supernova Combi LED | 200mA | 20m
-| Navigation | Steaming Light | Osculati Navigation and deck LED-light | 370 mA | 15m
+| Navigation | Steaming Light | Osculati Navigation and deck LED-light | 370mA | 15m
 | Navigation | Instruments | NMEA 2000 network LEN-30 | 1500mA | 0.2m
-| Navigation | | **Group Total Max**| **TBC** |
 | IP Networks | Router | Teltonika RUTX50 | TBC | 
 | IP Networks | PoE Switch | Linovision 5 Port Gigabit PoE Switch | TBC | 0.3m
 | IP Networks | LTE WAN Gateway | Teltonika TRB500 | TBC | 4m
 | IP Networks | SAT WAN Gateway | Starlink Mini | TBC | 4m
-| IP Networks | | **Group Total Max**| **TBC** |
+| Cabin Lighting | Forecabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
+| Cabin Lighting | Saloon Lights A | 3 x Acegoo DC 12v LED Recessed Ceiling Lights | 750mA | 5m |
+| Cabin Lighting | Saloon Lights B | 5 x Acegoo DC 12v LED Recessed Ceiling Lights | 1250mA | 5m |
+| Cabin Lighting | Saloon Lights C | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
+| Cabin Lighting | Saloon Stbd Bunk Reading Light |  | 1000mA | 5m |
+| Cabin Lighting | Saloon Port Bunk Reading Light |  | 1000mA | 5m |
+| Cabin Lighting | Aft Cabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1000mA | 5m |
+| Cabin Lighting | Galley Work Light | | 1000mA | 5m |
+| Cabin Lighting | Chart Table Work Light - White/Red | | 1000mA | 5m |
+| Cabin Lighting | Heads Light | | 1000mA | 5m |
+
+
+
+
+
+
+## Circuit termination
+
+An array of DIN rail mounted fused terminal connectors linked to the positive supply via jumper bars will supply each circuit via a spdt switch enabling selection of on, off, or auto. 
+
+### Selected Components
+- Terminal connectors [Wago 2006-1681 22](https://uk.rs-online.com/web/p/din-rail-terminal-blocks/2815884)
+- End and intermediate plates [Wago 2006 Series end plates](https://uk.rs-online.com/web/p/products/5076816/)
+- Jumper Bars [Wago 2006 Series Double Jumper Bar ](https://uk.rs-online.com/web/p/products/7581770/)
+- Jumper Bars [Wago 2006 Series Triple Jumper Bar ](https://uk.rs-online.com/web/p/products/2475845/)
+- Jumper Bars [Wago 2006 Series Quadrouple Jumper Bar ](https://uk.rs-online.com/web/p/products/7581773/)
