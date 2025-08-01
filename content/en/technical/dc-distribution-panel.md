@@ -37,12 +37,11 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 | Computer Monitor | Beetronics 15TS7M | 1300mA | 0.5m |
 | Helm Device Charger | HKY C140C PD3.1| 10000ma  | 5m | 
 | Coachroof Charger | HKY C140C PD3.1 | 10000ma | 4m | 
-| Companionway Charger | Dash Mount Dual Charger | 3500mA | 4m |
 
-### Pilot Drive
+### Pilot
 | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
 | ------ | -------- | ------ | ------ | ------ | ------ 
-| Pilot Drive | Jeffa DD-1 **or** Raymarine Wheel Piliot | TBC | |
+| Drive | Jeffa DD-1 **or** Raymarine Wheel Piliot | TBC | |
 
 ### Communications
 | Group | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
@@ -76,7 +75,11 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 ### Cabin Device Charging
 | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
 | ------ | -------- | ------ | ------ | ------ | ------ 
-
+| Foreward Cabin Chargers | 2 x Dash Mount Dual Charger | 7000mA | 4m |
+| Chart table Chargers | 2 x Dash Mount Dual Charger | 7000mA | 4m |
+| Nav Station Chargers | 2 x Dash Mount Dual Charger | 7000mA | 4m |
+| Saloon Table Chargers | 2 x Dash Mount Dual Charger | 7000mA | 4m |
+| Aft Cabin Chargers | 2 x Dash Mount Dual Charger | 7000mA | 4m |
 
 ### Domestic Services
 | Circuit | Devices | Max Draw | Circuit length | Wire Guage | Circuit Protection 
@@ -85,11 +88,6 @@ Each device is supplied via a separate circuit with wire guage chosen to support
 | Shower Discharge Pump | Jabsco Par Max 3 |  | 2m
 | Fridge | Isotherm Cruise 35 | 2700mA | 2m
 | TV | LG 24TN510S | 2300mA | 4m
-
-
-
-
-
 
 ## Circuit termination
 
