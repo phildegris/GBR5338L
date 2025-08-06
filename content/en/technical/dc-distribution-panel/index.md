@@ -1,6 +1,8 @@
 ---
 title: "DC Distribution Panel Upgrade"
 description: "Technical details of the re-design of our DC Distribution panel."
+date: 2025-08-05
+summary: With a longer than usual period on the hard planned for next winter, planning is underway to complete the modernisation of Ragtimes electrical systems.  This will finally see removal of the rats nest of old, poorly terminated and slowly corroding wiring behind the classic 1980's DC panel.
 ---
 
 ## Situation
