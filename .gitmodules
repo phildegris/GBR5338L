@@ -1,3 +1,6 @@
 [submodule "themes/roadster"]
 	path = themes/roadster
 	url = https://github.com/mansoorbarri/Roadster.git
+[submodule "themes/hugo-theme-relearn"]
+	path = themes/hugo-theme-relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git
