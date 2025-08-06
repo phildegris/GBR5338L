@@ -91,10 +91,12 @@ The 16mm Auxilliuary systems supply feed from the House Battery Distribution boa
 | Forecabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1A | 5m 
 | Saloon Lights A | 3 x Acegoo DC 12v LED Recessed Ceiling Lights | 0.75A | 5m |
 | Saloon Lights B | 5 x Acegoo DC 12v LED Recessed Ceiling Lights | 1.25A | 5m |
-| Saloon Lights C | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1mA | 5m |
+| Saloon Lights C | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1A | 5m |
 | Saloon Stbd Bunk Reading Light | 12v LED Reading light & USB Charger | 1A | 5m |
 | Saloon Port Bunk Reading Light | 12v LED Reading light & USB Charger | 1A | 5m |
 | Aft Cabin Lights | 4 x Acegoo DC 12v LED Recessed Ceiling Lights | 1A | 5m |
+| Aft Cabin Stbd Bunk Reading Light | 12v LED Reading light & USB Charger | 1A | 5m |
+| Aft Cabin Port Bunk Reading Light | 12v LED Reading light & USB Charger | 1A | 5m |
 | Galley Work Light | 12V LED Interior Strip Light 770mm | 1.4A | 5m |
 | Chart Table Work Light - White/Red | 12V LED Interior Strip Light 410mm | 1A | 5m |
 | Heads Light | 12V LED Interior Strip Light 410mm | 1A | 5m |
