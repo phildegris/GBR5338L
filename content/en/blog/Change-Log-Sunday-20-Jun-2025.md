@@ -1,5 +1,5 @@
 ---
-title: "Changelog Sunday 20 Jun 2027"
+title: "Changelog Sunday 20 Jun 2025"
 description: ""
 date: 2025-07-20
 author: Phil
