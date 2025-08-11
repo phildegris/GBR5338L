@@ -70,7 +70,7 @@ Since our lase visit we have been busy planning the replacement of the DC supply
 ## Issues arrising
 
 * Compass light still not working despite checking polarity - Resolve when re-sealing the housing to the pedestal.
-* Some of the battery terminations do not have spring washers.
+* Some of the battery terminations do not have spring washers. - RESOLVED
 * Some battery terminals are unprotected.
 * Temporary Terminal Post on the rear of the old master switch.
 * Cable support below the chart table and in the DC panel needs addressing.
@@ -82,8 +82,8 @@ Since our lase visit we have been busy planning the replacement of the DC supply
 
 ## TO DO before we leave
 
-* Spring Washers
-* Clear Bilge Water
-* Replace Cielings
-* Setup YDAP-04 via CAN View
+* [x] Spring Washers
+* [x] Clear Bilge Water
+* [x] Replace Cielings
+* [x] Setup YDAP-04 via CAN View
 * Calibrate AP
