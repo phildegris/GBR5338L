@@ -1,6 +1,6 @@
 ---
 title: GBR 5338L - Ragtime
-description: This is the online log of the sailing vessel Ragtime.
+description: This is the web log of the sailing vessel Ragtime.
 showHeader: false
 ---
 

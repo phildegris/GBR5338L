@@ -1,6 +1,9 @@
 ---
 title: DC Logical Circuits
 description:
+date: 2025-07-10
+author: Phil
+summary: Details about each electrical circuit, its wiring and protection 
 ---
 
 | Control Zone | Abbreviation | Location | Description |
