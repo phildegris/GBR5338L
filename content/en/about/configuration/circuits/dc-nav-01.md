@@ -15,8 +15,8 @@ date: 2026-10-31
 | Source | [EQ-002](/about/configuration/equipment/eq-002/) NAV LTS panel, upper-left of [EQ-001](/about/configuration/equipment/eq-001/) main DC panel |
 | Primary circuit protection | [CB-001](/about/configuration/equipment/cb-001/) **10 A**, panel position 1 |
 | Load | [EQ-021](/about/configuration/equipment/eq-021/) — NASA Combi masthead tricolour/anchor LED |
-| Switching and wiring | Via SW-001 DPDT centre-off selector; legacy **B2 blue-lever clamp in group 2 → blue-insulated mast wire** and **Y3 yellow-lever clamp in group 3 → black-insulated mast wire**. Not continuity-tested. |
-| Supply busbar, return path, cable size and length | Not independently inspected |
+| Switching and wiring | Original switch [SW-001](/about/configuration/equipment/sw-001/); **B2 → blue** and **Y3 → black** cores in **Oceanflex seven-core trunk to forecabin locker**. Older DPDT notes call Y3 a NASA light wire while handwritten CB column says `NC`; neither statement establishes the exact switched return or onward mast leg. |
+| Supply busbar, return path, cable size and length | Owner confirms upstream **Oceanflex 7 × 1.5 mm²** trunk to forecabin locker; onward mast cable/returns/total length not traced. [Schedule](/about/configuration/dc-terminal-schedule/) |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
 **Masthead function:** SW-001 reverses polarity to select the tricolour or anchor mode of one combined NASA light. The old switch terminal numbers and lamp polarity direction remain untested.

@@ -8,6 +8,8 @@ summary: Details about each electrical circuit, its wiring and protection
 
 See the [Equipment Register](/about/configuration/equipment-register/) for equipment-level records derived from this page. The records are provisional pending an onboard survey.
 
+> **2026 owner clarification:** The historic `7 Core` wiring entries below describe **panel-end cores of an Oceanflex 7 × 1.5 mm² distribution trunk** that travels forward to a **second clamp connector set in the forecabin starboard locker**, **not a continuous cable running directly up the mast**. The original text is deliberately retained as historical evidence. See the [owner's transcribed handwritten connector schedule](/about/configuration/dc-terminal-schedule/) for all seven cores, including the newly identified R2/deck and B3/bow assignments. Downstream runs to bow/forecabin, saloon and the mast via the swan neck have not been traced.
+
 | Control Zone | Abbreviation | Location | Description |
 | -------- | -------- | -------- | -------- |
 | DC Panel | DCP | Chart Table | The main DC Panel at the chart table |

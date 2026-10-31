@@ -133,7 +133,7 @@ Behind the main DC panel are **separate generic cage-clamp connectors**, arrange
 
 A group is a **physical ordering convention**, not one electrically common three-terminal block. `TB-001` and `TB-002` currently document the **second and third groups**, respectively, without inventing equipment IDs for every clamp or claiming cross-connections. The **photo supplied is incomplete**; total group count, populated terminals, jumpers, actual wiring and equipment manufacturer's identity remain to be surveyed.
 
-Do not conflate (1) lever colour, (2) mast-cable insulation colour or (3) product pigtail lead colour. They can differ. In particular, a `Y3` yellow-lever cage clamp is reported connected to the **black** mast conductor.
+Do not conflate (1) cage-clamp lever colour, (2) **panel-to-forecabin trunk** core colour, or (3) manufacturer pigtail lead colour. They may differ: `Y3` is a yellow-lever clamp connected to the **black** core of an owner-confirmed **Oceanflex 7 × 1.5 mm² distribution trunk to the forecabin starboard locker**. The onward mast run is separate and not yet traced. See the [transcribed handwritten terminal schedule](/about/configuration/dc-terminal-schedule/).
 
 Keep these as **physical position references and legacy aliases** while migrating to the new conventions. Do not silently replace verified onboard markings with newly invented numbers.
 

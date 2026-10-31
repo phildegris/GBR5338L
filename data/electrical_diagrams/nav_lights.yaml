@@ -1,5 +1,5 @@
 title: "NAV LTS — navigation and deck-light power"
-status: "Four 10 A breaker/load assignments owner-confirmed; cabling and DIN terminal positions not independently traced"
+status: "Four 10 A branch assignments owner-confirmed; Oceanflex 7 × 1.5 mm² forecabin trunk mapped, onward runs untraced"
 panel:
   id: "EQ-002"
   name: "Original Moody NAV LTS panel"
@@ -14,7 +14,7 @@ branches:
     circuit: "DC-NAV-01"
     circuit_url: "/about/configuration/circuits/dc-nav-01/"
     switch: "SW-001"
-    switch_label: "DPDT: tricolour / off / anchor"
+    switch_label: "DPDT selector; panel B2 blue and Y3 black trunk cores, onward mast leg untraced"
     switch_url: "/about/configuration/equipment/sw-001/"
     loads:
       - id: "EQ-021"
@@ -27,7 +27,7 @@ branches:
     breaker_url: "/about/configuration/equipment/cb-002/"
     circuit: "DC-NAV-02"
     circuit_url: "/about/configuration/circuits/dc-nav-02/"
-    note: "Owner-confirmed Osculati 13.243.88; steaming section"
+    note: "Panel Y2 to yellow Oceanflex trunk core; via forecabin locker, mast leg untraced"
     loads:
       - id: "EQ-020"
         name: "Osculati combined steaming/deck fitting"
@@ -39,7 +39,7 @@ branches:
     breaker_url: "/about/configuration/equipment/cb-004/"
     circuit: "DC-NAV-03"
     circuit_url: "/about/configuration/circuits/dc-nav-03/"
-    note: "Owner-confirmed Osculati 13.243.88; deck section"
+    note: "Panel R2 to red Oceanflex trunk core; via forecabin locker, mast leg untraced"
     loads:
       - id: "EQ-020"
         name: "Osculati combined steaming/deck fitting"
@@ -51,7 +51,7 @@ branches:
     breaker_url: "/about/configuration/equipment/cb-005/"
     circuit: "DC-NAV-04"
     circuit_url: "/about/configuration/circuits/dc-nav-04/"
-    note: "Two separate LED luminaires share one breaker"
+    note: "Bow B3 green trunk core; B1 stern-light label, separate route not traced"
     loads:
       - id: "EQ-018"
         name: "Osculati bow bicolour LED"
