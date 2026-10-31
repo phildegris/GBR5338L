@@ -38,7 +38,7 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 | --- | --- | --- | :---: | --- |
 | [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed Icom M510 installed at COM frame; variant, electrical connections and protective device require survey. |
 | [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed ATB1 installed at COM frame; antenna/data/power paths require survey. |
-| [`EQ-005`](/about/configuration/equipment/eq-005/) | [DY splitter (model to confirm)](/about/configuration/equipment/eq-005/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed DY splitter installed at COM frame; maker/model and antenna routing require survey. |
+| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (probable)](/about/configuration/equipment/eq-005/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner suggests SPL2000; model remains unverified pending nameplate photo. Supply, protection and coax routing require survey. |
 
 ## Charging outlets / devices
 
