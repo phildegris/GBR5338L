@@ -47,7 +47,7 @@ Examples: `CT-P` = chart table panel face; `CT-R` = rear of chart table panel; `
 | Code | Name | Physical description | Evidence and scope |
 | --- | --- | --- | --- |
 | `SL-COM` | **COM frame** | Saloon, starboard-forward side, adjacent to the chart-table DC panel | Owner-designated location (31 October 2026). Includes Icom M510 (`EQ-003`), Ocean Signal ATB1 (`EQ-004`), Digital Yacht SPL2000 (`EQ-005`), and four-way FC fuse board (`EQ-057`). [Supply and RF paths](/about/configuration/com-frame/) owner-reported; conductor and fuse ratings not surveyed. |
-| `MS-T` | **Masthead** | Masthead antenna/light mounting area | Owner reports a VHF/AIS-band compatible antenna (`EQ-058`) fitted at this location, connected to the SPL2000 on the COM frame. Exact antenna manufacturer/model and coax details pending. |
+| `MS-T` | **Masthead** | Masthead antenna/light mounting area | Owner confirms the **Vesper Marine VA159** VHF/AIS-band antenna (`EQ-058`) connected to the SPL2000 on the COM frame; coax details and measured VSWR pending. |
 
 The COM frame is a **location**, not an equipment item or circuit. Its location code is deliberately independent of the equipment IDs, so devices can be replaced or relocated without renumbering them.
 

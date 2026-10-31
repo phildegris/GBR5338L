@@ -12,7 +12,7 @@ summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS ante
 ## Physical locations
 
 - **`SL-COM` — COM frame:** saloon, starboard-forward side, adjacent to the original main DC panel. Holds [EQ-003](/about/configuration/equipment/eq-003/) Icom M510, [EQ-004](/about/configuration/equipment/eq-004/) Ocean Signal ATB1, [EQ-005](/about/configuration/equipment/eq-005/) Digital Yacht SPL2000 and [EQ-057](/about/configuration/equipment/eq-057/) four-way FC fuse board.
-- **`MS-T` — masthead:** [EQ-058](/about/configuration/equipment/eq-058/) shared VHF/AIS-band-compatible antenna (reported by owner as "Vespa"; exact make/model unverified).
+- **`MS-T` — masthead:** [EQ-058](/about/configuration/equipment/eq-058/) shared VHF/AIS-band-compatible **Vesper Marine VA159** antenna (manufacturer and model owner-confirmed).
 
 ## DC distribution — owner-reported functional topology
 
@@ -52,7 +52,7 @@ The owner confirms the VHF and AIS RF connections through the SPL2000 and the si
 
 1. Identify the model/manufacturer of the **FC** four-way fuse board, its rated voltage/current and whether the fourth way is occupied or spare.
 2. Record the main panel feeder source, upstream fuse/breaker, conductor cross-section and length, negative return, fuse-board way numbers and *actual fitted* fuse ratings.
-3. Photograph and verify the RF antenna label: the word **"Vespa"** is transcribed from the owner's description, not independently attributed to an identifiable antenna manufacturer.
+3. Confirm the **Vesper Marine VA159** coax type, masthead mounting, connectors and measured VSWR where possible; the model is owner-confirmed but installation measurements remain outstanding.
 4. Inspect coax cable type, masthead base and deck transitions, splitter RF connectors, and the optional AM/FM output; record checks of antenna match/VSWR at both voice VHF and AIS frequencies when practical.
 5. Recheck these supply and protection relationships when the main DC panel is replaced in the planned winter refit.
 
