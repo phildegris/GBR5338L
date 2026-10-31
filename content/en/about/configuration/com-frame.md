@@ -5,7 +5,7 @@ date: 2026-10-31
 summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS antenna."
 ---
 
-> **Status: Owner-reported topology, not tested as-built wiring.** Equipment locations and functional supply/RF relationships were confirmed by Ragtime's owner on 31 October 2026. Cable routes, fuse positions/ratings, conductor sizes, RF connectors and upstream protective-device identities are **not yet surveyed**.
+> **Status: Owner-confirmed functional topology, not independently tested.** CB-003 directly feeds EQ-057. The Vesper VA159 is connected to SPL2000 by white Ancor RG213 coax routed inside the mast and through a swan-neck into the deckhead. DC feeder cable size, fuse-board branch ratings, RF cable length, connectors and measured VSWR remain unverified.
 
 [← Electrical configuration](/about/configuration/) · [Equipment Register](/about/configuration/equipment-register/) · [Location reference system](/about/configuration/electrical-reference-system/)
 
@@ -14,46 +14,59 @@ summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS ante
 - **`SL-COM` — COM frame:** saloon, starboard-forward side, adjacent to the original main DC panel. Holds [EQ-003](/about/configuration/equipment/eq-003/) Icom M510, [EQ-004](/about/configuration/equipment/eq-004/) Ocean Signal ATB1, [EQ-005](/about/configuration/equipment/eq-005/) Digital Yacht SPL2000 and [EQ-057](/about/configuration/equipment/eq-057/) four-way FC fuse board.
 - **`MS-T` — masthead:** [EQ-058](/about/configuration/equipment/eq-058/) shared VHF/AIS-band-compatible **Vesper Marine VA159** antenna (manufacturer and model owner-confirmed).
 
-## DC distribution — owner-reported functional topology
+## DC distribution — owner-confirmed
 
 ```text
-EQ-001  Original main DC panel
-  |
-  |  CB-003: 10 A, location 3,4, label "VHF AIS"
-  |  POSSIBLE upstream feeder breaker: wiring NOT TRACED
+EQ-001 Moody DC panel
+  | 10 A CB-003 at 3,4, VHF AIS
+  | DC-COM-01 (owner-confirmed)
   v
-EQ-057  Four-way FC fuse board (SL-COM)
-  |-- [way ? / fuse ?] --> EQ-003  Icom M510 VHF
-  |-- [way ? / fuse ?] --> EQ-004  Ocean Signal ATB1 AIS
-  |-- [way ? / fuse ?] --> EQ-005  Digital Yacht SPL2000 splitter
-  '-- [way ?]          --> Unknown; spare status unconfirmed
+EQ-057 four-way fuse board (SL-COM)
+  |-- fuse ? --> EQ-003 VHF
+  |-- fuse ? --> EQ-004 AIS
+  |-- fuse ? --> EQ-005 SPL2000
+  '-- fourth way unknown
 ```
 
-- The **fuse board assembly** has equipment ID `EQ-057`. Four fuse positions are **not yet four individually allocated FU devices**: each actual installed fuse should receive its own `FU-xxx` equipment ID after a survey, with its physical way, type, rating and protected conductor/circuit recorded.
-- The board is owner-reported as **supplied from the main panel**. The owner has identified **[CB-003](/about/configuration/equipment/cb-003/)** at location `3,4` (marked “VHF AIS”, rated **10 A** by owner). It is a **plausible upstream feeder breaker**, but its downstream conductor must be traced before claiming it protects this board's feeder. The feeder cable, return arrangements and any additional upstream protection remain unspecified.
-- Do not assign circuit IDs or manufacturer-recommended fuse sizes as Ragtime's installed protective ratings without tracing and checking the conductors.
+[DC-COM-01](/about/configuration/circuits/dc-com-01/) is the **confirmed feeder**, protected by [CB-003](/about/configuration/equipment/cb-003/) and supplying [EQ-057](/about/configuration/equipment/eq-057/). See the [Circuit Register](/about/configuration/circuit-register/). The 10 A feeder protection is **separate** from the board's three individual branch fuses; feeder conductor size and return path are not yet recorded.
 
 ## RF signal paths — owner-confirmed functional topology
 
 ```text
 EQ-058  Masthead shared VHF / AIS antenna (MS-T)
   |
-  |  Mast coax details: NOT YET SURVEYED
+  |  Ancor white RG213 coax, 50 ohms
+  |  Inside mast -> swan-neck pipe -> deckhead -> SPL2000
   v
 EQ-005  Digital Yacht SPL2000, ANTENNA input (SL-COM)
   |-- VHF output --> EQ-003  Icom M510 VHF
   '-- AIS output --> EQ-004  Ocean Signal ATB1
 ```
 
-The owner confirms the VHF and AIS RF connections through the SPL2000 and the single masthead antenna. The SPL2000 manufacturer documents common-antenna operation, including a fail-safe VHF path in the event of lost splitter power. The optional AM/FM port is not documented as connected aboard Ragtime.
+The owner confirms a **white Ancor Marine Grade RG213 coax cable** runs from the Vesper VA159 **internally down the mast**, passes through a **swan-neck pipe into the deckhead**, then continues to the SPL2000. Length, connectors/joints and water sealing remain unverified. The owner confirms the VHF and AIS RF connections through the SPL2000 and the single masthead antenna. The SPL2000 manufacturer documents common-antenna operation, including a fail-safe VHF path in the event of lost splitter power. The optional AM/FM port is not documented as connected aboard Ragtime.
 
-**Product reference:** [Digital Yacht SPL2000 installation and user manual (PDF)](https://support.digitalyacht.net/Manuals/SPL2000%20User%20Manual%20V1_00_Eng.pdf).
+### Manufacturer reference — Ancor white RG213
+
+| Specification | Ancor catalogue value |
+| --- | --- |
+| Impedance | **50 Ω** |
+| Nominal outside diameter | **10.3 mm** |
+| Conductors / screening | Tinned copper centre and braid; **96% braid coverage** |
+| Sheath | UV-inhibited white PVC |
+| Capacitance | **30.8 pF/ft** |
+| Propagation velocity | **66%** |
+| Attenuation | **1.9 dB/100 ft at 100 MHz**, not a measured 162 MHz loss |
+
+The cable is an RF transmission connection, **not a new powered equipment asset**. Run length, connector count, measured loss and VSWR are not yet established.
+
+- [Ancor 2024 manufacturer catalogue (PDF, coax specifications on printed page 16)](https://disvent.com/pub/media/descargas/Cat%C3%A1logo%20Ancor.pdf)
+- [Digital Yacht SPL2000 installation manual (PDF)](https://support.digitalyacht.net/Manuals/SPL2000%20User%20Manual%20V1_00_Eng.pdf)
 
 ## Outstanding onboard survey
 
-1. Confirm by tracing or isolating whether **10 A [CB-003](/about/configuration/equipment/cb-003/) at panel position `3,4`** actually feeds the FC four-way fuse board. Identify the board's manufacturer/model, rated voltage/current and whether the fourth way is occupied or spare.
-2. Record the main panel feeder source, upstream fuse/breaker, conductor cross-section and length, negative return, fuse-board way numbers and *actual fitted* fuse ratings.
-3. Confirm the **Vesper Marine VA159** coax type, masthead mounting, connectors and measured VSWR where possible; the model is owner-confirmed but installation measurements remain outstanding.
-4. Inspect coax cable type, masthead base and deck transitions, splitter RF connectors, and the optional AM/FM output; record checks of antenna match/VSWR at both voice VHF and AIS frequencies when practical.
+1. CB-003 directly feeds EQ-057 per owner confirmation. Check feeder conductors, fuse-board model and fourth-way use during survey.
+2. Record feeder/return conductor sizes and route, additional upstream protection and actual branch fuse values.
+3. Ancor white RG213 and the inside-mast/swan-neck route are owner-confirmed; record total run length and connector/joint locations.
+4. Inspect connector moisture protection and swan-neck chafe/strain relief; measure VHF and AIS-frequency VSWR where practical.
 5. Recheck these supply and protection relationships when the main DC panel is replaced in the planned winter refit.
 

@@ -72,7 +72,7 @@ Thus `CB-014` denotes a breaker regardless of its panel position. Its equipment 
 
 Use `<SUPPLY>-<SYSTEM>-<NUMBER>`, with examples such as `DC-PWR-01` for DC power distribution, `DC-PIL-01` for autopilot power and `AC-PWR-01` for an AC distribution circuit. The system abbreviation describes the function; the number does not correspond to a breaker or switch number.
 
-Circuit identities and equipment numbers shown on this page are examples, **not allocations to existing Ragtime equipment**.
+Examples here remain illustrative; the first real circuit is [DC-COM-01](/about/configuration/circuits/dc-com-01/), protected by CB-003 and supplying EQ-057.
 
 ## Relationship between a breaker and a circuit
 
@@ -86,7 +86,7 @@ Model protection as an explicit **circuit-to-device relationship**. The circuit 
 | Load | `DC-PIL-01` feeds `EQ-019` |
 | Location | `CB-014` located at `CT-P` |
 
-The **Circuit Register** is authoritative for the protective relationship. A breaker's equipment page can display the reverse relationship — *circuits protected by this device* — rather than keeping a second copy that might become inconsistent.
+The **[Circuit Register](/about/configuration/circuit-register/)** is authoritative for the protective relationship. A breaker's equipment page can display the reverse relationship — *circuits protected by this device* — rather than keeping a second copy that might become inconsistent.
 
 A proposed future structured circuit record:
 
