@@ -5,7 +5,7 @@ date: 2026-10-31
 summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS antenna."
 ---
 
-> **Status: Owner-confirmed functional topology, not independently tested.** CB-003 directly feeds EQ-057. The Vesper VA159 connects to the SPL2000 by **one continuous white Ancor RG213 coax run** internally down the mast, through the swan neck into the deckhead, **with no intermediate joints or connectors**. DC feeder size, branch fuse ratings, RF run length, end terminations and measured VSWR remain unverified.
+> **Status: Owner-confirmed functional topology, not independently tested.** CB-003 directly feeds EQ-057. The Vesper VA159 connects to the SPL2000 by **one continuous white Ancor RG213 coax run**, inside the mast and through the swan neck into the deckhead, **without intermediate joints**. The owner estimates cable length at **mast height + 3 m**; **no SWR readings** exist. DC feeder size, branch fuse ratings and RF end terminations remain unverified.
 
 [← Electrical configuration](/about/configuration/) · [Equipment Register](/about/configuration/equipment-register/) · [Location reference system](/about/configuration/electrical-reference-system/)
 
@@ -37,6 +37,7 @@ EQ-058  Masthead shared VHF / AIS antenna (MS-T)
   |
   |  Ancor white RG213 coax, 50 ohms
   |  One uninterrupted length; NO intermediate connectors/joints
+  |  Estimated length: mast height + 3 m (not measured)
   |  Inside mast -> swan-neck pipe -> deckhead -> SPL2000
   v
 EQ-005  Digital Yacht SPL2000, ANTENNA input (SL-COM)
@@ -44,7 +45,7 @@ EQ-005  Digital Yacht SPL2000, ANTENNA input (SL-COM)
   '-- AIS output --> EQ-004  Ocean Signal ATB1
 ```
 
-The owner confirms a **white Ancor Marine Grade RG213 coax cable** runs from the Vesper VA159 **internally down the mast**, passes through a **swan-neck pipe into the deckhead**, then continues to the SPL2000. The owner explicitly confirms it is **one uninterrupted length with no intermediate coax connectors or splices**, chosen to avoid additional connection losses. **Run length, connector details at the two ends**, and swan-neck sealing/strain relief remain unverified. The owner confirms the VHF and AIS RF connections through the SPL2000 and the single masthead antenna. The SPL2000 manufacturer documents common-antenna operation, including a fail-safe VHF path in the event of lost splitter power. The optional AM/FM port is not documented as connected aboard Ragtime.
+The owner confirms a **white Ancor Marine Grade RG213 coax cable** runs from the Vesper VA159 **internally down the mast**, passes through a **swan-neck pipe into the deckhead**, then continues to the SPL2000. The owner explicitly confirms it is **one uninterrupted length with no intermediate coax connectors or splices**, chosen to avoid additional connection losses. **Estimated length is mast height + 3 m** (owner estimate; exact length not measured). Connector details at the two ends and swan-neck sealing/strain relief remain unverified; **no SWR readings are available**. The owner confirms the VHF and AIS RF connections through the SPL2000 and the single masthead antenna. The SPL2000 manufacturer documents common-antenna operation, including a fail-safe VHF path in the event of lost splitter power. The optional AM/FM port is not documented as connected aboard Ragtime.
 
 ### Manufacturer reference — Ancor white RG213
 
@@ -58,16 +59,20 @@ The owner confirms a **white Ancor Marine Grade RG213 coax cable** runs from the
 | Propagation velocity | **66%** |
 | Attenuation | **1.9 dB/100 ft at 100 MHz**, not a measured 162 MHz loss |
 
-The cable is an RF transmission connection, **not a new powered equipment asset**. The run has **no intermediate connectors**, owner-confirmed; **end-termination type and condition, run length, measured loss and VSWR** have not yet been established.
+The cable is an RF transmission connection, **not a new powered equipment asset**. The run has **no intermediate connectors**, owner-confirmed; **estimated length is mast height + 3 m**, not physically measured. End-termination type and condition and measured loss remain unverified; **SWR has not been measured**.
 
 - [Ancor 2024 manufacturer catalogue (PDF, coax specifications on printed page 16)](https://disvent.com/pub/media/descargas/Cat%C3%A1logo%20Ancor.pdf)
 - [Digital Yacht SPL2000 installation manual (PDF)](https://support.digitalyacht.net/Manuals/SPL2000%20User%20Manual%20V1_00_Eng.pdf)
+
+## Operational RF observation
+
+Following installation of the lower-attenuation RG213 cable, the owner observed a **marked improvement in VHF reception**, including reception of **Jersey Coastguard from Weymouth Bay**. This is a qualitative operational observation, **not** a quantified path-loss, radio-range or SWR measurement; environmental and installation factors also affect VHF reception.
 
 ## Outstanding onboard survey
 
 1. CB-003 directly feeds EQ-057 per owner confirmation. Check feeder conductors, fuse-board model and fourth-way use during survey.
 2. Record feeder/return conductor sizes and route, additional upstream protection and actual branch fuse values.
-3. Ancor white RG213, the inside-mast/swan-neck route and **absence of intermediate joints** are owner-confirmed; record total run length and the two end-termination types.
-4. Inspect connector moisture protection and swan-neck chafe/strain relief; measure VHF and AIS-frequency VSWR where practical.
+3. Ancor RG213, the inside-mast/swan-neck route, absence of intermediate joints and **estimated length (mast height + 3 m)** are owner-confirmed; precise length and the two end-termination types remain open.
+4. **No SWR readings are available.** A future VHF/AIS-frequency VSWR test, end-connector inspection and swan-neck chafe/moisture check would provide further evidence.
 5. Recheck these supply and protection relationships when the main DC panel is replaced in the planned winter refit.
 
