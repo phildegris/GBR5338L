@@ -40,7 +40,15 @@ Start with recognisable compartments or functional areas, adding a sublocation o
 | `MS` | Mast |
 | `BL` | Bilge |
 
-Examples: `CT-P` = chart table panel face; `CT-R` = rear of chart table panel; `AL-S` = starboard side of aft locker; `MS-T` = masthead. These codes are **proposed**, subject to a location survey.
+Examples: `CT-P` = chart table panel face; `CT-R` = rear of chart table panel; `AL-S` = starboard side of aft locker; `MS-T` = masthead. The generic examples remain **proposed** until surveyed.
+
+### Owner-designated sublocations
+
+| Code | Name | Physical description | Evidence and scope |
+| --- | --- | --- | --- |
+| `SL-COM` | **COM frame** | Saloon, starboard-forward side, adjacent to the chart-table DC panel | Owner-designated location (31 October 2026). The Icom M510 VHF (`EQ-003`), Ocean Signal ATB1 AIS (`EQ-004`) and DY splitter (`EQ-005`) are reported mounted here. Internal wiring and protection not surveyed. |
+
+The COM frame is a **location**, not an equipment item or circuit. Its location code is deliberately independent of the equipment IDs, so devices can be replaced or relocated without renumbering them.
 
 ## Equipment references
 

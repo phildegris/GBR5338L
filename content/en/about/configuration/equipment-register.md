@@ -9,7 +9,7 @@ summary: "Provisional equipment identifiers, locations and survey status for ele
 
 This register uses the permanent equipment IDs proposed in the [Electrical Reference System](/about/configuration/electrical-reference-system/). IDs identify *equipment*, not circuits or panel positions. Legacy breaker, busbar and terminal designations are retained in the notes. Circuit protection belongs in a future Circuit Register rather than being inferred from this inventory.
 
-**Survey state:** `U` = mentioned on the source page; not physically verified. `T` = tentative bracketed entry; installation or proposal status unknown. `G` = grouped equipment with unspecified individual quantity; a survey must allocate separate IDs to actual devices. These are *documentation states*, not proof of installation.
+**Survey state:** `U` = identified from source notes or confirmed by the owner, but the electrical installation has not been independently surveyed. `T` = tentative bracketed entry; installation or proposal status unknown. `G` = grouped equipment with unspecified individual quantity; a survey must allocate separate IDs to actual devices. These are *documentation states*, not proof of installation.
 
 [Browse the equipment catalogue](/about/configuration/equipment/) for one record per item, with manufacturer references and survey questions.
 
@@ -36,9 +36,9 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 
 | ID | Equipment | Reported location | State | Source / survey note |
 | --- | --- | --- | :---: | --- |
-| [`EQ-003`](/about/configuration/equipment/eq-003/) | [Radio transceiver](/about/configuration/equipment/eq-003/) | Unsurveyed | `U` | Source: Tranciever; make/model not stated. |
-| [`EQ-004`](/about/configuration/equipment/eq-004/) | [AIS equipment](/about/configuration/equipment/eq-004/) | Unsurveyed | `U` | Source: AIS; device identity not stated. |
-| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Communications splitter](/about/configuration/equipment/eq-005/) | Unsurveyed | `U` | Source: Splitter; type/model unverified. |
+| [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed Icom M510 installed at COM frame; variant, electrical connections and protective device require survey. |
+| [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed ATB1 installed at COM frame; antenna/data/power paths require survey. |
+| [`EQ-005`](/about/configuration/equipment/eq-005/) | [DY splitter (model to confirm)](/about/configuration/equipment/eq-005/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed DY splitter installed at COM frame; maker/model and antenna routing require survey. |
 
 ## Charging outlets / devices
 
