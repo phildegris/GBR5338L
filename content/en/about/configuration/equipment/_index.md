@@ -10,13 +10,15 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | Equipment ID | Description | Documentation / survey status |
 | --- | --- | --- |
 | [`EQ-001`](/about/configuration/equipment/eq-001/) | [Main DC panel (DCP)](/about/configuration/equipment/eq-001/) | {{< equipment-status id="EQ-001" >}} |
-| [`EQ-002`](/about/configuration/equipment/eq-002/) | [Navigation-lights illuminated graphic/control section](/about/configuration/equipment/eq-002/) | {{< equipment-status id="EQ-002" >}} |
+| [`EQ-002`](/about/configuration/equipment/eq-002/) | [NAV LTS four-breaker / yacht-outline panel](/about/configuration/equipment/eq-002/) | {{< equipment-status id="EQ-002" >}} |
 | [`BB-001`](/about/configuration/equipment/bb-001/) | [Main negative busbar](/about/configuration/equipment/bb-001/) | {{< equipment-status id="BB-001" >}} |
 | [`BB-002`](/about/configuration/equipment/bb-002/) | [DC panel negative busbar](/about/configuration/equipment/bb-002/) | {{< equipment-status id="BB-002" >}} |
-| [`CB-001`](/about/configuration/equipment/cb-001/) | [Masthead-light circuit breaker](/about/configuration/equipment/cb-001/) | {{< equipment-status id="CB-001" >}} |
-| [`CB-002`](/about/configuration/equipment/cb-002/) | [Steaming-light circuit breaker](/about/configuration/equipment/cb-002/) | {{< equipment-status id="CB-002" >}} |
+| [`CB-001`](/about/configuration/equipment/cb-001/) | [NAV masthead breaker, 10 A](/about/configuration/equipment/cb-001/) | {{< equipment-status id="CB-001" >}} |
+| [`CB-002`](/about/configuration/equipment/cb-002/) | [NAV steaming breaker, 10 A](/about/configuration/equipment/cb-002/) | {{< equipment-status id="CB-002" >}} |
+| [`CB-004`](/about/configuration/equipment/cb-004/) | [10 A deck-light breaker](/about/configuration/equipment/cb-004/) | {{< equipment-status id="CB-004" >}} |
+| [`CB-005`](/about/configuration/equipment/cb-005/) | [10 A bow/stern navigation breaker](/about/configuration/equipment/cb-005/) | {{< equipment-status id="CB-005" >}} |
 | [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS circuit breaker (10 A, position 3,4)](/about/configuration/equipment/cb-003/) | {{< equipment-status id="CB-003" >}} |
-| [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead anchor/tricolour polarity selector](/about/configuration/equipment/sw-001/) | {{< equipment-status id="SW-001" >}} |
+| [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead DPDT polarity-reversing selector](/about/configuration/equipment/sw-001/) | {{< equipment-status id="SW-001" >}} |
 | [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN connector block no. 2](/about/configuration/equipment/tb-001/) | {{< equipment-status id="TB-001" >}} |
 | [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN connector block no. 3](/about/configuration/equipment/tb-002/) | {{< equipment-status id="TB-002" >}} |
 | [`TB-003`](/about/configuration/equipment/tb-003/) | [Four-way connector block](/about/configuration/equipment/tb-003/) | {{< equipment-status id="TB-003" >}} |
@@ -40,11 +42,11 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`EQ-015`](/about/configuration/equipment/eq-015/) | [Navigation-station hutch charging point 2](/about/configuration/equipment/eq-015/) | {{< equipment-status id="EQ-015" >}} |
 | [`EQ-016`](/about/configuration/equipment/eq-016/) | [Forward-cabin charging point](/about/configuration/equipment/eq-016/) | {{< equipment-status id="EQ-016" >}} |
 | [`EQ-017`](/about/configuration/equipment/eq-017/) | [Aft-cabin charging point](/about/configuration/equipment/eq-017/) | {{< equipment-status id="EQ-017" >}} |
-| [`EQ-018`](/about/configuration/equipment/eq-018/) | [Bow navigation light](/about/configuration/equipment/eq-018/) | {{< equipment-status id="EQ-018" >}} |
-| [`EQ-019`](/about/configuration/equipment/eq-019/) | [Stern navigation light](/about/configuration/equipment/eq-019/) | {{< equipment-status id="EQ-019" >}} |
-| [`EQ-020`](/about/configuration/equipment/eq-020/) | [Steaming light](/about/configuration/equipment/eq-020/) | {{< equipment-status id="EQ-020" >}} |
-| [`EQ-021`](/about/configuration/equipment/eq-021/) | [Combined masthead tricolour/anchor light](/about/configuration/equipment/eq-021/) | {{< equipment-status id="EQ-021" >}} |
-| [`EQ-022`](/about/configuration/equipment/eq-022/) | [Deck lights (group)](/about/configuration/equipment/eq-022/) | {{< equipment-status id="EQ-022" >}} |
+| [`EQ-018`](/about/configuration/equipment/eq-018/) | [Osculati bow bicolour LED](/about/configuration/equipment/eq-018/) | {{< equipment-status id="EQ-018" >}} |
+| [`EQ-019`](/about/configuration/equipment/eq-019/) | [Osculati stern LED light](/about/configuration/equipment/eq-019/) | {{< equipment-status id="EQ-019" >}} |
+| [`EQ-020`](/about/configuration/equipment/eq-020/) | [Osculati combined steaming/deck fixture](/about/configuration/equipment/eq-020/) | {{< equipment-status id="EQ-020" >}} |
+| [`EQ-021`](/about/configuration/equipment/eq-021/) | [NASA Marine Combi masthead tricolour/anchor LED](/about/configuration/equipment/eq-021/) | {{< equipment-status id="EQ-021" >}} |
+| [`EQ-022`](/about/configuration/equipment/eq-022/) | [Legacy deck-lights group (not an additional confirmed fitting)](/about/configuration/equipment/eq-022/) | {{< equipment-status id="EQ-022" >}} |
 | [`EQ-023`](/about/configuration/equipment/eq-023/) | [Compass light](/about/configuration/equipment/eq-023/) | {{< equipment-status id="EQ-023" >}} |
 | [`EQ-024`](/about/configuration/equipment/eq-024/) | [Cockpit light](/about/configuration/equipment/eq-024/) | {{< equipment-status id="EQ-024" >}} |
 | [`EQ-025`](/about/configuration/equipment/eq-025/) | [Boom light](/about/configuration/equipment/eq-025/) | {{< equipment-status id="EQ-025" >}} |

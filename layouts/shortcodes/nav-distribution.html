@@ -1,0 +1,34 @@
+{{- $key := .Get "id" -}}
+{{- $d := index .Site.Data.electrical_diagrams $key -}}
+{{- with $d -}}
+<section class="ragtime-diagram ragtime-nav" aria-label="{{ .title }}">
+  <div class="ragtime-diagram__heading">
+    <strong>{{ .title }}</strong>
+    <small>{{ .status }}</small>
+  </div>
+  <div class="ragtime-diagram__node ragtime-diagram__source">
+    <span class="ragtime-diagram__kicker">Panel · {{ .panel.location }}</span>
+    <a href="{{ .panel.url | relURL }}"><strong>{{ .panel.id }}</strong> — {{ .panel.name }}</a>
+  </div>
+  <div class="ragtime-nav__trunk" aria-hidden="true"></div>
+  <div class="ragtime-nav__branches">
+    {{- range .branches }}
+    <div class="ragtime-nav__branch">
+      <span class="ragtime-diagram__kicker">Panel position {{ .way }} · {{ .label }}</span>
+      <a class="ragtime-nav__breaker" href="{{ .breaker_url | relURL }}"><strong>{{ .breaker }}</strong> · {{ .rating }}</a>
+      <a class="ragtime-nav__circuit" href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+      {{- if .switch }}
+      <div class="ragtime-nav__device ragtime-nav__switch"><a href="{{ .switch_url | relURL }}"><strong>{{ .switch }}</strong> — {{ .switch_label }}</a></div>
+      {{- end }}
+      {{- range .loads }}
+      <div class="ragtime-nav__device"><a href="{{ .url | relURL }}"><strong>{{ .id }}</strong> — {{ .name }}</a></div>
+      {{- end }}
+      {{- with .note }}<small>{{ . }}</small>{{- end }}
+    </div>
+    {{- end }}
+  </div>
+  <p class="ragtime-diagram__note">One Osculati housing EQ-020 appears in two branches because its steaming and deck functions have separate breakers. Bow and stern fittings share CB-005. Each breaker is 10 A by owner declaration; cable, returns and DIN clamp connections remain untested.</p>
+</section>
+{{- else -}}
+<p>Navigation-light diagram “{{ $key }}” is not configured.</p>
+{{- end -}}
