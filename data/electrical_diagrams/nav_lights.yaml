@@ -27,7 +27,7 @@ branches:
     breaker_url: "/about/configuration/equipment/cb-002/"
     circuit: "DC-NAV-02"
     circuit_url: "/about/configuration/circuits/dc-nav-02/"
-    note: "Same Osculati housing; 13.243.88 visual match, SKU unverified"
+    note: "Owner-confirmed Osculati 13.243.88; steaming section"
     loads:
       - id: "EQ-020"
         name: "Osculati combined steaming/deck fitting"
@@ -39,7 +39,7 @@ branches:
     breaker_url: "/about/configuration/equipment/cb-004/"
     circuit: "DC-NAV-03"
     circuit_url: "/about/configuration/circuits/dc-nav-03/"
-    note: "Four deck LEDs in same housing; 13.243.88 visual match"
+    note: "Owner-confirmed Osculati 13.243.88; deck section"
     loads:
       - id: "EQ-020"
         name: "Osculati combined steaming/deck fitting"

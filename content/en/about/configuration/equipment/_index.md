@@ -44,7 +44,7 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`EQ-017`](/about/configuration/equipment/eq-017/) | [Aft-cabin charging point](/about/configuration/equipment/eq-017/) | {{< equipment-status id="EQ-017" >}} |
 | [`EQ-018`](/about/configuration/equipment/eq-018/) | [Osculati bow bicolour LED](/about/configuration/equipment/eq-018/) | {{< equipment-status id="EQ-018" >}} |
 | [`EQ-019`](/about/configuration/equipment/eq-019/) | [Osculati stern LED light](/about/configuration/equipment/eq-019/) | {{< equipment-status id="EQ-019" >}} |
-| [`EQ-020`](/about/configuration/equipment/eq-020/) | [Osculati combined steaming/deck fixture](/about/configuration/equipment/eq-020/) | {{< equipment-status id="EQ-020" >}} |
+| [`EQ-020`](/about/configuration/equipment/eq-020/) | [Osculati 13.243.88 combined steaming/deck LED](/about/configuration/equipment/eq-020/) | {{< equipment-status id="EQ-020" >}} |
 | [`EQ-021`](/about/configuration/equipment/eq-021/) | [NASA Marine Combi masthead tricolour/anchor LED](/about/configuration/equipment/eq-021/) | {{< equipment-status id="EQ-021" >}} |
 | [`EQ-022`](/about/configuration/equipment/eq-022/) | [Legacy deck-lights group (not an additional confirmed fitting)](/about/configuration/equipment/eq-022/) | {{< equipment-status id="EQ-022" >}} |
 | [`EQ-023`](/about/configuration/equipment/eq-023/) | [Compass light](/about/configuration/equipment/eq-023/) | {{< equipment-status id="EQ-023" >}} |

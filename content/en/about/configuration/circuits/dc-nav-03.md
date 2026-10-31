@@ -19,7 +19,7 @@ date: 2026-10-31
 | Supply busbar, return path, cable size and length | Not independently inspected |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
-**Visual identification:** The owner's reference image closely matches **Osculati 13.243.88**, a four-LED deck/LED steaming combined unit. The installed SKU is not nameplate-confirmed. The candidate's **brown deck + / white common −** pigtail references must be kept separate from untraced onboard DIN/mast conductors.
+**Owner-confirmed model:** **Osculati 13.243.88**, combined LED steaming/deck fitting. Published **brown deck-positive / white common-negative** product pigtail functions are model-specific references, not verification of Ragtime's DIN terminal connections.
 
 **Shared physical housing:** This and the other Osculati circuit independently supply two functions of the **same EQ-020 combined steaming/deck fitting**, not two independent luminaires.
 
