@@ -14,18 +14,19 @@ date: 2026-10-31
 
 ## House-bank primary DC distribution
 
-**Source:** One house-bank electrical interface [EQ-059](/about/configuration/equipment/eq-059/) feeds positive bus [BB-003](/about/configuration/equipment/bb-003/) and an independent monitored negative return through the Victron BMV-712 shunt [EQ-060](/about/configuration/equipment/eq-060/). The owner confirms **one common remote switch [SW-002](/about/configuration/equipment/sw-002/)** controlling the two House/Autopilot service circuits together, while three essential feeds bypass the switch. **Fuse/device ratings and sizes are not yet inspected**. See the [functional source/return diagram](/about/configuration/house-bank-distribution/).
+**Source:** The complete House bank remains one interface [EQ-059](/about/configuration/equipment/eq-059/). The owner confirms fitted **battery-post MRBF fuses** and **ANL distribution fuses**, with **one common SW-002** for House, Autopilot and Windlass; Watchkeeper and both pumps bypass it. Windlass also retains a **fitted 80 A breaker CB-006**. Current ANL fuse ratings, positions and six-service mapping remain unverified. [Distribution diagram](/about/configuration/house-bank-distribution/).
 
-| Circuit | Primary protection | Functional destination | Evidence |
+| Circuit | Installed protective evidence | Functional destination | Switching / outstanding detail |
 | --- | --- | --- | --- |
-| [DC-PWR-01](/about/configuration/circuits/dc-pwr-01/) | **Unverified**; House-bank source feeder | House source [EQ-059](/about/configuration/equipment/eq-059/) → positive bus [BB-003](/about/configuration/equipment/bb-003/) | Unknown upstream main battery protection |
-| [DC-WAT-01](/about/configuration/circuits/dc-wat-01/) | **Unverified**; Watchkeeper always-on | Watchkeeper critical feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown |
-| [DC-BIL-01](/about/configuration/circuits/dc-bil-01/) | **Unverified**; Pump 1 always-on | Pump 1 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
-| [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | **Unverified**; Pump 2 always-on | Pump 2 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
-| [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | **Unverified branch fuse**; House through common [SW-002](/about/configuration/equipment/sw-002/) | Main DC panel [EQ-001](/about/configuration/equipment/eq-001/) | **Switched together with Autopilot**; wire/rating unknown |
-| [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | **Unverified branch fuse**; Autopilot through common [SW-002](/about/configuration/equipment/sw-002/) | Autopilot distribution | **Switched together with House**; wire/rating unknown |
+| [DC-PWR-01](/about/configuration/circuits/dc-pwr-01/) | Battery-post fuses owner-confirmed installed; 2025 design specified 2 × 125 A MRBF | [EQ-059](/about/configuration/equipment/eq-059/) → [BB-003](/about/configuration/equipment/bb-003/) | Current count, rating and cabling not inspected |
+| [DC-WAT-01](/about/configuration/circuits/dc-wat-01/) | ANL fuse installation confirmed as a group; particular fuse/rating not yet mapped | Watchkeeper | Unswitched by SW-002 |
+| [DC-BIL-01](/about/configuration/circuits/dc-bil-01/) | Pump circuit protection untraced | Pump 1 | Unswitched by SW-002 |
+| [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | Pump circuit protection untraced | Pump 2 | Unswitched by SW-002 |
+| [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | Original ANL installation owner-confirmed; fuse allocation not yet traced | Main DC panel [EQ-001](/about/configuration/equipment/eq-001/) | Shares SW-002 with Pilot and Windlass |
+| [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | Original ANL installation owner-confirmed; individual branch protection not yet mapped | Autopilot | Shares SW-002 with House and Windlass |
+| [DC-WIN-01](/about/configuration/circuits/dc-win-01/) | **[CB-006](/about/configuration/equipment/cb-006/) fitted 80 A breaker** plus installed ANL scheme (2025 design called for 100 A ANL Windlass) | Windlass | Shares SW-002 with House and Pilot; physical ANL rating/order untraced |
 
-**Unswitched is not unprotected:** protect each cable separately; nominal fusing from older design notes is not confirmed as installed. Pump 1/Pump 2 are not yet physically cross-referenced to the legacy tentative pump equipment entries.
+The 2025 Primary/Auxiliary/Watchkeeper/Winch ANL schedule must not be silently mapped to today's six service circuit names. **Unswitched does not mean unprotected.** Assign individual `FU-NNN` records when particular fitted fuses and ways have been positively identified.
 
 ## Navigation and deck lighting
 
