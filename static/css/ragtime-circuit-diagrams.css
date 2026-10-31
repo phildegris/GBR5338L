@@ -1,0 +1,62 @@
+/* Ragtime responsive, linked circuit diagrams — no external JS or runtime dependencies */
+.ragtime-diagram {
+  color: #223047; background: #f8fafc; border: 1px solid #cad5e2;
+  border-radius: 12px; padding: 1.1rem; margin: 1.2rem 0 1.5rem;
+  max-width: 100%; box-sizing: border-box;
+}
+.ragtime-diagram * { box-sizing: border-box; }
+.ragtime-diagram a { color: #194a7a; text-decoration: underline; text-underline-offset: 2px; }
+.ragtime-diagram a:hover, .ragtime-diagram a:focus { color: #0d3456; }
+.ragtime-diagram__heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .35rem 1rem; margin-bottom: 1rem; }
+.ragtime-diagram__heading strong { font-size: 1.05rem; }
+.ragtime-diagram__heading small { color: #56657b; font-size: .82rem; }
+.ragtime-diagram__node {
+  border: 1px solid #adc3d6; border-radius: 8px; background: white; padding: .7rem 1rem;
+  display: flex; flex-direction: column; align-items: center; gap: .3rem; text-align: center;
+  width: min(100%, 440px); margin: 0 auto; line-height: 1.45;
+}
+.ragtime-diagram__kicker { color: #56657b; font-size: .77rem; font-weight: 600; letter-spacing: .02em; }
+.ragtime-diagram__board { border-color: #507c9c; background: #e6f1f8; }
+.ragtime-diagram__wire {
+  min-height: 98px; width: fit-content; margin: 0 auto; padding: 10px 13px 13px 18px;
+  border-left: 3px solid #6d879f; display: flex; flex-direction: column;
+  gap: .12rem; position: relative; background: transparent;
+  font-size: .83rem; line-height: 1.4;
+}
+.ragtime-diagram__wire:after {
+  content: ""; position: absolute; bottom: 0; left: -7px;
+  border-left: 5px solid transparent; border-right: 5px solid transparent;
+  border-top: 8px solid #6d879f;
+}
+.ragtime-diagram__branches {
+  margin-top: 28px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .65rem; position: relative;
+}
+.ragtime-diagram__branches:before {
+  content:""; position: absolute; left: 12.5%; right: 12.5%; top: -18px;
+  border-top: 2px solid #95aabe;
+}
+.ragtime-diagram__branch {
+  min-width: 0; border: 1px solid #bdcddd; border-radius: 8px;
+  padding: .75rem .55rem; background: white; display:flex;
+  flex-direction:column; align-items:center; gap:.3rem; text-align:center;
+  font-size: .86rem; line-height:1.4; position:relative;
+}
+.ragtime-diagram__branch:before {
+  content:""; position:absolute; height:18px; top:-19px; left:50%; border-left:2px solid #95aabe;
+}
+.ragtime-diagram__circuit { font-size:.8rem; }
+.ragtime-diagram__load {
+  border-top: 1px solid #e4ebf2; margin-top:.25rem; padding-top:.5rem; width:100%; font-size:.82rem;
+}
+.ragtime-diagram__branch--unknown { border-style:dashed; background: #f2f4f7; color: #546275; }
+.ragtime-diagram__load--unknown { color:#697588; }
+.ragtime-diagram__note { font-size:.79rem; color:#52617a; margin: .85rem 0 0; line-height:1.5; }
+@media (max-width: 780px) {
+  .ragtime-diagram__branches { grid-template-columns: repeat(2,minmax(0,1fr)); row-gap: 1.1rem; }
+  .ragtime-diagram__branches:before { display:none; }
+  .ragtime-diagram__branch:before { display:none; }
+}
+@media (max-width: 390px) {
+  .ragtime-diagram__branches {grid-template-columns: 1fr;}
+}

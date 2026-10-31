@@ -5,7 +5,7 @@ date: 2026-10-31
 summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS antenna."
 ---
 
-> **Status: Owner-confirmed functional topology, not independently tested.** CB-003 directly feeds EQ-057. The Vesper VA159 connects to the SPL2000 by **one continuous white Ancor RG213 coax run**, inside the mast and through the swan neck into the deckhead, **without intermediate joints**. The owner estimates cable length at **mast height + 3 m**; **no SWR readings** exist. DC feeder size and branch fuse ratings remain unverified. **Both coax end terminations are owner-confirmed soldered PL-259 connectors**; their condition and weatherproofing have not been inspected.
+> **Status: Owner-confirmed functional topology, not independently tested.** CB-003 (10 A) feeds EQ-057. Fuse assignments are now **way 1 = 10 A VHF**, **way 2 = 3 A SPL2000**, **way 3 = 3 A ATB1**; way 4 remains unknown. The shared antenna uses continuous white Ancor RG213 with soldered PL-259 ends and no intermediate joints. DC conductor sizes and measured SWR remain outstanding.
 
 [← Electrical configuration](/about/configuration/) · [Equipment Register](/about/configuration/equipment-register/) · [Location reference system](/about/configuration/electrical-reference-system/)
 
@@ -16,19 +16,11 @@ summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS ante
 
 ## DC distribution — owner-confirmed
 
-```text
-EQ-001 Moody DC panel
-  | 10 A CB-003 at 3,4, VHF AIS
-  | DC-COM-01 (owner-confirmed)
-  v
-EQ-057 four-way fuse board (SL-COM)
-  |-- fuse ? --> EQ-003 VHF
-  |-- fuse ? --> EQ-004 AIS
-  |-- fuse ? --> EQ-005 SPL2000
-  '-- fourth way unknown
-```
+{{< dc-distribution id="com_frame" >}}
 
-[DC-COM-01](/about/configuration/circuits/dc-com-01/) is the **confirmed feeder**, protected by [CB-003](/about/configuration/equipment/cb-003/) and supplying [EQ-057](/about/configuration/equipment/eq-057/). See the [Circuit Register](/about/configuration/circuit-register/). The 10 A feeder protection is **separate** from the board's three individual branch fuses; feeder conductor size and return path are not yet recorded.
+The **10 A feeder breaker CB-003** protects **DC-COM-01** to **EQ-057**, whereas the **individual fuses FU-001–FU-003** protect the outgoing VHF, SPL2000 and AIS branch circuits. Branch fuse ratings and positions are owner-confirmed; actual conductor sizes, fuse types and selective tripping behaviour are not verified.
+
+The fourth physical way on the FC fuse board has **no confirmed assignment**. It must not be described as spare until checked. See the [Circuit Register](/about/configuration/circuit-register/) for authoritative circuit-to-protection relationships.
 
 ## RF signal paths — owner-confirmed functional topology
 
@@ -71,8 +63,8 @@ Following installation of the lower-attenuation RG213 cable, the owner observed 
 
 ## Outstanding onboard survey
 
-1. CB-003 directly feeds EQ-057 per owner confirmation. Check feeder conductors, fuse-board model and fourth-way use during survey.
-2. Record feeder/return conductor sizes and route, additional upstream protection and actual branch fuse values.
+1. CB-003 → EQ-057 and ways 1–3 are owner-confirmed; check feeder conductor sizing, fuse-board make/model and whether way 4 is occupied.
+2. The three *ratings and way numbers are confirmed*. Record actual fuse formats, conductor sizes/returns and time-current coordination during the panel refit.
 3. Ancor RG213, the inside-mast/swan-neck route, no intermediate joints, **two soldered PL-259 end connectors** and **estimated length (mast height + 3 m)** are owner-confirmed. Only actual length and connector condition/inspection remain open.
 4. **No SWR readings are available.** A future VHF/AIS-frequency VSWR test, end-connector inspection and swan-neck chafe/moisture check would provide further evidence.
 5. Recheck these supply and protection relationships when the main DC panel is replaced in the planned winter refit.

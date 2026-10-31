@@ -1,0 +1,42 @@
+{{- $id := .Get "id" -}}
+{{- $d := index .Site.Data.electrical_diagrams $id -}}
+{{- with $d -}}
+<section class="ragtime-diagram" aria-label="{{ .title }}">
+  <div class="ragtime-diagram__heading">
+    <strong>{{ .title }}</strong>
+    <small>{{ .status }}</small>
+  </div>
+  <div class="ragtime-diagram__node ragtime-diagram__source">
+    <span class="ragtime-diagram__kicker">Source · {{ .source.location }}</span>
+    <a href="{{ .source.url | relURL }}"><strong>{{ .source.id }}</strong> — {{ .source.name }}</a>
+  </div>
+  <div class="ragtime-diagram__wire">
+    <a href="{{ .feeder.breaker_url | relURL }}"><strong>{{ .feeder.id }}</strong> · {{ .feeder.rating }}</a>
+    <span>Position {{ .feeder.position }} · {{ .feeder.label }}</span>
+    <a href="{{ .feeder.circuit_url | relURL }}">{{ .feeder.circuit }}</a>
+  </div>
+  <div class="ragtime-diagram__node ragtime-diagram__board">
+    <span class="ragtime-diagram__kicker">Distribution · {{ .board.location }}</span>
+    <a href="{{ .board.url | relURL }}"><strong>{{ .board.id }}</strong> — {{ .board.name }}</a>
+  </div>
+  <div class="ragtime-diagram__branches">
+    {{- range .branches }}
+    <div class="ragtime-diagram__branch {{ if not .fuse }}ragtime-diagram__branch--unknown{{ end }}">
+      <span class="ragtime-diagram__kicker">Fuse-board way {{ .way }}</span>
+      {{- if .fuse }}
+      <a href="{{ .fuse_url | relURL }}"><strong>{{ .fuse }}</strong> · {{ .rating }}</a>
+      <a class="ragtime-diagram__circuit" href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+      <div class="ragtime-diagram__load"><a href="{{ .load_url | relURL }}"><strong>{{ .load }}</strong> — {{ .load_name }}</a></div>
+      {{- else }}
+      <strong>Unknown</strong>
+      <span>{{ .load_name }}</span>
+      <div class="ragtime-diagram__load ragtime-diagram__load--unknown">Not confirmed as spare</div>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  <p class="ragtime-diagram__note">Labels identify physical devices and independent circuit IDs. The feeder breaker and branch fuses have distinct protection responsibilities; fuse formats, wiring sizes and selective tripping are not yet verified.</p>
+</section>
+{{- else -}}
+<p>Electrical distribution diagram “{{ $id }}” is not configured.</p>
+{{- end -}}

@@ -23,7 +23,10 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | Unverified |
 | [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | Unverified |
 | [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (owner-confirmed)](/about/configuration/equipment/eq-005/) | Unverified |
-| [`EQ-057`](/about/configuration/equipment/eq-057/) | [COM-frame four-way FC fuse board](/about/configuration/equipment/eq-057/) | Owner-confirmed, ratings not surveyed |
+| [`EQ-057`](/about/configuration/equipment/eq-057/) | [COM-frame four-way FC fuse board](/about/configuration/equipment/eq-057/) | Owner-confirmed ways 1–3; fuse formats not surveyed |
+| [`FU-001`](/about/configuration/equipment/fu-001/) | [COM-frame way 1: Icom M510 VHF, 10 A](/about/configuration/equipment/fu-001/) | Owner-confirmed fuse way and rating |
+| [`FU-002`](/about/configuration/equipment/fu-002/) | [COM-frame way 2: Digital Yacht SPL2000, 3 A](/about/configuration/equipment/fu-002/) | Owner-confirmed fuse way and rating |
+| [`FU-003`](/about/configuration/equipment/fu-003/) | [COM-frame way 3: Ocean Signal ATB1, 3 A](/about/configuration/equipment/fu-003/) | Owner-confirmed fuse way and rating |
 | [`EQ-058`](/about/configuration/equipment/eq-058/) | [Vesper Marine VA159 masthead VHF/AIS antenna](/about/configuration/equipment/eq-058/) | VA159 model owner-confirmed |
 | [`EQ-006`](/about/configuration/equipment/eq-006/) | [Handheld VHF charging point](/about/configuration/equipment/eq-006/) | Unverified |
 | [`EQ-007`](/about/configuration/equipment/eq-007/) | [Instrument-panel charging point](/about/configuration/equipment/eq-007/) | Unverified |

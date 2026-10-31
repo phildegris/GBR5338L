@@ -9,7 +9,7 @@ logo:
   subtitle: "This is the log of the sailing vessel Ragtime"
 
 custom_js: []
-custom_css: []
+custom_css: ["/css/ragtime-circuit-diagrams.css"]
 
 ######################## custom config ####################
 
