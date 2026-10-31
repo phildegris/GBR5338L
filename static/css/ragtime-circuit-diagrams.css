@@ -60,3 +60,38 @@
 @media (max-width: 390px) {
   .ragtime-diagram__branches {grid-template-columns: 1fr;}
 }
+
+/* Signal paths are reciprocal: connectors show topology, not transmission direction. */
+.ragtime-rf__antenna { background: #f0f7fe; border-color: #7296b7; }
+.ragtime-rf__feeder {
+  display: flex; flex-direction: column; text-align: center; align-items: center;
+  gap: .2rem; width: min(100%, 440px); margin: 0 auto;
+  padding: 10px 12px 12px; border-left: 3px solid #6d879f;
+  border-right: 3px solid #6d879f; font-size: .84rem; line-height: 1.45;
+  background: #f1f5fa;
+}
+.ragtime-rf__feeder strong { color: #263e5a; }
+.ragtime-rf__connector { color: #4a607a; font-size: .8rem; }
+.ragtime-rf__branches {
+  display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: .75rem; margin-top: 28px; position: relative;
+}
+.ragtime-rf__branches:before {
+  content:""; position:absolute; top:-18px; left:25%; right:25%;
+  border-top: 2px solid #95aabe;
+}
+.ragtime-rf__branch {
+  background: white; border: 1px solid #bdcddd; border-radius: 8px;
+  padding: .8rem .7rem; min-width: 0; display:flex; flex-direction:column;
+  align-items:center; text-align:center; gap: .35rem; position:relative;
+  font-size: .86rem; line-height: 1.4;
+}
+.ragtime-rf__branch:before {
+  content:""; height:18px; position:absolute; top:-19px; left:50%;
+  border-left:2px solid #95aabe;
+}
+.ragtime-rf__port { color: #5a6b80; font-size: .78rem; }
+@media (max-width: 390px) {
+  .ragtime-rf__branches { grid-template-columns: 1fr; gap: .5rem; margin-top: 12px; }
+  .ragtime-rf__branches:before, .ragtime-rf__branch:before { display:none; }
+}

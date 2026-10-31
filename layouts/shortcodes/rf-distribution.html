@@ -1,0 +1,37 @@
+{{- $id := .Get "id" -}}
+{{- $d := index .Site.Data.electrical_diagrams $id -}}
+{{- with $d -}}
+<section class="ragtime-diagram" aria-label="{{ .title }}">
+  <div class="ragtime-diagram__heading">
+    <strong>{{ .title }}</strong>
+    <small>{{ .status }}</small>
+  </div>
+  <div class="ragtime-diagram__node ragtime-rf__antenna">
+    <span class="ragtime-diagram__kicker">Antenna · {{ .antenna.location }}</span>
+    <a href="{{ .antenna.url | relURL }}"><strong>{{ .antenna.id }}</strong> — {{ .antenna.name }}</a>
+  </div>
+  <div class="ragtime-rf__feeder">
+    <strong>{{ .feeder.type }}</strong>
+    <span>{{ .feeder.length }}</span>
+    <span>{{ .feeder.route }}</span>
+    <span class="ragtime-rf__connector">{{ .feeder.terminations }}</span>
+    <span class="ragtime-rf__connector">{{ .feeder.joints }}</span>
+  </div>
+  <div class="ragtime-diagram__node ragtime-diagram__board">
+    <span class="ragtime-diagram__kicker">Antenna splitter · {{ .splitter.location }}</span>
+    <a href="{{ .splitter.url | relURL }}"><strong>{{ .splitter.id }}</strong> — {{ .splitter.name }}</a>
+    <span class="ragtime-rf__port">{{ .splitter.port }}</span>
+  </div>
+  <div class="ragtime-rf__branches">
+    {{- range .branches }}
+    <div class="ragtime-rf__branch">
+      <span class="ragtime-diagram__kicker">Splitter {{ .port }}</span>
+      <a href="{{ .url | relURL }}"><strong>{{ .id }}</strong> — {{ .name }}</a>
+    </div>
+    {{- end }}
+  </div>
+  <p class="ragtime-diagram__note">Connections are bidirectional for transmit/receive operation; this diagram shows topology, not signal direction. Cable type and connections are owner-confirmed, but actual SWR, insertion loss and end-connector condition have not been measured.</p>
+</section>
+{{- else -}}
+<p>RF diagram “{{ $id }}” is not configured.</p>
+{{- end -}}

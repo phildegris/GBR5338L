@@ -1,0 +1,28 @@
+title: "VHF/AIS shared antenna — RF connections"
+status: "Owner-confirmed functional connections; no SWR measurements available"
+antenna:
+  id: "EQ-058"
+  name: "Vesper Marine VA159"
+  location: "MS-T masthead"
+  url: "/about/configuration/equipment/eq-058/"
+feeder:
+  type: "Ancor Marine Grade RG213, white, 50 Ω"
+  length: "Mast height + 3 m (estimated)"
+  route: "Inside mast → swan neck → deckhead → COM frame"
+  joints: "Continuous: no intermediate connectors"
+  terminations: "Soldered PL-259 at both ends"
+splitter:
+  id: "EQ-005"
+  name: "Digital Yacht SPL2000"
+  location: "SL-COM"
+  port: "ANTENNA (shared)"
+  url: "/about/configuration/equipment/eq-005/"
+branches:
+  - port: "VHF port"
+    id: "EQ-003"
+    name: "Icom M510 VHF"
+    url: "/about/configuration/equipment/eq-003/"
+  - port: "AIS port"
+    id: "EQ-004"
+    name: "Ocean Signal ATB1 AIS"
+    url: "/about/configuration/equipment/eq-004/"

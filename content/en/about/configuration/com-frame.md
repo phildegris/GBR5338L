@@ -24,19 +24,7 @@ The fourth physical way on the FC fuse board has **no confirmed assignment**. It
 
 ## RF signal paths — owner-confirmed functional topology
 
-```text
-EQ-058  Masthead shared VHF / AIS antenna (MS-T)
-  |
-  |  Ancor white RG213 coax, 50 ohms
-  |  Soldered PL-259 at antenna and SPL2000 ends
-  |  One uninterrupted length; NO intermediate connectors/joints
-  |  Estimated length: mast height + 3 m (not measured)
-  |  Inside mast -> swan-neck pipe -> deckhead -> SPL2000
-  v
-EQ-005  Digital Yacht SPL2000, ANTENNA input (SL-COM)
-  |-- VHF output --> EQ-003  Icom M510 VHF
-  '-- AIS output --> EQ-004  Ocean Signal ATB1
-```
+{{< rf-distribution id="com_frame_rf" >}}
 
 The owner confirms a **white Ancor Marine Grade RG213 coax cable** runs from the Vesper VA159 **internally down the mast**, passes through a **swan-neck pipe into the deckhead**, then continues to the SPL2000. The owner explicitly confirms it is **one uninterrupted length with no intermediate coax connectors or splices**, chosen to avoid additional connection losses. **Estimated length is mast height + 3 m** (owner estimate; exact length not measured). **Both end connectors are soldered PL-259s**, owner-confirmed; condition of the terminations and swan-neck sealing/strain relief remain unverified. **No SWR readings are available**. The owner confirms the VHF and AIS RF connections through the SPL2000 and the single masthead antenna. The SPL2000 manufacturer documents common-antenna operation, including a fail-safe VHF path in the event of lost splitter power. The optional AM/FM port is not documented as connected aboard Ragtime.
 
