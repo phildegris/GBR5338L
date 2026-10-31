@@ -51,6 +51,14 @@ Examples: `CT-P` = chart table panel face; `CT-R` = rear of chart table panel; `
 
 The COM frame is a **location**, not an equipment item or circuit. Its location code is deliberately independent of the equipment IDs, so devices can be replaced or relocated without renumbering them.
 
+## Equipment record and index status
+
+Equipment documentation progress and electrical verification are **distinct**. Each equipment page owns its `survey_state` (for example `U`, `T` or `G`) and optional `documentation_stage`. The Equipment Register and Catalogue use a Hugo `equipment-status` shortcode to **render these values automatically**; do not separately maintain status in their tables.
+
+- `documentation_stage: mapped` — equipment identity, location and relevant functional connections have been documented from owner information. **This is not independently verified as-built electrical work.**
+- `survey_state: U` — installation not independently electrically surveyed, even if the owner has confirmed details; `T` = tentative, `G` = grouped.
+- A completed physical inspection or electrical test should be recorded with its evidence and only then change the applicable survey state.
+
 ## Equipment references
 
 Assign permanent identifiers to significant components, unique **within the equipment type**.

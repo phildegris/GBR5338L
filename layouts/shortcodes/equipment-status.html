@@ -1,0 +1,13 @@
+{{- $id := .Get "id" | lower -}}
+{{- $page := site.GetPage (printf "/about/configuration/equipment/%s" $id) -}}
+{{- if $page -}}
+  {{- $survey := $page.Params.survey_state | default "U" | upper -}}
+  {{- $stage := $page.Params.documentation_stage | default "identified" -}}
+  {{- if eq $stage "mapped" -}}
+    <span title="Owner-confirmed functional mapping; not independently electrically surveyed">Mapped ({{ $survey }})</span>
+  {{- else -}}
+    <span title="{{ if eq $survey "T" }}Tentative installation or proposal{{ else if eq $survey "G" }}Grouped equipment, individual count unknown{{ else }}Identified or owner-confirmed; electrical installation not independently surveyed{{ end }}">{{ $survey }}</span>
+  {{- end -}}
+{{- else -}}
+  <span title="Equipment record was not found">Missing record</span>
+{{- end -}}
