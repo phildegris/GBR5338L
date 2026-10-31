@@ -1,5 +1,5 @@
 title: "House-bank source → five service feeds"
-status: "Owner-confirmed functions; fuse ratings, physical switches and exact wiring unverified"
+status: "Five owner-confirmed services; Aug 2025 photo shows one WhisperPower remote switch and four lower fuseholders; current wiring unverified"
 source:
   id: "EQ-059"
   name: "House-bank source port"
@@ -47,5 +47,5 @@ branches:
     state: "Remotely switched"
     circuit: "DC-PIL-01"
     circuit_url: "/about/configuration/circuits/dc-pil-01/"
-    note: "Independent from House; remote-switch device not identified"
+    note: "Separate protected service; may share one common remote switch with House, hardware/wiring unverified"
 
