@@ -6,6 +6,8 @@ author: Phil
 summary: Details about each electrical circuit, its wiring and protection 
 ---
 
+See the [Equipment Register](/about/configuration/equipment-register/) for equipment-level records derived from this page. The records are provisional pending an onboard survey.
+
 | Control Zone | Abbreviation | Location | Description |
 | -------- | -------- | -------- | -------- |
 | DC Panel | DCP | Chart Table | The main DC Panel at the chart table |
