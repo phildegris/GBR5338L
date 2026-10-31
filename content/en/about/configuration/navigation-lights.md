@@ -17,7 +17,7 @@ The **NAV LTS panel** is [EQ-002](/about/configuration/equipment/eq-002/), part 
 
 ## Confirmed equipment functions
 
-- **Masthead:** [CB-001](/about/configuration/equipment/cb-001/), 10 A, feeds [SW-001](/about/configuration/equipment/sw-001/) DPDT On-Off-On polarity-reversing selector. It supplies one [NASA Marine Combi LED](/about/configuration/equipment/eq-021/) tricolour/anchor light at the masthead. Centre-off disables both; polarity reversal selects a mode; **the switch pinout and exact polarity mapping have not been independently tested**.
+- **Masthead:** [CB-001](/about/configuration/equipment/cb-001/), 10 A, supplies [SW-001](/about/configuration/equipment/sw-001/) DPDT On-Off-On polarity-reversing selector and the [NASA Marine Combi LED](/about/configuration/equipment/eq-021/). **Owner-confirmed switched pair: R3/brown and B4/white** in the 7 × 1.5 mm² trunk, continuing from the forecabin locker into a **separate 2 × 1.5 mm² Oceanflex mast cable**. Both are polarity-switched; neither conductor is a permanent negative return. Exact 2-core wire-to-trunk colour matching and switch pin truth table remain untraced.
 - **Steaming:** [CB-002](/about/configuration/equipment/cb-002/), 10 A, supplies the forward-white function of [Osculati 13.243.88 EQ-020](/about/configuration/equipment/eq-020/). The handwritten schedule establishes **Y2 → yellow Oceanflex seven-core trunk conductor** to the forecabin locker; the *separate* mast-going cable and fitting pigtail junction remain untraced.
 - **Deck:** [CB-004](/about/configuration/equipment/cb-004/), 10 A, independently feeds the four-LED deck function in the **same EQ-020 housing**. New handwritten source: **R2 → red Oceanflex trunk conductor**; onward forecabin junction and mast leg remain untraced.
 - **Bow and stern:** [CB-005](/about/configuration/equipment/cb-005/), 10 A, supplies [EQ-018 bow bicolour](/about/configuration/equipment/eq-018/) and [EQ-019 stern light](/about/configuration/equipment/eq-019/). Handwritten references identify **B3 → green Oceanflex trunk core (bow)** and **B1 → stern-light-labelled connector**, but the stern prefix is not fully legible and the separate routes have not been continuity-traced.
@@ -30,13 +30,13 @@ The owner has supplied a [handwritten connector schedule](/about/configuration/d
 | --- | --- | --- |
 | Breaker 1,1 | Masthead to DPDT selector | Owner confirms function and 10 A breaker; physical terminal alias retained |
 | Selector pins 1–6 | Polarity-reversing masthead supply | Legacy pin notes only; contact map not independently tested |
-| `B2` blue lever | **7× blue** Oceanflex trunk core, handwritten `MAST HD` | Panel-end allocation; onward mast leg untraced |
+| `B2` blue lever | **7× blue** trunk core, original handwriting `MAST HD` | Original label retained; superseded as **NASA Combi switched pair** by owner-confirmed R3/B4 |
 | `Y2` yellow lever | **7× yellow** core, handwritten `STEAM.` | Panel-end allocation; onward mast leg untraced |
 | `R2` red lever | **7× red** core, handwritten `DECK` | New owner handwriting; onward mast leg untraced |
 | `B3` blue lever | **7× green** core, handwritten `NAV LTS (Bow)` | Forecabin-bound trunk; actual bow wiring untraced |
-| `Y3` yellow lever | **7× black** core, CB column `NC`; older DPDT notes mention NASA masthead | NC does **not** establish disconnected wire; conflicting functional implications untraced |
-| `R3` red lever | **7× brown** core, CB column `NC` | Destination not yet established |
-| `B4` blue lever | **7× white** core, CB column `NC` | Destination not yet established |
+| `Y3` yellow lever | **7× black** core, CB column `NC`; older DPDT notes mention NASA | Older NASA link superseded; separate hypothesis of common −12 V return **not verified** |
+| `R3` red lever | **7× brown** core, CB column `NC` | **Owner-confirmed NASA Combi switched conductor**, via SW-001; original NC label retained |
+| `B4` blue lever | **7× white** core, CB column `NC` | **Owner-confirmed NASA Combi switched conductor**, via SW-001; original NC label retained |
 | `B1` blue lever | “RG STERN LT”, prefix unclear | Stern-light label in handwritten notes; cable route untraced |
 
 ## Manufacturer references (separate model identity from electrical verification)
@@ -49,4 +49,4 @@ The owner has supplied a [handwritten connector schedule](/about/configuration/d
 
 ## Outstanding onboard survey
 
-The **Osculati 13.243.88** model, **Oceanflex 7 × 1.5 mm²** panel-to-forecabin trunk and seven panel-end colour references are now owner-confirmed. The next survey is the **forecabin starboard-locker secondary connectors**: identify onward runs to bow, saloon and mast (via the swan neck), negatives, joints and any jumpers. NASA variant, polarity-switch contacts and local downstream protection remain open.
+The **Osculati 13.243.88** model, **Oceanflex 7 × 1.5 mm²** panel-to-forecabin trunk, **NASA mast 2 × 1.5 mm² cable**, **Osculati mast 3 × 1.5 mm² cable** and the NASA **R3/brown + B4/white switched pair** are now owner-confirmed. The next survey is the **forecabin starboard-locker secondary connectors**: identify onward runs to bow, saloon and mast (via the swan neck), negatives, joints and any jumpers. NASA variant, exact correspondence between the 2-core mast wires and brown/white trunk cores, polarity-switch contacts, assumed negative busbar connections and local downstream protection remain open.

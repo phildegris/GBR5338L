@@ -20,13 +20,13 @@ The handwritten columns are **CB / rail / circuit**. The middle column uses the 
 | NAV LTS (stern, partially overwritten) | `B1` | “RG STERN LT” | Stern-light label; “RG” prefix uncertain |
 | NAV INSTR | `Y1` | “NMEA 2K B” | NMEA 2000 network B legacy label |
 | NAV INSTR | `R1` | “NMEA 2K A” | NMEA 2000 network A legacy label |
-| MAST HD | `B2` | “7× BLUE” | Oceanflex blue core, originally labelled masthead |
+| MAST HD | `B2` | “7× BLUE” | Handwritten masthead label preserved; owner says **NASA switched pair is R3/B4**, not B2 |
 | STEAM. | `Y2` | “7× YELLOW” | Oceanflex yellow core, originally labelled steaming |
 | DECK | `R2` | “7× RED” | Oceanflex red core, originally labelled deck |
 | NAV LTS (BOW) | `B3` | “7× GREEN” | Oceanflex green core, originally labelled bow |
-| NC | `Y3` | “7× BLACK” | Oceanflex black core; **NC is in CB column**, not proof of disconnect |
-| NC | `R3` | “7× BROWN” | Oceanflex brown core; downstream connection unknown |
-| NC | `B4` | “7× WHITE” | Oceanflex white core; downstream connection unknown |
+| NC | `Y3` | “7× BLACK” | Original NC preserved; older NASA association **superseded**, common-negative hypothesis untested |
+| NC | `R3` | “7× BROWN” | **Original label preserved**; later owner-confirmed NASA Combi switched conductor |
+| NC | `B4` | “7× WHITE” | **Original label preserved**; later owner-confirmed NASA Combi switched conductor |
 | VHF AIS (edited/crossed text) | `Y4` | “RADIO BUS” | Older label; actual connection untraced |
 | RADAR | `R4` | “RADAR +” | Older label, no protective device established |
 | Cabin/bunk lights (overwritten) | `B5` | “2× RED” | Separate cable reference; exact cable construction unknown |
@@ -41,13 +41,13 @@ The owner explicitly confirms that **7×** denotes one **Oceanflex 7-core cable*
 
 | Core insulation | Panel clamp | Original handwritten function |
 | --- | --- | --- |
-| Blue | `B2` | Masthead |
+| Blue | `B2` | Masthead (handwritten historical label; **superseded** for NASA Combi switched pair) |
 | Yellow | `Y2` | Steaming |
 | Red | `R2` | Deck |
 | Green | `B3` | Bow navigation |
-| Black | `Y3` | NC in CB column; older DPDT notes also mention masthead |
-| Brown | `R3` | NC in CB column |
-| White | `B4` | NC in CB column |
+| Black | `Y3` | NC in CB column; old DPDT note mentions NASA (superseded); **−12 V common connection is an assumption, not electrically measured** |
+| Brown | `R3` | NC in CB column; **owner confirms this is one NASA Combi switched conductor** |
+| White | `B4` | NC in CB column; **owner confirms this is the other NASA Combi switched conductor** |
 
 **Owner-confirmed physical routing:**
 
@@ -60,7 +60,11 @@ The owner explicitly confirms that **7×** denotes one **Oceanflex 7-core cable*
 
 Older [DC Logical Circuits](/about/configuration/logical-circuits/) notes described `B2`, `Y2`, `Y3` as seven-core *mast* wires. That was a functional shorthand and **is not their direct physical route**. These are panel-end cores of the **forecabin-bound trunk**. The onward mast run begins beyond the forecabin secondary connector distribution.
 
-One uncertainty remains: older polarity-selector notes refer to `Y3`/black as a NASA masthead conductor, whereas the photographed hand note has **NC** in its *CB column* for the same black conductor. Preserve both statements without equating NC with an electrically open circuit.
+**Superseding owner clarification, 31 October 2026:** The NASA Combi's **two switched conductors use `R3`/brown and `B4`/white** of the 7 × 1.5 mm² Oceanflex distribution trunk, connected through the DC panel's cage-clamp rail to the DPDT polarity switch **SW-001**. From the forecabin starboard-locker distribution these connect to the mast's **separate 2 × 1.5 mm² Oceanflex cable** (the cable includes a black-insulated core). **Which of the two mast-cable cores joins brown or white is not yet recorded.** The two NASA conductors are polarity-reversed by SW-001, so neither must be drawn as a permanently earthed/−12 V return.
+
+The handwritten CB column records `NC` for `R3` and `B4`, while the earlier DPDT sketch mentioned `B2`/blue and `Y3`/black as the masthead pair. Retain both as **historical annotations superseded by the owner's latest as-fitted clarification**; do not rewrite the photographic transcription. The `B2` handwritten `MAST HD` label remains as a historical *function label*, but is **not proof that the NASA Combi uses B2**. The older `Y3` black masthead relationship is superseded.
+
+**Negative-return hypothesis, not a traced electrical connection:** The owner previously proposed black cores associated with a common **−12 V busbar**. The black core of the **seven-core trunk** and the black core of the **separate 3 × 1.5 mm² Oceanflex steaming/deck mast cable** may be connected to that busbar; the actual junctions have not been measured or traced. That hypothesis **does not apply to the black core of the 2-core NASA Combi cable**, which is part of the polarity-reversing two-wire pair. The **3-core mast cable** serves the steaming and deck functions of [Osculati EQ-020](/about/configuration/equipment/eq-020/); do not infer its two positive wire colours from the manufacturer pigtail or the upstream seven-core colour codes.
 
 See [DC-NAV-01](/about/configuration/circuits/dc-nav-01/), [DC-NAV-02](/about/configuration/circuits/dc-nav-02/), [DC-NAV-03](/about/configuration/circuits/dc-nav-03/) and [DC-NAV-04](/about/configuration/circuits/dc-nav-04/) for functional protection.
 

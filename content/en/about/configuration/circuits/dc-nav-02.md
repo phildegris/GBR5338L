@@ -16,7 +16,7 @@ date: 2026-10-31
 | Primary circuit protection | [CB-002](/about/configuration/equipment/cb-002/) **10 A**, panel position 2 |
 | Load | [EQ-020](/about/configuration/equipment/eq-020/) — Osculati combined fitting: steaming function |
 | Switching and wiring | Panel **Y2 → yellow** Oceanflex 7 × 1.5 mm² trunk core to forecabin starboard-locker connectors; separate onward mast cable to Osculati lamp not yet traced. |
-| Supply busbar, return path, cable size and length | Panel-to-forecabin **Oceanflex 7 × 1.5 mm²** owner-confirmed; onward mast cable, joins, return, total length unverified. [Schedule](/about/configuration/dc-terminal-schedule/) |
+| Supply busbar, return path, cable size and length | Owner confirms upstream **Oceanflex 7 × 1.5 mm²** trunk to forecabin and **separate Oceanflex 3 × 1.5 mm²** mast cable for steaming/deck. Mast cable's black core as common −12 V is **assumed**, not traced. [Schedule](/about/configuration/dc-terminal-schedule/) |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
 **Owner-confirmed model:** **Osculati 13.243.88**, combined LED steaming/deck light. The product's published **yellow steaming-positive** pigtail has **not** been continuity-matched through the separate mast-going cable and forecabin junction to the **Y2/yellow Oceanflex distribution-trunk core**; leave this actual connection unverified.

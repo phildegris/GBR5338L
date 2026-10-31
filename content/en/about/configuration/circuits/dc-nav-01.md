@@ -15,11 +15,11 @@ date: 2026-10-31
 | Source | [EQ-002](/about/configuration/equipment/eq-002/) NAV LTS panel, upper-left of [EQ-001](/about/configuration/equipment/eq-001/) main DC panel |
 | Primary circuit protection | [CB-001](/about/configuration/equipment/cb-001/) **10 A**, panel position 1 |
 | Load | [EQ-021](/about/configuration/equipment/eq-021/) — NASA Combi masthead tricolour/anchor LED |
-| Switching and wiring | Original switch [SW-001](/about/configuration/equipment/sw-001/); **B2 → blue** and **Y3 → black** cores in **Oceanflex seven-core trunk to forecabin locker**. Older DPDT notes call Y3 a NASA light wire while handwritten CB column says `NC`; neither statement establishes the exact switched return or onward mast leg. |
-| Supply busbar, return path, cable size and length | Owner confirms upstream **Oceanflex 7 × 1.5 mm²** trunk to forecabin locker; onward mast cable/returns/total length not traced. [Schedule](/about/configuration/dc-terminal-schedule/) |
+| Switching and wiring | [SW-001](/about/configuration/equipment/sw-001/) DPDT switches **R3/brown and B4/white** of the 7 × 1.5 mm² Oceanflex trunk; forecabin-starboard-locker junction leads to **separate Oceanflex 2 × 1.5 mm² NASA mast cable**. Both wires polarity-reversible; individual mast-core-to-trunk matching not yet recorded. |
+| Supply busbar, return path, cable size and length | Owner confirms **Oceanflex 7 × 1.5 mm² forecabin trunk** and **2 × 1.5 mm² NASA mast cable**. **No permanently negative lamp conductor**; supply polarity reverses via SW-001. Junction pin mapping and cable lengths untested. [Schedule](/about/configuration/dc-terminal-schedule/) |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
-**Masthead function:** SW-001 reverses polarity to select the tricolour or anchor mode of one combined NASA light. The old switch terminal numbers and lamp polarity direction remain untested.
+**Masthead function:** SW-001 reverses polarity to select tricolour versus anchor mode on **R3/brown and B4/white**, connecting to the two-core mast cable. The old **B2/blue and Y3/black** switch references are superseded historical evidence, not the current mapped pair. The actual selector contact truth table and individual mast cable core assignment remain untested.
 
 ## Remaining survey
 

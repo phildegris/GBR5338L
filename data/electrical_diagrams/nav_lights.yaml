@@ -14,7 +14,7 @@ branches:
     circuit: "DC-NAV-01"
     circuit_url: "/about/configuration/circuits/dc-nav-01/"
     switch: "SW-001"
-    switch_label: "DPDT selector; panel B2 blue and Y3 black trunk cores, onward mast leg untraced"
+    switch_label: "DPDT polarity switch: R3 brown + B4 white trunk cores to 2 × 1.5 mm² NASA mast cable; core matching untraced"
     switch_url: "/about/configuration/equipment/sw-001/"
     loads:
       - id: "EQ-021"

@@ -128,12 +128,14 @@ Behind the main DC panel are **separate generic cage-clamp connectors**, arrange
 | `B1` | Blue lever connector, group 1 |
 | `Y2` | Yellow lever connector, group 2 — legacy steaming-light connection |
 | `B2` | Blue lever connector, group 2 — legacy masthead connection |
-| `Y3` | Yellow lever connector, group 3 — legacy masthead connection, **black-insulated conductor** |
-| `R4` | Red lever connector, group 4 (naming example; connected circuit not established) |
+| `Y3` | Yellow lever connector, group 3 — **black-insulated trunk core**; legacy NASA masthead assignment **superseded**; −12 V busbar connection currently an assumption |
+| `R3` | Red lever connector, group 3 — **brown trunk core**; owner-confirmed NASA Combi switched leg through SW-001 |
+| `B4` | Blue lever connector, group 4 — **white trunk core**; owner-confirmed second NASA Combi switched leg through SW-001 |
+| `R4` | Red lever connector, group 4 — radar + in legacy handwritten schedule; circuit not verified |
 
 A group is a **physical ordering convention**, not one electrically common three-terminal block. `TB-001` and `TB-002` currently document the **second and third groups**, respectively, without inventing equipment IDs for every clamp or claiming cross-connections. The **photo supplied is incomplete**; total group count, populated terminals, jumpers, actual wiring and equipment manufacturer's identity remain to be surveyed.
 
-Do not conflate (1) cage-clamp lever colour, (2) **panel-to-forecabin trunk** core colour, or (3) manufacturer pigtail lead colour. They may differ: `Y3` is a yellow-lever clamp connected to the **black** core of an owner-confirmed **Oceanflex 7 × 1.5 mm² distribution trunk to the forecabin starboard locker**. The onward mast run is separate and not yet traced. See the [transcribed handwritten terminal schedule](/about/configuration/dc-terminal-schedule/).
+Do not conflate (1) cage-clamp lever colour, (2) **panel-to-forecabin trunk** core colour, or (3) manufacturer pigtail lead colour. They may differ: `Y3` is a yellow-lever clamp connected to the **black** core of an Oceanflex 7 × 1.5 mm² trunk to the forecabin locker. **The owner-confirmed NASA Combi switched pair is `R3`/brown and `B4`/white**, continuing into its **separate Oceanflex 2 × 1.5 mm² mast cable**; earlier B2/blue and Y3/black NASA annotations are superseded. **Neither NASA wire is permanently negative**. The seven-core black and separate three-core steaming/deck black busbar links remain a hypothesis, not measurements. See the [transcribed handwritten terminal schedule](/about/configuration/dc-terminal-schedule/).
 
 Keep these as **physical position references and legacy aliases** while migrating to the new conventions. Do not silently replace verified onboard markings with newly invented numbers.
 

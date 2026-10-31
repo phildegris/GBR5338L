@@ -16,7 +16,7 @@ date: 2026-10-31
 | Primary circuit protection | [CB-004](/about/configuration/equipment/cb-004/) **10 A**, panel position 3 |
 | Load | [EQ-020](/about/configuration/equipment/eq-020/) — Osculati combined fitting: deck function |
 | Switching and wiring | Handwritten panel-end **R2 → red** Oceanflex 7 × 1.5 mm² trunk core, labelled `DECK`. Next connector distribution in forecabin locker; onward mast cable not traced. |
-| Supply busbar, return path, cable size and length | Upstream **Oceanflex 7 × 1.5 mm²** trunk owner-confirmed; outgoing mast leg, negative and length unverified. [Schedule](/about/configuration/dc-terminal-schedule/) |
+| Supply busbar, return path, cable size and length | **Oceanflex 7 × 1.5 mm²** trunk and **separate 3 × 1.5 mm²** steaming/deck mast cable owner-confirmed; mast cable black **assumed** common −12 V; actual termination untraced. [Schedule](/about/configuration/dc-terminal-schedule/) |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
 **Owner-confirmed model:** **Osculati 13.243.88**, combined LED steaming/deck fitting. Published **brown deck-positive / white common-negative** product pigtail functions are model-specific references, not verification of Ragtime's DIN terminal connections.
