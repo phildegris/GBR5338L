@@ -21,7 +21,7 @@ See the [Equipment Register](/about/configuration/equipment-register/) for equip
 ## Circuits
 
 * Circuit breakers on the main DC Panel are identified by Column and Row number, e.g. Breaker 1,1 is the top left Circuit breaker.
-* Most circuits from circuit breakers first pass through a din rail mount cage clamp connector block. Each block has three connections with Red, Yellow and Blue levers.  The blocks are mounted vertically behind the DC panel and are refered to by color, R,Y, or B, and block number, from the top down e.g. B4, blue lever on the fourth block down. 
+* **Owner clarification (31 October 2026):** Most breaker circuits pass through individual generic cage-clamp connectors on a DIN rail behind the DC panel. The owner organised the **separate connectors** in vertically repeating sets of **Yellow, Red, Blue** levers (Y / R / B) and numbered each *group* from the **top down**. Thus **B1** is the blue connector in group 1, **Y2** the yellow connector in group 2, and **R4** the red connector in group 4. The group number does **not** mean a single three-way connector block, and lever colour does **not** identify the insulation colour of the connected wire. A recently supplied photograph is **incomplete** and cannot establish total group count or all wire assignments. Legacy downstream wiring entries remain subject to physical tracing.
 
 | Circuit Name | Path | Notes |
 | -------- | -------- | -------- |

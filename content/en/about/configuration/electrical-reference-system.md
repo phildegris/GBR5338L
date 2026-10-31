@@ -115,7 +115,25 @@ This YAML is only an example, **not an as-installed circuit**. Each protective d
 
 ## Preserve existing physical markings
 
-The current [DC Logical Circuits](/about/configuration/logical-circuits/) page describes breaker locations by column and row (such as `1,1`), DIN rail terminal connections (such as `B2` and `Y3`), and existing busbar names (`DC-BB-M` and `DC-BB-A`).
+The current [DC Logical Circuits](/about/configuration/logical-circuits/) page describes breaker positions by column and row (such as `1,1`), **individual cage-clamp connector positions** (such as `B2` and `Y3`), and existing busbar names (`DC-BB-M` and `DC-BB-A`).
+
+### Confirmed DIN connector reference convention
+
+Behind the main DC panel are **separate generic cage-clamp connectors**, arranged by the owner into repeating groups of **Yellow → Red → Blue** lever colours. Groups are numbered from the **top down** following the legacy notes. The code combines **connector lever colour + group number**, not cable insulation colour or an equipment ID.
+
+| Physical alias | Exact meaning |
+| --- | --- |
+| `Y1` | Yellow lever connector, group 1 |
+| `R1` | Red lever connector, group 1 |
+| `B1` | Blue lever connector, group 1 |
+| `Y2` | Yellow lever connector, group 2 — legacy steaming-light connection |
+| `B2` | Blue lever connector, group 2 — legacy masthead connection |
+| `Y3` | Yellow lever connector, group 3 — legacy masthead connection, **black-insulated conductor** |
+| `R4` | Red lever connector, group 4 (naming example; connected circuit not established) |
+
+A group is a **physical ordering convention**, not one electrically common three-terminal block. `TB-001` and `TB-002` currently document the **second and third groups**, respectively, without inventing equipment IDs for every clamp or claiming cross-connections. The **photo supplied is incomplete**; total group count, populated terminals, jumpers, actual wiring and equipment manufacturer's identity remain to be surveyed.
+
+Do not conflate (1) lever colour, (2) mast-cable insulation colour or (3) product pigtail lead colour. They can differ. In particular, a `Y3` yellow-lever cage clamp is reported connected to the **black** mast conductor.
 
 Keep these as **physical position references and legacy aliases** while migrating to the new conventions. Do not silently replace verified onboard markings with newly invented numbers.
 

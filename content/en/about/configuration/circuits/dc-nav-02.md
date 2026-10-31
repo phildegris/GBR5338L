@@ -15,7 +15,7 @@ date: 2026-10-31
 | Source | [EQ-002](/about/configuration/equipment/eq-002/) NAV LTS panel, upper-left of [EQ-001](/about/configuration/equipment/eq-001/) main DC panel |
 | Primary circuit protection | [CB-002](/about/configuration/equipment/cb-002/) **10 A**, panel position 2 |
 | Load | [EQ-020](/about/configuration/equipment/eq-020/) — Osculati combined fitting: steaming function |
-| Switching and wiring | Legacy Y2 DIN terminal and seven-core yellow mast conductor. |
+| Switching and wiring | Legacy **Y2 yellow-lever cage clamp in physical group 2 → yellow-insulated seven-core mast conductor**; not continuity-tested against Osculati pigtail. |
 | Supply busbar, return path, cable size and length | Not independently inspected |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 

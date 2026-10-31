@@ -19,8 +19,8 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`CB-005`](/about/configuration/equipment/cb-005/) | [10 A bow/stern navigation breaker](/about/configuration/equipment/cb-005/) | {{< equipment-status id="CB-005" >}} |
 | [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS circuit breaker (10 A, position 3,4)](/about/configuration/equipment/cb-003/) | {{< equipment-status id="CB-003" >}} |
 | [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead DPDT polarity-reversing selector](/about/configuration/equipment/sw-001/) | {{< equipment-status id="SW-001" >}} |
-| [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN connector block no. 2](/about/configuration/equipment/tb-001/) | {{< equipment-status id="TB-001" >}} |
-| [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN connector block no. 3](/about/configuration/equipment/tb-002/) | {{< equipment-status id="TB-002" >}} |
+| [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN Y/R/B cage-clamp group 2](/about/configuration/equipment/tb-001/) | {{< equipment-status id="TB-001" >}} |
+| [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN Y/R/B cage-clamp group 3](/about/configuration/equipment/tb-002/) | {{< equipment-status id="TB-002" >}} |
 | [`TB-003`](/about/configuration/equipment/tb-003/) | [Four-way connector block](/about/configuration/equipment/tb-003/) | {{< equipment-status id="TB-003" >}} |
 | [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | {{< equipment-status id="EQ-003" >}} |
 | [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | {{< equipment-status id="EQ-004" >}} |

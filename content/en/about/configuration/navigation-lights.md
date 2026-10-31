@@ -22,7 +22,7 @@ The **NAV LTS panel** is [EQ-002](/about/configuration/equipment/eq-002/), part 
 - **Deck:** [CB-004](/about/configuration/equipment/cb-004/), 10 A, separately feeds **four downward-facing LEDs** on the **same EQ-020 Osculati housing**, not a second fixture. Its DIN feed and mast cable colour are still unknown.
 - **Bow and stern:** [CB-005](/about/configuration/equipment/cb-005/), 10 A, feeds [Osculati bow bicolour LED](/about/configuration/equipment/eq-018/) and [Osculati stern LED](/about/configuration/equipment/eq-019/) together. Their branch point, return path and DIN clamp assignments have not been traced.
 
-The owner confirms all four branches run through the original **DIN-rail mounted colour-coded clamp connector blocks** described in the [legacy DC Logical Circuits](/about/configuration/logical-circuits/), without establishing the exact clamp positions for all four circuits.
+The owner confirms that the branches use the original **DIN-rail mounted generic cage-clamp connectors**, arranged into repeated **Yellow → Red → Blue** groups. A code like **`B2`** names the **blue-lever connector in group 2**, not a blue wire or the second terminal on a common connector assembly. [Naming convention](/about/configuration/electrical-reference-system/#confirmed-din-connector-reference-convention). The supplied connector photograph is **partial**; actual branch assignments beyond the legacy entries below remain untraced.
 
 ## Legacy terminal notes, retained as references
 
@@ -30,9 +30,9 @@ The owner confirms all four branches run through the original **DIN-rail mounted
 | --- | --- | --- |
 | Breaker 1,1 | Masthead to DPDT selector | Owner confirms function and 10 A breaker; physical terminal alias retained |
 | Selector pins 1–6 | Polarity-reversing masthead supply | Legacy pin notes only; contact map not independently tested |
-| B2, blue seven-core mast conductor | One side of NASA masthead lamp | Legacy notes; no continuity measurement |
-| Y3, black seven-core mast conductor | Other side of NASA masthead lamp | Legacy notes; no continuity measurement |
-| Breaker 1,2 → Y2, yellow mast conductor | Steaming function of Osculati fixture | Legacy field notes; no continuity measurement |
+| `B2` — **blue-lever clamp, group 2** | Blue-insulated seven-core mast conductor → NASA Combi [EQ-021](/about/configuration/equipment/eq-021/) | Legacy notes; no continuity measurement |
+| `Y3` — **yellow-lever clamp, group 3** | **Black-insulated** seven-core mast conductor → NASA Combi [EQ-021](/about/configuration/equipment/eq-021/) | Legacy notes; lever colour ≠ wire colour; no continuity measurement |
+| Breaker 1,2 → `Y2` — **yellow-lever clamp, group 2** | Yellow-insulated seven-core mast conductor → Osculati steaming light [EQ-020](/about/configuration/equipment/eq-020/) | Legacy notes; manufacturer pigtail junction untraced |
 | CB-004 / CB-005 downstream DIN positions | Deck and bow/stern feeds | Not recorded, rather than guessed |
 
 ## Manufacturer references (separate model identity from electrical verification)

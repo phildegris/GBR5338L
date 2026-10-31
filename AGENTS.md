@@ -33,6 +33,14 @@ This repository builds Ragtime's Hugo technical website.
 - When allocating a new equipment ID, create its equipment page (including `survey_state`) and use the same status shortcode in **both** indexes; check that every index ID resolves to an existing equipment page.
 - Keep provenance explicit: `owner-confirmed`, `photographically observed`, `taken from legacy notes`, `manufacturer-published`, `estimated`, `measured/tested` and `proposed` are different kinds of evidence. Record test dates and conditions if available. A useful qualitative observation (for example improved radio reception) is not a calibrated signal-loss, range or VSWR measurement.
 
+### Colour-coded DIN cage-clamp groups
+
+- Behind Ragtime's DC panel, the owner arranged **three separate generic cage-clamp connectors** into repeated physical groups, with lever colours always **Yellow, Red, Blue** (`Y`, `R`, `B`) in that order. Groups are numbered sequentially **from the top down**, following the original field notes.
+- A legacy reference `B1` means the **blue individual connector in group 1**, `Y2` the **yellow connector in group 2**, and `R4` the **red connector in group 4**. The number is a **group ordinal**, not a terminal number or colour of wire insulation. These references are physical location aliases, **not circuit IDs or equipment IDs**.
+- **Never confuse the lever colour with the attached conductor colour.** For example `Y3` can connect a **black insulated wire**; the original documentation explicitly reports this for a NASA masthead conductor. Manufacturer pigtail colours (for example Osculati yellow/brown/white) are a **third, distinct** naming system; do not infer colour-to-colour splices.
+- Keep a group-level `TB-NNN` record separate from individual `Y2`/`R2`/`B2` connection positions. Do **not** imply that the three cage clamps in a group are electrically common or form one multi-way connector. Their electrical links, bridged parts (if any), wire occupancy and actual conductor routes require evidence.
+- **Partial photographs establish only what they show.** The owner has advised that the connector photo is incomplete: do not infer the full number of groups, wire occupancy, unused clamp positions, colour ordering of hidden parts or complete conductor topology from it.
+
 ## Electrical data rules
 
 - Maintain independent **location**, **equipment**, **circuit** and **relationship** identifiers. A location (for example `SL-COM`) is not a device; a circuit name does not encode its fuse or breaker. Keep stable IDs even if equipment moves, a device is replaced or protection is redesigned; preserve the installation/change history.
