@@ -124,3 +124,18 @@
 @media(max-width:920px){.ragtime-house__branches {grid-template-columns:repeat(3,minmax(0,1fr));}.ragtime-house__branch:before,.ragtime-house__branches:before {display:none;}}
 @media(max-width:520px){.ragtime-house__branches {grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:350px){.ragtime-house__branches {grid-template-columns:minmax(0,1fr);}}
+
+/* Explicit 3+2 topology: three always-live branches, one switch feeding two distinct downstream circuits. */
+.ragtime-house__groups {display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:.8rem;margin-top:.5rem;align-items:stretch;}
+.ragtime-house__group {border:1px solid #c1cfdd;background:#f8fafc;border-radius:9px;padding:.8rem;min-width:0;}
+.ragtime-house__group-heading {text-align:center;display:flex;flex-direction:column;gap:.15rem;padding-bottom:.65rem;}
+.ragtime-house__group-heading small {color:#53677b;font-size:.76rem;}
+.ragtime-house__group-branches {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.45rem;}
+.ragtime-house__group-switched .ragtime-house__group-branches {grid-template-columns:repeat(2,minmax(0,1fr));}
+.ragtime-house__groups .ragtime-house__branch {font-size:.78rem;padding:.55rem .35rem;}
+.ragtime-house__shared-switch {margin:.25rem 0;display:flex;flex-direction:column;gap:.3rem;text-align:center;border:2px solid #809bb7;border-radius:7px;background:#e7eff9;padding:.6rem .4rem;line-height:1.4;font-size:.8rem;}
+.ragtime-house__shared-switch small {color:#53677b;font-size:.74rem;}
+.ragtime-house__group .ragtime-house__down {height:15px;}
+.ragtime-house__groups .ragtime-house__branch:before {display:none;}
+@media(max-width:760px){.ragtime-house__groups {grid-template-columns:minmax(0,1fr);}.ragtime-house__group-branches {grid-template-columns:repeat(3,minmax(0,1fr));}.ragtime-house__group-switched .ragtime-house__group-branches {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:440px){.ragtime-house__group-branches {grid-template-columns:minmax(0,1fr);}.ragtime-house__group-switched .ragtime-house__group-branches {grid-template-columns:minmax(0,1fr);}}

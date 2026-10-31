@@ -22,6 +22,7 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`CB-004`](/about/configuration/equipment/cb-004/) | [10 A deck-light breaker](/about/configuration/equipment/cb-004/) | {{< equipment-status id="CB-004" >}} |
 | [`CB-005`](/about/configuration/equipment/cb-005/) | [10 A bow/stern navigation breaker](/about/configuration/equipment/cb-005/) | {{< equipment-status id="CB-005" >}} |
 | [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS circuit breaker (10 A, position 3,4)](/about/configuration/equipment/cb-003/) | {{< equipment-status id="CB-003" >}} |
+| [`SW-002`](/about/configuration/equipment/sw-002/) | [House and Autopilot shared remote battery switch](/about/configuration/equipment/sw-002/) | {{< equipment-status id="SW-002" >}} |
 | [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead DPDT polarity-reversing selector](/about/configuration/equipment/sw-001/) | {{< equipment-status id="SW-001" >}} |
 | [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN Y/R/B cage-clamp group 2](/about/configuration/equipment/tb-001/) | {{< equipment-status id="TB-001" >}} |
 | [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN Y/R/B cage-clamp group 3](/about/configuration/equipment/tb-002/) | {{< equipment-status id="TB-002" >}} |

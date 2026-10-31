@@ -14,7 +14,7 @@ date: 2026-10-31
 
 ## House-bank primary DC distribution
 
-**Source:** One house-bank electrical interface [EQ-059](/about/configuration/equipment/eq-059/) feeds positive bus [BB-003](/about/configuration/equipment/bb-003/) and an independent monitored negative return through the Victron BMV-712 shunt [EQ-060](/about/configuration/equipment/eq-060/). The owner confirms three unswitched essential feeds and two remotely switched service feeds. **Fuse/device ratings and sizes are not yet inspected**. See the [functional source/return diagram](/about/configuration/house-bank-distribution/).
+**Source:** One house-bank electrical interface [EQ-059](/about/configuration/equipment/eq-059/) feeds positive bus [BB-003](/about/configuration/equipment/bb-003/) and an independent monitored negative return through the Victron BMV-712 shunt [EQ-060](/about/configuration/equipment/eq-060/). The owner confirms **one common remote switch [SW-002](/about/configuration/equipment/sw-002/)** controlling the two House/Autopilot service circuits together, while three essential feeds bypass the switch. **Fuse/device ratings and sizes are not yet inspected**. See the [functional source/return diagram](/about/configuration/house-bank-distribution/).
 
 | Circuit | Primary protection | Functional destination | Evidence |
 | --- | --- | --- | --- |
@@ -22,8 +22,8 @@ date: 2026-10-31
 | [DC-WAT-01](/about/configuration/circuits/dc-wat-01/) | **Unverified**; Watchkeeper always-on | Watchkeeper critical feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown |
 | [DC-BIL-01](/about/configuration/circuits/dc-bil-01/) | **Unverified**; Pump 1 always-on | Pump 1 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
 | [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | **Unverified**; Pump 2 always-on | Pump 2 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
-| [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | **Unverified**; House remotely switched | House remote-switching function (device not yet identified) → [EQ-001](/about/configuration/equipment/eq-001/) main DC panel | Remote switch model and protection unverified |
-| [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | **Unverified**; Autopilot remotely switched | Autopilot remote-switching function (device not yet identified) → autopilot distribution | Remote switch model and protection unverified |
+| [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | **Unverified branch fuse**; House through common [SW-002](/about/configuration/equipment/sw-002/) | Main DC panel [EQ-001](/about/configuration/equipment/eq-001/) | **Switched together with Autopilot**; wire/rating unknown |
+| [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | **Unverified branch fuse**; Autopilot through common [SW-002](/about/configuration/equipment/sw-002/) | Autopilot distribution | **Switched together with House**; wire/rating unknown |
 
 **Unswitched is not unprotected:** protect each cable separately; nominal fusing from older design notes is not confirmed as installed. Pump 1/Pump 2 are not yet physically cross-referenced to the legacy tentative pump equipment entries.
 

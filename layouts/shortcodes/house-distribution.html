@@ -16,24 +16,51 @@
     <a href="{{ .positive.url | relURL }}"><strong>{{ .positive.id }}</strong> — {{ .positive.name }}</a>
   </div>
   <div class="ragtime-house__down" aria-hidden="true"></div>
-  <div class="ragtime-house__branches">
-    {{- range .branches }}
-    <div class="ragtime-house__branch">
-      <span class="ragtime-diagram__kicker">{{ .state }}</span>
-      <strong>{{ .name }}</strong>
-      {{- if .switch }}<div class="ragtime-house__switch"><a href="{{ .switch_url | relURL }}">{{ .switch }} remote disconnect</a></div>{{- end }}
-      <a href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
-      <small>{{ .note }}</small>
-      <span class="ragtime-house__fuse">Overcurrent protection: unverified</span>
+  <div class="ragtime-house__groups">
+    <div class="ragtime-house__group">
+      <div class="ragtime-house__group-heading">
+        <strong>Always supplied</strong>
+        <small>These feeds bypass SW-002</small>
+      </div>
+      <div class="ragtime-house__group-branches">
+        {{- range .unswitched }}
+        <div class="ragtime-house__branch">
+          <strong>{{ .name }}</strong>
+          <a href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+          <small>{{ .note }}</small>
+          <span class="ragtime-house__fuse">Individual protection unverified</span>
+        </div>
+        {{- end }}
+      </div>
     </div>
-    {{- end }}
+    <div class="ragtime-house__group ragtime-house__group-switched">
+      <div class="ragtime-house__group-heading">
+        <strong>Common remotely switched supply</strong>
+        <small>One switch controls both services</small>
+      </div>
+      <div class="ragtime-house__shared-switch">
+        <a href="{{ .remote_switch.url | relURL }}"><strong>{{ .remote_switch.id }}</strong> — {{ .remote_switch.name }}</a>
+        <small>{{ .remote_switch.note }}</small>
+      </div>
+      <div class="ragtime-house__down" aria-hidden="true"></div>
+      <div class="ragtime-house__group-branches">
+        {{- range .switched }}
+        <div class="ragtime-house__branch">
+          <strong>{{ .name }}</strong>
+          <a href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+          <small>{{ .note }}</small>
+          <span class="ragtime-house__fuse">Individual protection unverified</span>
+        </div>
+        {{- end }}
+      </div>
+    </div>
   </div>
   <div class="ragtime-house__negative">
     <h4>Common battery-negative return / BMV measurement</h4>
     <p>Battery negative → <a href="{{ .negative.link.url | relURL }}"><strong>{{ .negative.link.id }}</strong> tinned-copper interconnect</a> → <a href="{{ .negative.monitor.url | relURL }}"><strong>{{ .negative.monitor.id }}</strong> Victron BMV-712 shunt</a> → <a href="{{ .negative.downstream.url | relURL }}"><strong>{{ .negative.downstream.id }}</strong> system negative distribution</a> (link to confirm).</p>
     <small>{{ .negative.note }}</small>
   </div>
-  <p class="ragtime-diagram__note">The five outputs are confirmed functional services, not proof of five identical physical fuse positions. The Watchkeeper and pump feeds are unswitched by the House/Autopilot remote disconnects, but each still requires suitable individual protection. No proposed switch or fuse model has been asserted as fitted.</p>
+  <p class="ragtime-diagram__note">The five circuits are separate functional services but their actual fuseholders remain unidentified. Watchkeeper and both pumps bypass ONE common remote switch; House and Autopilot share its ON/OFF state. The photographed 2025 switch is WhisperPower branded, while the currently fitted product code and downstream wiring are not verified.</p>
 </section>
 {{- else -}}
 <p>House-bank source diagram “{{ $key }}” is not configured.</p>
