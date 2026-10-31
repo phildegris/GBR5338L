@@ -1,0 +1,109 @@
+---
+title: "Electrical Reference System"
+description: "Proposed conventions for identifying electrical circuits, devices and locations aboard Ragtime"
+date: 2026-10-31
+summary: "Location codes, equipment references, circuit identifiers and protection relationships."
+---
+
+> **Status: Proposed convention — not an as-built wiring record.** Numerical identifiers and electrical relationships on this page are illustrative until confirmed by a survey aboard Ragtime. Do not use example connections or protective-device ratings as installation instructions.
+
+The objective is to identify a circuit, find the breaker or fuse protecting it, and locate any switch, terminal or piece of equipment aboard Ragtime. The convention takes inspiration from Royal Navy location and equipment referencing, without introducing warship-scale complexity.
+
+## Four separate concepts
+
+| Concept | Example | Meaning |
+| --- | --- | --- |
+| **Location** | `CT-P` | The physical location of an item |
+| **Equipment** | `CB-014` | A particular circuit breaker |
+| **Circuit** | `DC-PIL-01` | A specific electrical circuit |
+| **Relationship** | `CB-014` protects `DC-PIL-01` | How a device participates in a circuit |
+
+An equipment ID does **not** encode location, and a circuit ID does **not** encode its protective device. Consequently, equipment can move and protection can be replaced without renumbering the circuit.
+
+## Location codes
+
+Start with recognisable compartments or functional areas, adding a sublocation only when precision matters.
+
+| Code | Proposed location |
+| --- | --- |
+| `FP` | Forepeak / anchor locker |
+| `FC` | Forward cabin |
+| `SL` | Saloon |
+| `CT` | Chart table / navigation station |
+| `GL` | Galley |
+| `HD` | Heads |
+| `AC` | Aft cabin |
+| `ER` | Engine compartment |
+| `AL` | Aft locker / steering compartment |
+| `CP` | Cockpit |
+| `HM` | Helm / pedestal |
+| `MS` | Mast |
+| `BL` | Bilge |
+
+Examples: `CT-P` = chart table panel face; `CT-R` = rear of chart table panel; `AL-S` = starboard side of aft locker; `MS-T` = masthead. These codes are **proposed**, subject to a location survey.
+
+## Equipment references
+
+Assign permanent identifiers to significant components, unique **within the equipment type**.
+
+| Prefix | Type |
+| --- | --- |
+| `SW` | Switch or control |
+| `CB` | Circuit breaker |
+| `FU` | Fuse |
+| `TB` | Terminal block |
+| `BB` | Busbar |
+| `RL` | Relay or contactor |
+| `BAT` | Battery |
+| `EQ` | Other electrical equipment |
+
+Thus `CB-014` denotes a breaker regardless of its panel position. Its equipment record should contain its physical location, make, model, rating and a photograph. Keep installation and change history separate from the identifier.
+
+## Circuit references
+
+Use `<SUPPLY>-<SYSTEM>-<NUMBER>`, with examples such as `DC-PWR-01` for DC power distribution, `DC-PIL-01` for autopilot power and `AC-PWR-01` for an AC distribution circuit. The system abbreviation describes the function; the number does not correspond to a breaker or switch number.
+
+Circuit identities and equipment numbers shown on this page are examples, **not allocations to existing Ragtime equipment**.
+
+## Relationship between a breaker and a circuit
+
+Model protection as an explicit **circuit-to-device relationship**. The circuit record should identify its source, primary branch protection, upstream protection and loads. Crucially, a breaker or fuse protects a **defined downstream conductor or wiring section**, not necessarily a complete functional subsystem.
+
+| Relationship | Illustrative example |
+| --- | --- |
+| Supply | `DC-PIL-01` supplied from `BB-001` |
+| Primary branch protection | `CB-014` protects `DC-PIL-01` |
+| Upstream protection | `FU-001` upstream of `CB-014` |
+| Load | `DC-PIL-01` feeds `EQ-019` |
+| Location | `CB-014` located at `CT-P` |
+
+The **Circuit Register** is authoritative for the protective relationship. A breaker's equipment page can display the reverse relationship — *circuits protected by this device* — rather than keeping a second copy that might become inconsistent.
+
+A proposed future structured circuit record:
+
+```yaml
+id: DC-PIL-01
+name: Autopilot power
+status: proposed
+source: BB-001
+protection:
+  primary: CB-014
+  upstream:
+    - FU-001
+loads:
+  - EQ-019
+```
+
+This YAML is only an example, **not an as-installed circuit**. Each protective device's position in the actual wiring, size, rating and conductor cross-section must be verified.
+
+## Preserve existing physical markings
+
+The current [DC Logical Circuits](/about/configuration/logical-circuits/) page describes breaker locations by column and row (such as `1,1`), DIN rail terminal connections (such as `B2` and `Y3`), and existing busbar names (`DC-BB-M` and `DC-BB-A`).
+
+Keep these as **physical position references and legacy aliases** while migrating to the new conventions. Do not silently replace verified onboard markings with newly invented numbers.
+
+## Verified versus proposed
+
+Every future register entry should distinguish **Installed / Verified**, **Installed / Unverified**, **Planned** and **Retired**. Record the last physical verification date, location, connection and terminal references, protective-device ratings, cable details and photographs where practicable.
+
+The sensible first survey is the chart-table DC panel. From that we can progressively build the Location Register, Equipment Register and Circuit Register without inventing wiring that has not yet been traced.
