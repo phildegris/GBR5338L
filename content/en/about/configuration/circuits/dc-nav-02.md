@@ -19,6 +19,8 @@ date: 2026-10-31
 | Supply busbar, return path, cable size and length | Not independently inspected |
 | Provenance | Owner confirmation, 31 October 2026; any terminal references from earlier [DC Logical Circuits](/about/configuration/logical-circuits/) notes |
 
+**Visual identification:** The owner supplied a representative image closely matching **Osculati 13.243.88**, an LED steaming/deck combination. The fitted SKU is not independently confirmed. Its manufacturer's **yellow steaming +** pigtail must not be assumed identical to the legacy **Y2/yellow seven-core mast conductor** without tracing.
+
 **Shared physical housing:** This and the other Osculati circuit independently supply two functions of the **same EQ-020 combined steaming/deck fitting**, not two independent luminaires.
 
 ## Remaining survey
