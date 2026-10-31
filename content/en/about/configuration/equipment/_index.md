@@ -21,7 +21,9 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`TB-003`](/about/configuration/equipment/tb-003/) | [Four-way connector block](/about/configuration/equipment/tb-003/) | Unverified |
 | [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | Unverified |
 | [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | Unverified |
-| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (probable)](/about/configuration/equipment/eq-005/) | Unverified |
+| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (owner-confirmed)](/about/configuration/equipment/eq-005/) | Unverified |
+| [`EQ-057`](/about/configuration/equipment/eq-057/) | [COM-frame four-way FC fuse board](/about/configuration/equipment/eq-057/) | Owner-confirmed, ratings not surveyed |
+| [`EQ-058`](/about/configuration/equipment/eq-058/) | [Masthead shared VHF/AIS antenna](/about/configuration/equipment/eq-058/) | Owner-confirmed, model unknown |
 | [`EQ-006`](/about/configuration/equipment/eq-006/) | [Handheld VHF charging point](/about/configuration/equipment/eq-006/) | Unverified |
 | [`EQ-007`](/about/configuration/equipment/eq-007/) | [Instrument-panel charging point](/about/configuration/equipment/eq-007/) | Unverified |
 | [`EQ-008`](/about/configuration/equipment/eq-008/) | [Companionway charging point](/about/configuration/equipment/eq-008/) | Unverified |

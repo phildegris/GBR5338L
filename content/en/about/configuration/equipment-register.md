@@ -13,9 +13,9 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 
 [Browse the equipment catalogue](/about/configuration/equipment/) for one record per item, with manufacturer references and survey questions.
 
-**Current inventory:** 64 register records (56 EQ, 2 BB, 2 CB, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each.
+**Current inventory:** 66 register records (58 EQ, 2 BB, 2 CB, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each. Two entries (`EQ-057` and `EQ-058`) were added from the owner's 31 October 2026 COM-frame clarification.
 
-**Source:** [DC Logical Circuits](/about/configuration/logical-circuits/) (original notes, including physical connection aliases). The equipment names below are functional descriptions; product identity and serial numbers remain to be surveyed.
+**Sources:** [DC Logical Circuits](/about/configuration/logical-circuits/) (original notes), plus owner-supplied updates on 31 October 2026. See the [COM-frame supply and RF overview](/about/configuration/com-frame/). Individual equipment IDs are independent of circuit and location IDs; unverified nameplates and electrical values remain open.
 
 ## DC distribution and controls
 
@@ -38,7 +38,9 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 | --- | --- | --- | :---: | --- |
 | [`EQ-003`](/about/configuration/equipment/eq-003/) | [Icom IC-M510 VHF transceiver](/about/configuration/equipment/eq-003/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed Icom M510 installed at COM frame; variant, electrical connections and protective device require survey. |
 | [`EQ-004`](/about/configuration/equipment/eq-004/) | [Ocean Signal ATB1 AIS transponder](/about/configuration/equipment/eq-004/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed ATB1 installed at COM frame; antenna/data/power paths require survey. |
-| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (probable)](/about/configuration/equipment/eq-005/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner suggests SPL2000; model remains unverified pending nameplate photo. Supply, protection and coax routing require survey. |
+| [`EQ-005`](/about/configuration/equipment/eq-005/) | [Digital Yacht SPL2000 AIS/VHF splitter (owner-confirmed)](/about/configuration/equipment/eq-005/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner confirms SPL2000. Fused DC feed from COM-frame FC board; RF connected to VHF, AIS and masthead antenna. Individual fuse ratings unverified. |
+| [`EQ-057`](/about/configuration/equipment/eq-057/) | [COM-frame four-way FC fuse board](/about/configuration/equipment/eq-057/) | `SL-COM` — COM frame (saloon, starboard-forward) | `U` | Owner-confirmed four-way fuse board fed from main DC panel, supplying VHF (`EQ-003`), AIS (`EQ-004`) and SPL2000 (`EQ-005`); positions, fourth way and protection ratings unknown. |
+| [`EQ-058`](/about/configuration/equipment/eq-058/) | [Masthead shared VHF/AIS antenna (reported as “Vespa”)](/about/configuration/equipment/eq-058/) | `MS-T` — masthead | `U` | Owner reports VHF/AIS band-compatible antenna as shared RF source to SPL2000. “Vespa” name retained verbatim; exact manufacturer/model and coax details need confirmation. |
 
 ## Charging outlets / devices
 
