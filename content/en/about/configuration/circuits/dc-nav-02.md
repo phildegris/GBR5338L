@@ -23,6 +23,8 @@ date: 2026-10-31
 
 **Shared physical housing:** This and the other Osculati circuit independently supply two functions of the **same EQ-020 combined steaming/deck fitting**, not two independent luminaires.
 
+**Second card's conflicting allocation:** The seven-core **green** conductor is handwritten `STEAM +` on a separate functional card, while the original panel card labels **B3/green** as the **bow navigation light**. This does not independently disprove the original Y2/yellow panel label for steaming: the cards may describe different layouts or historical revisions. The **Y2 → steaming** panel reference remains a *source statement*, not a verified end-to-end connection. [Compare both cards](/about/configuration/dc-terminal-schedule/).
+
 ## Remaining survey
 
 Confirm breaker maker/DC voltage rating, terminal numbering through the DIN clamp blocks, conductor ampacity/size, return routing, voltage drop and physical device labels. Do not infer a cable size or protection suitability from the stated breaker rating.

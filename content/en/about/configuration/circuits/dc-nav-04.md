@@ -21,6 +21,8 @@ date: 2026-10-31
 
 **Shared breaker:** One 10 A breaker feeds *both* bow and stern luminaires. The branch point and individual return arrangement are unknown.
 
+**Second card's conflicting allocation:** The seven-core **green** conductor is written as `STEAM +` in the second handwritten card, but **B3/green** is written as `NAV LTS (Bow)` in the original panel schedule. The confirmed **CB-005 → bow/stern** protection relationship is unchanged; **B3/green → bow** must stay labelled as *unverified historic panel notation* until the forecabin starboard-locker connectors are traced. [Source comparison](/about/configuration/dc-terminal-schedule/).
+
 ## Remaining survey
 
 Confirm breaker maker/DC voltage rating, terminal numbering through the DIN clamp blocks, conductor ampacity/size, return routing, voltage drop and physical device labels. Do not infer a cable size or protection suitability from the stated breaker rating.

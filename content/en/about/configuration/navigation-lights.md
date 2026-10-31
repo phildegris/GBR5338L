@@ -39,6 +39,14 @@ The owner has supplied a [handwritten connector schedule](/about/configuration/d
 | `B4` blue lever | **7× white** core, CB column `NC` | **Owner-confirmed NASA Combi switched conductor**, via SW-001; original NC label retained |
 | `B1` blue lever | “RG STERN LT”, prefix unclear | Stern-light label in handwritten notes; cable route untraced |
 
+## Second handwritten trunk-core allocation — cross-check
+
+The owner confirms the **colours on a second handwritten card are the seven-core Oceanflex trunk insulation colours**. This is a separate piece of historical evidence from the original DC-panel/rail schedule. The second card labels: **blue SAL +**, **yellow SAL −**, **white and brown NASA COMBI**, **green STEAM +**, **red DECK +**, and **black STEAM/DECK −**. `SAL` identifies the **12 saloon LED downlights**, to be documented separately.
+
+**Do not merge the two old cards without tracing.** The first panel-end schedule instead labels **B2/blue masthead**, **Y2/yellow steaming**, and **B3/green bow**. The NASA **R3/brown + B4/white pair** is separately confirmed by the owner and matches the second card; the deck/red function agrees in both cards. The black shared negative is documented as a *card label* but has **not** been measured at the busbar. [Full side-by-side source comparison](/about/configuration/dc-terminal-schedule/).
+
+The manufacturer's pigtail colours and the colours of the separate 2-core/3-core **mast cables** remain distinct from these seven-core **trunk** labels; the forecabin connector mapping remains unverified.
+
 ## Manufacturer references (separate model identity from electrical verification)
 
 - [NASA Marine Supernova Combi product](https://www.nasamarine.com/product/supernova-combi-tri-and-anchor-l-e-d-mastlight/) and [original fitting instructions (PDF)](https://www.nasamarine.com/wp-content/uploads/2015/12/Super-Nova.pdf) explain a **two-wire polarity-reversing tricolour/anchor arrangement**, consistent with Ragtime's NASA Combi. The installed suffix/revision is not independently confirmed.
