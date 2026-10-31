@@ -13,7 +13,7 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 
 [Browse the equipment catalogue](/about/configuration/equipment/) for one record per item, with manufacturer references and survey questions.
 
-**Current inventory:** 66 register records (58 EQ, 2 BB, 2 CB, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each. Two entries (`EQ-057` and `EQ-058`) were added from the owner's 31 October 2026 COM-frame clarification.
+**Current inventory:** 67 register records (58 EQ, 2 BB, 3 CB, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each. Two entries (`EQ-057` and `EQ-058`) were added from the owner's 31 October 2026 COM-frame clarification.
 
 **Sources:** [DC Logical Circuits](/about/configuration/logical-circuits/) (original notes), plus owner-supplied updates on 31 October 2026. See the [COM-frame supply and RF overview](/about/configuration/com-frame/). Individual equipment IDs are independent of circuit and location IDs; unverified nameplates and electrical values remain open.
 
@@ -27,6 +27,7 @@ This register uses the permanent equipment IDs proposed in the [Electrical Refer
 | [`BB-002`](/about/configuration/equipment/bb-002/) | [DC panel negative busbar](/about/configuration/equipment/bb-002/) | DCP | `U` | Legacy alias DC-BB-A; source records link to DC-BB-M; legacy cable condition/capacity to check. |
 | [`CB-001`](/about/configuration/equipment/cb-001/) | [Masthead-light circuit breaker](/about/configuration/equipment/cb-001/) | DCP, position 1,1 | `U` | Physical alias Breaker 1,1; source traces to DPDT selector; rating unknown. |
 | [`CB-002`](/about/configuration/equipment/cb-002/) | [Steaming-light circuit breaker](/about/configuration/equipment/cb-002/) | DCP, position 1,2 | `U` | Physical alias Breaker 1,2; source traces via Y2; rating unknown. |
+| [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS panel circuit breaker — 10 A](/about/configuration/equipment/cb-003/) | `CT-P`, position `3,4` | `U` | Photo confirms “VHF AIS” faceplate; owner confirms 10 A. Possible upstream feeder to `EQ-057` is **not traced**. |
 | [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead anchor/tricolour polarity selector](/about/configuration/equipment/sw-001/) | Unsurveyed | `U` | DPDT On-Off-On switch; source pin numbers 1–6; feeds combined masthead lamp. |
 | [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN connector block no. 2](/about/configuration/equipment/tb-001/) | Behind DCP | `U` | Source terminal aliases B2 (masthead) and Y2 (steaming); interpreted as colour positions on block 2, verify. |
 | [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN connector block no. 3](/about/configuration/equipment/tb-002/) | Behind DCP | `U` | Source terminal alias Y3 (masthead); verify physical block. |

@@ -19,7 +19,8 @@ summary: "COM-frame four-way fused distribution and masthead shared VHF/AIS ante
 ```text
 EQ-001  Original main DC panel
   |
-  |  Feeder and upstream protection: NOT YET SURVEYED
+  |  CB-003: 10 A, location 3,4, label "VHF AIS"
+  |  POSSIBLE upstream feeder breaker: wiring NOT TRACED
   v
 EQ-057  Four-way FC fuse board (SL-COM)
   |-- [way ? / fuse ?] --> EQ-003  Icom M510 VHF
@@ -29,7 +30,7 @@ EQ-057  Four-way FC fuse board (SL-COM)
 ```
 
 - The **fuse board assembly** has equipment ID `EQ-057`. Four fuse positions are **not yet four individually allocated FU devices**: each actual installed fuse should receive its own `FU-xxx` equipment ID after a survey, with its physical way, type, rating and protected conductor/circuit recorded.
-- The board is owner-reported as **supplied from the main panel**. The feeder cable, its source breaker/fuse, return arrangements and upstream protection remain unspecified.
+- The board is owner-reported as **supplied from the main panel**. The owner has identified **[CB-003](/about/configuration/equipment/cb-003/)** at location `3,4` (marked “VHF AIS”, rated **10 A** by owner). It is a **plausible upstream feeder breaker**, but its downstream conductor must be traced before claiming it protects this board's feeder. The feeder cable, return arrangements and any additional upstream protection remain unspecified.
 - Do not assign circuit IDs or manufacturer-recommended fuse sizes as Ragtime's installed protective ratings without tracing and checking the conductors.
 
 ## RF signal paths — owner-confirmed functional topology
@@ -50,7 +51,7 @@ The owner confirms the VHF and AIS RF connections through the SPL2000 and the si
 
 ## Outstanding onboard survey
 
-1. Identify the model/manufacturer of the **FC** four-way fuse board, its rated voltage/current and whether the fourth way is occupied or spare.
+1. Confirm by tracing or isolating whether **10 A [CB-003](/about/configuration/equipment/cb-003/) at panel position `3,4`** actually feeds the FC four-way fuse board. Identify the board's manufacturer/model, rated voltage/current and whether the fourth way is occupied or spare.
 2. Record the main panel feeder source, upstream fuse/breaker, conductor cross-section and length, negative return, fuse-board way numbers and *actual fitted* fuse ratings.
 3. Confirm the **Vesper Marine VA159** coax type, masthead mounting, connectors and measured VSWR where possible; the model is owner-confirmed but installation measurements remain outstanding.
 4. Inspect coax cable type, masthead base and deck transitions, splitter RF connectors, and the optional AM/FM output; record checks of antenna match/VSWR at both voice VHF and AIS frequencies when practical.

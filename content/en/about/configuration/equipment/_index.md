@@ -15,6 +15,7 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`BB-002`](/about/configuration/equipment/bb-002/) | [DC panel negative busbar](/about/configuration/equipment/bb-002/) | Unverified |
 | [`CB-001`](/about/configuration/equipment/cb-001/) | [Masthead-light circuit breaker](/about/configuration/equipment/cb-001/) | Unverified |
 | [`CB-002`](/about/configuration/equipment/cb-002/) | [Steaming-light circuit breaker](/about/configuration/equipment/cb-002/) | Unverified |
+| [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS circuit breaker (10 A, position 3,4)](/about/configuration/equipment/cb-003/) | Owner-reported 10 A; faceplate photographed |
 | [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead anchor/tricolour polarity selector](/about/configuration/equipment/sw-001/) | Unverified |
 | [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN connector block no. 2](/about/configuration/equipment/tb-001/) | Unverified |
 | [`TB-002`](/about/configuration/equipment/tb-002/) | [DIN connector block no. 3](/about/configuration/equipment/tb-002/) | Unverified |
