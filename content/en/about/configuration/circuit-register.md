@@ -12,6 +12,21 @@ date: 2026-10-31
 | [DC-COM-03](/about/configuration/circuits/dc-com-03/) | [FU-002](/about/configuration/equipment/fu-002/) **3 A**, EQ-057 way **2** | [EQ-005](/about/configuration/equipment/eq-005/) Digital Yacht SPL2000 | Owner-confirmed branch protection; conductor not surveyed |
 | [DC-COM-04](/about/configuration/circuits/dc-com-04/) | [FU-003](/about/configuration/equipment/fu-003/) **3 A**, EQ-057 way **3** | [EQ-004](/about/configuration/equipment/eq-004/) Ocean Signal ATB1 | Owner-confirmed branch protection; conductor not surveyed |
 
+## House-bank primary DC distribution
+
+**Source:** One house-bank electrical interface [EQ-059](/about/configuration/equipment/eq-059/) feeds positive bus [BB-003](/about/configuration/equipment/bb-003/) and an independent monitored negative return through the Victron BMV-712 shunt [EQ-060](/about/configuration/equipment/eq-060/). The owner confirms three unswitched essential feeds and two remotely switched service feeds. **Fuse/device ratings and sizes are not yet inspected**. See the [functional source/return diagram](/about/configuration/house-bank-distribution/).
+
+| Circuit | Primary protection | Functional destination | Evidence |
+| --- | --- | --- | --- |
+| [DC-PWR-01](/about/configuration/circuits/dc-pwr-01/) | **Unverified**; House-bank source feeder | House source [EQ-059](/about/configuration/equipment/eq-059/) → positive bus [BB-003](/about/configuration/equipment/bb-003/) | Unknown upstream main battery protection |
+| [DC-WAT-01](/about/configuration/circuits/dc-wat-01/) | **Unverified**; Watchkeeper always-on | Watchkeeper critical feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown |
+| [DC-BIL-01](/about/configuration/circuits/dc-bil-01/) | **Unverified**; Pump 1 always-on | Pump 1 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
+| [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | **Unverified**; Pump 2 always-on | Pump 2 feed from [BB-003](/about/configuration/equipment/bb-003/) | Unswitched; fuse unknown; motor unassigned |
+| [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | **Unverified**; House remotely switched | House remote-switching function (device not yet identified) → [EQ-001](/about/configuration/equipment/eq-001/) main DC panel | Remote switch model and protection unverified |
+| [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | **Unverified**; Autopilot remotely switched | Autopilot remote-switching function (device not yet identified) → autopilot distribution | Remote switch model and protection unverified |
+
+**Unswitched is not unprotected:** protect each cable separately; nominal fusing from older design notes is not confirmed as installed. Pump 1/Pump 2 are not yet physically cross-referenced to the legacy tentative pump equipment entries.
+
 ## Navigation and deck lighting
 
 | [DC-NAV-01](/about/configuration/circuits/dc-nav-01/) | [CB-001](/about/configuration/equipment/cb-001/) **10 A**, NAV LTS row 1 | EQ-021 — NASA Combi via SW-001 | Owner-confirmed 10 A and functional loads; DIN conductor paths not electrically traced |

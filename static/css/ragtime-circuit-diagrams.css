@@ -107,3 +107,20 @@
 .ragtime-nav__switch {background:#f3f6f9; border:1px solid #d9e2eb; border-radius:6px; padding:.5rem;}
 .ragtime-nav__branch small {font-size:.76rem; color:#59677b;}
 @media(max-width:540px){.ragtime-nav__branches{grid-template-columns:minmax(0,1fr);}}
+
+/* House-bank source diagram: five independent functional outputs, monitored common negative. */
+.ragtime-house__down {height:25px; border-left:3px solid #718da9; width:0; margin:0 auto;}
+.ragtime-house__branches {display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.55rem; margin-top:28px; position:relative;}
+.ragtime-house__branches:before {content:""; position:absolute; left:10%; right:10%; top:-18px; border-top:2px solid #8a9caf;}
+.ragtime-house__branch {display:flex; flex-direction:column; align-items:center; gap:.4rem; text-align:center; position:relative; min-width:0; padding:.7rem .4rem; border:1px solid #c1cfdd; background:white; border-radius:8px; font-size:.82rem; line-height:1.45;}
+.ragtime-house__branch:before {content:""; position:absolute; left:50%; top:-19px; height:18px; border-left:2px solid #8a9caf;}
+.ragtime-house__branch small {font-size:.73rem; color:#53667b;}
+.ragtime-house__switch {background:#e7eff9; border:1px solid #b0c3d7; padding:.4rem .25rem; border-radius:5px; width:100%; font-size:.75rem;}
+.ragtime-house__fuse {margin-top:auto; padding-top:.45rem; font-size:.72rem; color:#6d6070;}
+.ragtime-house__negative {margin-top:1rem; border:1px dashed #9daec0; border-radius:8px; background:#f2f5fa; padding:.7rem .95rem; font-size:.85rem; line-height:1.5;}
+.ragtime-house__negative h4 {font-size:.9rem; margin:0 0 .3rem;}
+.ragtime-house__negative p {margin:.3rem 0; }
+.ragtime-house__negative small {color:#53677b; }
+@media(max-width:920px){.ragtime-house__branches {grid-template-columns:repeat(3,minmax(0,1fr));}.ragtime-house__branch:before,.ragtime-house__branches:before {display:none;}}
+@media(max-width:520px){.ragtime-house__branches {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:350px){.ragtime-house__branches {grid-template-columns:minmax(0,1fr);}}

@@ -1,0 +1,40 @@
+{{- $key := .Get "id" -}}
+{{- $d := index .Site.Data.electrical_diagrams $key -}}
+{{- with $d -}}
+<section class="ragtime-diagram ragtime-house" aria-label="{{ .title }}">
+  <div class="ragtime-diagram__heading">
+    <strong>{{ .title }}</strong>
+    <small>{{ .status }}</small>
+  </div>
+  <div class="ragtime-diagram__node">
+    <span class="ragtime-diagram__kicker">Aggregated 12 V source — internal battery composition deferred</span>
+    <a href="{{ .source.url | relURL }}"><strong>{{ .source.id }}</strong> — {{ .source.name }}</a>
+  </div>
+  <div class="ragtime-house__down" aria-hidden="true"></div>
+  <div class="ragtime-diagram__node ragtime-diagram__board">
+    <span class="ragtime-diagram__kicker">Positive distribution · upstream protection unverified</span>
+    <a href="{{ .positive.url | relURL }}"><strong>{{ .positive.id }}</strong> — {{ .positive.name }}</a>
+  </div>
+  <div class="ragtime-house__down" aria-hidden="true"></div>
+  <div class="ragtime-house__branches">
+    {{- range .branches }}
+    <div class="ragtime-house__branch">
+      <span class="ragtime-diagram__kicker">{{ .state }}</span>
+      <strong>{{ .name }}</strong>
+      {{- if .switch }}<div class="ragtime-house__switch"><a href="{{ .switch_url | relURL }}">{{ .switch }} remote disconnect</a></div>{{- end }}
+      <a href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+      <small>{{ .note }}</small>
+      <span class="ragtime-house__fuse">Overcurrent protection: unverified</span>
+    </div>
+    {{- end }}
+  </div>
+  <div class="ragtime-house__negative">
+    <h4>Common battery-negative return / BMV measurement</h4>
+    <p>Battery negative → <a href="{{ .negative.link.url | relURL }}"><strong>{{ .negative.link.id }}</strong> tinned-copper interconnect</a> → <a href="{{ .negative.monitor.url | relURL }}"><strong>{{ .negative.monitor.id }}</strong> Victron BMV-712 shunt</a> → <a href="{{ .negative.downstream.url | relURL }}"><strong>{{ .negative.downstream.id }}</strong> system negative distribution</a> (link to confirm).</p>
+    <small>{{ .negative.note }}</small>
+  </div>
+  <p class="ragtime-diagram__note">The five outputs are confirmed functional services, not proof of five identical physical fuse positions. The Watchkeeper and pump feeds are unswitched by the House/Autopilot remote disconnects, but each still requires suitable individual protection. No proposed switch or fuse model has been asserted as fitted.</p>
+</section>
+{{- else -}}
+<p>House-bank source diagram “{{ $key }}” is not configured.</p>
+{{- end -}}

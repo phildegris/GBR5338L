@@ -13,14 +13,20 @@ This register uses the permanent equipment IDs in the [Electrical Reference Syst
 
 [Browse the equipment catalogue](/about/configuration/equipment/) for one record per item, with manufacturer references and survey questions.
 
-**Current inventory:** 72 register records (58 EQ, 2 BB, 5 CB, 3 FU, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each. Two entries (`EQ-057` and `EQ-058`) were added from the owner's 31 October 2026 COM-frame clarification.
+**Current inventory:** 76 register records (60 EQ, 4 BB, 5 CB, 3 FU, 1 SW, 3 TB). Four entries represent groups with unknown individual counts; all other records identify one candidate device or subassembly each. Two entries (`EQ-057` and `EQ-058`) were added from the owner's 31 October 2026 COM-frame clarification.
 
 **Sources:** [DC Logical Circuits](/about/configuration/logical-circuits/) (original notes), plus owner-supplied updates on 31 October 2026. See the [COM-frame supply and RF overview](/about/configuration/com-frame/). Individual equipment IDs are independent of circuit and location IDs; unverified nameplates and electrical values remain open.
 
 ## DC distribution and controls
 
+**House bank upstream source and returns:** [Source topology](/about/configuration/house-bank-distribution/) models the bank as one port, without implying the previous battery-design options are installed.
+
 | ID | Equipment | Reported location | Status | Source / survey note |
 | --- | --- | --- | :---: | --- |
+| [`EQ-059`](/about/configuration/equipment/eq-059/) | [House-bank aggregated source interface](/about/configuration/equipment/eq-059/) | House-bank distribution; exact mounting unverified | {{< equipment-status id="EQ-059" >}} | Single logical two-terminal source boundary; internal batteries deferred. [Source diagram](/about/configuration/house-bank-distribution/). |
+| [`BB-003`](/about/configuration/equipment/bb-003/) | [House-bank positive five-output distribution](/about/configuration/equipment/bb-003/) | House-bank distribution; exact mounting unverified | {{< equipment-status id="BB-003" >}} | Watchkeeper, Pump 1, Pump 2 unswitched; House and Autopilot independently remote-switched. [Source diagram](/about/configuration/house-bank-distribution/). |
+| [`BB-004`](/about/configuration/equipment/bb-004/) | [DIY tinned-copper battery-negative link](/about/configuration/equipment/bb-004/) | House-bank distribution; exact mounting unverified | {{< equipment-status id="BB-004" >}} | Direct house battery negatives to the battery side of EQ-060 BMV shunt; dimensions not as-built measured. [Source diagram](/about/configuration/house-bank-distribution/). |
+| [`EQ-060`](/about/configuration/equipment/eq-060/) | [Victron BMV-712 battery monitor and shunt](/about/configuration/equipment/eq-060/) | House-bank distribution; exact mounting unverified | {{< equipment-status id="EQ-060" >}} | Owner-confirmed monitoring; only battery negatives on shunt battery side, system loads/charging returns on other. [Source diagram](/about/configuration/house-bank-distribution/). |
 | [`EQ-001`](/about/configuration/equipment/eq-001/) | [Main DC panel (DCP)](/about/configuration/equipment/eq-001/) | Chart table | {{< equipment-status id="EQ-001" >}} | Parent panel assembly; individual breakers recorded separately. |
 | [`EQ-002`](/about/configuration/equipment/eq-002/) | [NAV LTS four-breaker / yacht-outline panel](/about/configuration/equipment/eq-002/) | `CT-P`, upper-left Moody panel | {{< equipment-status id="EQ-002" >}} | Four **10 A** circuits identified; [NAV lighting diagram](/about/configuration/navigation-lights/). |
 | [`BB-001`](/about/configuration/equipment/bb-001/) | [Main negative busbar](/about/configuration/equipment/bb-001/) | Aft engine-bay frame | {{< equipment-status id="BB-001" >}} | Legacy alias DC-BB-M; linked to engine block/battery negative according to source; capacity to check. |

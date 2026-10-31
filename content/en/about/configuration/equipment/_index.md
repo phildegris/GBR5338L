@@ -9,6 +9,10 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 
 | Equipment ID | Description | Documentation / survey status |
 | --- | --- | --- |
+| [`EQ-059`](/about/configuration/equipment/eq-059/) | [House-bank aggregated source interface](/about/configuration/equipment/eq-059/) | {{< equipment-status id="EQ-059" >}} |
+| [`BB-003`](/about/configuration/equipment/bb-003/) | [House-bank positive five-output distribution](/about/configuration/equipment/bb-003/) | {{< equipment-status id="BB-003" >}} |
+| [`BB-004`](/about/configuration/equipment/bb-004/) | [DIY tinned-copper battery-negative link](/about/configuration/equipment/bb-004/) | {{< equipment-status id="BB-004" >}} |
+| [`EQ-060`](/about/configuration/equipment/eq-060/) | [Victron BMV-712 battery monitor and shunt](/about/configuration/equipment/eq-060/) | {{< equipment-status id="EQ-060" >}} |
 | [`EQ-001`](/about/configuration/equipment/eq-001/) | [Main DC panel (DCP)](/about/configuration/equipment/eq-001/) | {{< equipment-status id="EQ-001" >}} |
 | [`EQ-002`](/about/configuration/equipment/eq-002/) | [NAV LTS four-breaker / yacht-outline panel](/about/configuration/equipment/eq-002/) | {{< equipment-status id="EQ-002" >}} |
 | [`BB-001`](/about/configuration/equipment/bb-001/) | [Main negative busbar](/about/configuration/equipment/bb-001/) | {{< equipment-status id="BB-001" >}} |
