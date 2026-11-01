@@ -14,7 +14,7 @@ date: 2026-10-31
 
 ## House-bank primary DC distribution
 
-**Source:** The complete House bank remains one interface [EQ-059](/about/configuration/equipment/eq-059/). The owner confirms fitted **battery-post MRBF fuses** and **ANL distribution fuses**, with **one common SW-002** for House, Autopilot and Windlass; Watchkeeper and both pumps bypass it. Windlass also retains a **fitted 80 A breaker CB-006**. Current ANL fuse ratings, positions and six-service mapping remain unverified. [Distribution diagram](/about/configuration/house-bank-distribution/).
+**Source:** The complete House bank remains one interface [EQ-059](/about/configuration/equipment/eq-059/). The owner confirms fitted **battery-post MRBF fuses** and **ANL distribution fuses**, with **one common SW-002** for House, Autopilot and Windlass; Watchkeeper and both pumps bypass it. Windlass also retains a **fitted 70 A breaker CB-006**. Current ANL fuse ratings, positions and six-service mapping remain unverified. [Distribution diagram](/about/configuration/house-bank-distribution/).
 
 | Circuit | Installed protective evidence | Functional destination | Switching / outstanding detail |
 | --- | --- | --- | --- |
@@ -24,7 +24,8 @@ date: 2026-10-31
 | [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | Pump circuit protection untraced | Pump 2 | Unswitched by SW-002 |
 | [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | Original ANL installation owner-confirmed; fuse allocation not yet traced | Main DC panel [EQ-001](/about/configuration/equipment/eq-001/) | Shares SW-002 with Pilot and Windlass |
 | [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | Original ANL installation owner-confirmed; individual branch protection not yet mapped | Autopilot | Shares SW-002 with House and Windlass |
-| [DC-WIN-01](/about/configuration/circuits/dc-win-01/) | **[CB-006](/about/configuration/equipment/cb-006/) fitted 80 A breaker** plus installed ANL scheme (2025 design called for 100 A ANL Windlass) | Windlass | Shares SW-002 with House and Pilot; physical ANL rating/order untraced |
+| [DC-WIN-01](/about/configuration/circuits/dc-win-01/) | **[CB-006](/about/configuration/equipment/cb-006/) fitted 70 A breaker** plus installed ANL scheme (2025 design called for 100 A ANL Windlass) | **[Lewmar HX1 800 W EQ-061](/about/configuration/equipment/eq-061/)** | Shares SW-002 with House and Pilot; via [contactor EQ-062](/about/configuration/equipment/eq-062/) controlled by two foredeck switches; physical ANL rating/order untraced |
+| [DC-WIN-02](/about/configuration/circuits/dc-win-02/) | **Control fuse not verified**; Lewmar manufacturer standard includes 3 A control fuse | Two [foredeck switches SW-003](/about/configuration/equipment/sw-003/) and [SW-004](/about/configuration/equipment/sw-004/) actuating [contactor EQ-062](/about/configuration/equipment/eq-062/) → [HX1 EQ-061](/about/configuration/equipment/eq-061/) | Separate low-current control function; fitted coil wiring, direction mapping and fuse position untraced |
 
 The 2025 Primary/Auxiliary/Watchkeeper/Winch ANL schedule must not be silently mapped to today's six service circuit names. **Unswitched does not mean unprotected.** Assign individual `FU-NNN` records when particular fitted fuses and ways have been positively identified.
 

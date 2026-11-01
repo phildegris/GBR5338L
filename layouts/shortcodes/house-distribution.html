@@ -48,6 +48,13 @@
         <div class="ragtime-house__branch">
           <strong>{{ .name }}</strong>
           <a href="{{ .circuit_url | relURL }}">{{ .circuit }}</a>
+          {{- if .equipment }}<a href="{{ .equipment_url | relURL }}"><strong>{{ .equipment }}</strong> — Windlass</a>{{- end }}
+          {{- if .contactor }}<a href="{{ .contactor_url | relURL }}">{{ .contactor }} — contactor</a>{{- end }}
+          {{- if .breaker }}<a href="{{ .breaker_url | relURL }}">{{ .breaker }} — breaker</a>{{- end }}
+          {{- if .control_circuit }}<a href="{{ .control_circuit_url | relURL }}">{{ .control_circuit }} — control circuit</a>{{- end }}
+          {{- if .controls }}
+          {{- range .controls }}<a href="{{ .url | relURL }}">{{ .id }} — foredeck control</a>{{- end }}
+          {{- end }}
           <small>{{ .note }}</small>
           <span class="ragtime-house__fuse">Protection way/rating not yet mapped</span>
         </div>
@@ -60,7 +67,7 @@
     <p>Battery negative → <a href="{{ .negative.link.url | relURL }}"><strong>{{ .negative.link.id }}</strong> tinned-copper interconnect</a> → <a href="{{ .negative.monitor.url | relURL }}"><strong>{{ .negative.monitor.id }}</strong> Victron BMV-712 shunt</a> → <a href="{{ .negative.downstream.url | relURL }}"><strong>{{ .negative.downstream.id }}</strong> system negative distribution</a> (link to confirm).</p>
     <small>{{ .negative.note }}</small>
   </div>
-  <p class="ragtime-diagram__note">Six functional services: three bypass the common switch; House, Autopilot and Windlass switch together. ANL and battery-post fuses were fitted per owner, and Windlass retains an 80 A breaker. Fuse way/rating allocations remain untraced. The photographed 2025 switch is WhisperPower branded, while the currently fitted product code and downstream wiring are not verified.</p>
+  <p class="ragtime-diagram__note">Six functional services: three bypass the common switch; House, Autopilot and Windlass switch together. ANL and battery-post fuses were fitted per owner, and Windlass retains a 70 A breaker. Fuse way/rating allocations remain untraced. The photographed 2025 switch is WhisperPower branded, while the currently fitted product code and downstream wiring are not verified.</p>
 </section>
 {{- else -}}
 <p>House-bank source diagram “{{ $key }}” is not configured.</p>

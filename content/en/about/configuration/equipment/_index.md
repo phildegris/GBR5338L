@@ -12,6 +12,8 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`EQ-059`](/about/configuration/equipment/eq-059/) | [House-bank aggregated source interface](/about/configuration/equipment/eq-059/) | {{< equipment-status id="EQ-059" >}} |
 | [`BB-003`](/about/configuration/equipment/bb-003/) | [House-bank positive six-service distribution](/about/configuration/equipment/bb-003/) | {{< equipment-status id="BB-003" >}} |
 | [`BB-004`](/about/configuration/equipment/bb-004/) | [DIY tinned-copper battery-negative link](/about/configuration/equipment/bb-004/) | {{< equipment-status id="BB-004" >}} |
+| [`EQ-061`](/about/configuration/equipment/eq-061/) | [Lewmar HX1 800 W windlass](/about/configuration/equipment/eq-061/) | {{< equipment-status id="EQ-061" >}} |
+| [`EQ-062`](/about/configuration/equipment/eq-062/) | [Windlass contactor](/about/configuration/equipment/eq-062/) | {{< equipment-status id="EQ-062" >}} |
 | [`EQ-060`](/about/configuration/equipment/eq-060/) | [Victron BMV-712 battery monitor and shunt](/about/configuration/equipment/eq-060/) | {{< equipment-status id="EQ-060" >}} |
 | [`EQ-001`](/about/configuration/equipment/eq-001/) | [Main DC panel (DCP)](/about/configuration/equipment/eq-001/) | {{< equipment-status id="EQ-001" >}} |
 | [`EQ-002`](/about/configuration/equipment/eq-002/) | [NAV LTS four-breaker / yacht-outline panel](/about/configuration/equipment/eq-002/) | {{< equipment-status id="EQ-002" >}} |
@@ -20,9 +22,11 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 | [`CB-001`](/about/configuration/equipment/cb-001/) | [NAV masthead breaker, 10 A](/about/configuration/equipment/cb-001/) | {{< equipment-status id="CB-001" >}} |
 | [`CB-002`](/about/configuration/equipment/cb-002/) | [NAV steaming breaker, 10 A](/about/configuration/equipment/cb-002/) | {{< equipment-status id="CB-002" >}} |
 | [`CB-004`](/about/configuration/equipment/cb-004/) | [10 A deck-light breaker](/about/configuration/equipment/cb-004/) | {{< equipment-status id="CB-004" >}} |
-| [`CB-006`](/about/configuration/equipment/cb-006/) | [Windlass retained 80 A circuit breaker](/about/configuration/equipment/cb-006/) | {{< equipment-status id="CB-006" >}} |
+| [`CB-006`](/about/configuration/equipment/cb-006/) | [Windlass fitted 70 A circuit breaker](/about/configuration/equipment/cb-006/) | {{< equipment-status id="CB-006" >}} |
 | [`CB-005`](/about/configuration/equipment/cb-005/) | [10 A bow/stern navigation breaker](/about/configuration/equipment/cb-005/) | {{< equipment-status id="CB-005" >}} |
 | [`CB-003`](/about/configuration/equipment/cb-003/) | [VHF AIS circuit breaker (10 A, position 3,4)](/about/configuration/equipment/cb-003/) | {{< equipment-status id="CB-003" >}} |
+| [`SW-003`](/about/configuration/equipment/sw-003/) | [Foredeck windlass control switch A](/about/configuration/equipment/sw-003/) | {{< equipment-status id="SW-003" >}} |
+| [`SW-004`](/about/configuration/equipment/sw-004/) | [Foredeck windlass control switch B](/about/configuration/equipment/sw-004/) | {{< equipment-status id="SW-004" >}} |
 | [`SW-002`](/about/configuration/equipment/sw-002/) | [House, Autopilot and Windlass shared remote battery switch](/about/configuration/equipment/sw-002/) | {{< equipment-status id="SW-002" >}} |
 | [`SW-001`](/about/configuration/equipment/sw-001/) | [Masthead DPDT polarity-reversing selector](/about/configuration/equipment/sw-001/) | {{< equipment-status id="SW-001" >}} |
 | [`TB-001`](/about/configuration/equipment/tb-001/) | [DIN Y/R/B cage-clamp group 2](/about/configuration/equipment/tb-001/) | {{< equipment-status id="TB-001" >}} |

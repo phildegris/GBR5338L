@@ -5,6 +5,8 @@ date: 2025-08-05
 summary: With a longer than usual period on the hard planned for next winter, planning is underway to complete the modernisation of Ragtimes electrical systems.  This will finally see removal of the rats nest of old, poorly terminated and slowly corroding wiring behind the classic 1980's DC panel.
 ---
 
+> **As-fitted audit update — 1 November 2026:** The installed windlass is owner-confirmed as a **[Lewmar HX1 800 W](/about/configuration/equipment/eq-061/)**, with a **fitted [70 A breaker CB-006](/about/configuration/equipment/cb-006/)**, a **separate [contactor EQ-062](/about/configuration/equipment/eq-062/)** and **two foredeck control switches [SW-003](/about/configuration/equipment/sw-003/) and [SW-004](/about/configuration/equipment/sw-004/)**. The 2025 supply lengths, ANL ratings and equipment grouping below describe the *contemporary design proposal*, not independently surveyed current wiring. Refer to [current windlass circuit](/about/configuration/circuits/dc-win-01/) and [house distribution](/about/configuration/house-bank-distribution/).
+
 ## Situation
 **Summer 2025** With a longer than usual period on the hard planned for next winter, planning is underway to complete the modernisation of Ragtimes electrical systems.  This will finally see removal of the rats nest of old, poorly terminated and slowly corroding wiring behind the classic 1980's DC panel.
 

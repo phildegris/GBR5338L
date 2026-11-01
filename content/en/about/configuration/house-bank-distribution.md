@@ -1,6 +1,6 @@
 ---
 title: "House-bank source and DC distribution"
-description: "Six circuits; single remote switch; fitted ANL and battery-post fuses; retained 80 A windlass breaker"
+description: "Six circuits; single remote switch; fitted ANL and battery-post fuses; retained 70 A windlass breaker"
 date: 2026-10-31
 summary: "Single house-bank source, three unswitched and three commonly switched services, installed protection, Victron BMV-712 shunt."
 ---
@@ -22,13 +22,13 @@ The house-bank positive source supplies [BB-003](/about/configuration/equipment/
 | Pump 2 | Unswitched | [DC-BIL-02](/about/configuration/circuits/dc-bil-02/) | Protection device/branch position not yet reconciled |
 | House | Switched through **SW-002** | [DC-HOU-01](/about/configuration/circuits/dc-hou-01/) | Owner confirms original ANL fuse installation; current assignment untraced |
 | Autopilot | Switched through **same SW-002** | [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) | Individual downstream fuse allocation untraced |
-| Windlass | Switched through **same SW-002** | [DC-WIN-01](/about/configuration/circuits/dc-win-01/) | **Fitted 80 A breaker [CB-006](/about/configuration/equipment/cb-006/)**, with fitted ANL fusing also confirmed; circuit order/rating of ANL not traced |
+| Windlass | Switched through **same SW-002** | [DC-WIN-01](/about/configuration/circuits/dc-win-01/) → [Lewmar HX1 EQ-061](/about/configuration/equipment/eq-061/) | **Fitted 70 A breaker [CB-006](/about/configuration/equipment/cb-006/)**, with fitted ANL fusing also confirmed; circuit order/rating of ANL not traced |
 
 There are **six distinct functional circuits**, **three unswitched** and **three controlled by one common remote switch**. The six circuits are not assumed to correspond to six individual terminals or fuseholders on the source busbar.
 
 ## Owner-confirmed fitted protection — ANL, battery posts and windlass breaker
 
-The owner has now explicitly confirmed that **all of the ANL fuses and battery-post fuses associated with the earlier DC-distribution build were fitted**, and **the windlass's existing 80 A circuit breaker was retained in its supply**. Therefore **installed ANL/MRBF fusing is a fact**, not merely a project proposal. Exact fitted ratings, fuse counts, cable sizes, and today's connection to each service circuit still need inspection.
+The owner has now explicitly confirmed that **all of the ANL fuses and battery-post fuses associated with the earlier DC-distribution build were fitted**, and **the windlass's existing 70 A circuit breaker was retained in its supply**. Therefore **installed ANL/MRBF fusing is a fact**, not merely a project proposal. Exact fitted ratings, fuse counts, cable sizes, and today's connection to each service circuit still need inspection.
 
 The older sources record the following **historical nominal design ratings**, which must not be mistaken for a current fuse-body reading:
 
@@ -36,9 +36,11 @@ The older sources record the following **historical nominal design ratings**, wh
 | --- | --- | --- |
 | July 2025 house-bank discussion | Two **125 A MRBF battery-post** fuses with equal **25 mm²** feed cables; an intermediate design also considered **80 A MIDI/MEGA panel**, **40 A MIDI/MEGA pump** and individual **20 A pump fuses** | Battery-post fuses **confirmed installed**; old exact ratings, count and MIDI/MEGA alternatives not independently checked |
 | [5 August 2025 DC Distribution Panel Upgrade](/articles/technical/dc-distribution-panel/) | **80 A ANL Primary**, **80 A ANL Auxiliary**, **100 A ANL Windlass**, **40 A ANL Watchkeeper**; proposed Windlass **25 mm²**, **10 m**, **Lewmar HX1** | Original ANL fuses **confirmed installed**; the 2025 functional group names and per-fuse ratings must **not automatically be mapped** to today's six service circuits |
-| Current owner confirmation | **80 A windlass breaker retained in the windlass supply** | **Confirmed fitted protective device [CB-006](/about/configuration/equipment/cb-006/)**, in addition to the installed ANL fuse arrangement |
+| Current owner confirmation | **70 A windlass breaker retained in the windlass supply** | **Confirmed fitted protective device [CB-006](/about/configuration/equipment/cb-006/)**, in addition to the installed ANL fuse arrangement |
 
-A **100 A ANL fuse and 80 A breaker can both exist in the same windlass supply**. They may perform different upstream-cable protection and local isolation functions. Their actual ordering and protection selectivity remain unverified. We are **not** choosing one in place of the other.
+A **100 A ANL fuse and 70 A breaker can both exist in the same windlass supply**. They may perform different upstream-cable protection and local isolation functions. Their actual ordering and protection selectivity remain unverified. We are **not** choosing one in place of the other.
+
+**Current windlass identity:** Owner confirms fitted **[Lewmar HX1 800 W, EQ-061](/about/configuration/equipment/eq-061/)**, **70 A [CB-006](/about/configuration/equipment/cb-006/) breaker**, and a **separate [contactor EQ-062](/about/configuration/equipment/eq-062/)** controlled by **two foredeck switches [SW-003](/about/configuration/equipment/sw-003/) and [SW-004](/about/configuration/equipment/sw-004/)**. The earlier 80 A breaker reference was an audit error, superseded 1 November 2026. The historic **100 A ANL** remains a design rating pending inspection of the actual fuse. Contactor maker/part, UP/DOWN mapping and any control fuse are unverified.
 
 **Evidence provenance:** Owner's direct installation confirmations in the October 2026 electrical audit, plus 2025 dated planning records. The physical 5 August 2025 photograph shows **one WhisperPower-branded remote battery switch** and **four lower covered fuseholders**; the labels and output cables cannot be read. It supports the hardware-family history, not individual fuse allocations. A later **BEP 701-MD** preference was a *replacement proposal*, not confirmed installed.
 
