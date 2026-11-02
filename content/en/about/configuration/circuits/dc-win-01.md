@@ -34,4 +34,4 @@ The Lewmar HX1 manufacturer's manual identifies a **70 A supplied breaker (68000
 
 ## Next inspection
 
-Confirm windlass motor/controller, 70 A breaker location and part markings, relevant ANL fuse holder and markings, cable sizes, negative return and the switched-output branch point.
+Confirm windlass motor/controller; inspect the mounting and part markings of CB-006 at the aft end of the engine drive compartment beneath the aft cabin bunk; trace the relevant ANL fuse holder and markings, cable sizes, negative return and the switched-output branch point.

@@ -56,6 +56,6 @@ The earlier copper-link design included approximately **25.4 × 3.2 mm tinned co
 
 ## Remaining as-fitted audit
 
-Trace the battery-post fuse quantity and markings without expanding the aggregate house-bank model; read ANL fuse ratings and identify the photographed fuseholder ways; confirm SW-002's actual model and common switched output; locate **CB-006** relative to the Windlass ANL fuse and its motor controller; then map individual House, Autopilot, Watchkeeper and pump protections and all negative returns.
+Trace the battery-post fuse quantity and markings without expanding the aggregate house-bank model; read ANL fuse ratings and identify the photographed fuseholder ways; confirm SW-002's actual model and common switched output; trace the electrical placement of **CB-006** (mounted aft in the engine drive compartment, beneath the aft cabin bunk) relative to the Windlass ANL fuse and its motor controller; then map individual House, Autopilot, Watchkeeper and pump protections and all negative returns.
 
 **Safety:** This documentation is not an instruction to disconnect live battery cables. Isolate and follow safe manufacturer-approved work methods when conducting the high-current physical survey.
