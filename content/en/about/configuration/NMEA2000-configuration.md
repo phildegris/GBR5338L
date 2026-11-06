@@ -10,7 +10,7 @@ summary: N2K network design and configuration notes
 
 ## Network segments and power
 
-**Owner-confirmed, 6 November 2026:** Ragtime has **one NMEA 2000 network with two segments, A and B**. **Both segments have power injection behind the DC panel (DCP).** This describes the owner-reported arrangement, not an independently traced electrical installation.
+**Owner-confirmed, 6 November 2026:** Ragtime has **one NMEA 2000 network with two segments, A and B**. **Both segments have power injection behind the DC panel (DCP).** The segments are joined by a **[power isolator (EQ-063)](/about/configuration/equipment/eq-063/)** that **passes CAN data while separating their positive supplies** (owner-confirmed). This describes the owner-reported arrangement, not an independently traced electrical installation.
 
 | Segment | Power injection location | Historical panel reference | Still to establish |
 | --- | --- | --- | --- |
@@ -22,12 +22,12 @@ The panel aliases come from the [historical connector schedule](/about/configura
 ### Network and equipment inventory to complete
 
 - Record the physical backbone and drop routes, junctions and terminator positions.
-- Establish how A and B are interconnected for data and whether their power conductors are isolated. Two injection points alone do not establish separate power domains or two separate CAN networks.
+- Identify the power isolator’s manufacturer/model and physical location, and document its pin-level connections. CAN data continuity and positive-supply separation are owner-confirmed; negative/shield continuity and galvanic isolation have not been established.
 - Identify the supply circuit, fuse/breaker, switching and return path for each injection point; allocate circuit and physical component IDs once identified.
 - Link each connected device to its equipment record, segment and drop connection. Record **bus power**, **separate operating supply**, and any bus-interface power requirement independently; network attachment alone does not establish how a device is powered.
 - Record manufacturer power/load figures separately from onboard measurements and calculate segment loads once device allocation and power boundaries are known.
 
-A and B are **network segment labels**, not physical equipment IDs. Device allocation, cable lengths, protection ratings and power-isolation hardware have not yet been supplied for this network record.
+A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Device allocation, cable lengths, protection ratings and the isolator’s model/location remain to be documented.
 
 ## Historical configuration notes — July 2025
 

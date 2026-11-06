@@ -35,7 +35,7 @@ The handwritten columns are **CB / rail / circuit**. The middle column uses the 
 
 A crossed-out mark between `Y4` and `R4` **does not justify allocating an additional rail position**. The first-row lettering and corrected lower-left labels should be treated as provisional until the owner confirms them. `NC` is **not** automatically “spare”, “not connected” or “disconnected”.
 
-**NMEA 2000 clarification (owner, 6 November 2026):** A and B are two segments of one network; each has power injection behind DCP. This does not independently verify the historical `R1`/`Y1` connections or establish power isolation between segments. See the [network and power record](/about/configuration/nmea2000-configuration/).
+**NMEA 2000 clarification (owner, 6 November 2026):** A and B are two segments of one network; each has power injection behind DCP. The owner also confirms a [power isolator (EQ-063)](/about/configuration/equipment/eq-063/) between the segments, passing CAN data while separating positive supplies. This does not independently verify the historical `R1`/`Y1` connections; the isolator’s physical location and model remain unreported. See the [network and power record](/about/configuration/nmea2000-configuration/).
 
 ## Oceanflex 7 × 1.5 mm² distribution trunk
 

@@ -159,9 +159,15 @@ This register uses the permanent equipment IDs in the [Electrical Reference Syst
 ## Outstanding distinctions and survey actions
 
 - The combined **masthead anchor/tricolour lamp is one physical item** with two modes, not two independent lights. The steering, navigation and electrical circuits should link to its single equipment ID.
-- **NMEA2000 A and NMEA2000 B** are **two segments of one NMEA 2000 network**, with **power injection for both behind DCP** (owner-confirmed, 6 November 2026), not individual devices or two established separate networks. See the [network and power record](/about/configuration/nmea2000-configuration/). Source circuits, protection, segment interconnection/power isolation, backbone components and connected instruments remain to be documented; no fictitious equipment records have been created for the segment labels.
+- **NMEA2000 A and NMEA2000 B** are **two segments of one NMEA 2000 network**, with **power injection for both behind DCP** (owner-confirmed, 6 November 2026), not individual devices or two established separate networks. See the [network and power record](/about/configuration/nmea2000-configuration/). A [power isolator (EQ-063)](/about/configuration/equipment/eq-063/) passes CAN data and separates the segment positive supplies (owner-confirmed). Source circuits, protection, isolator model/location, backbone components and connected instruments remain to be documented; no fictitious equipment records have been created for the segment labels.
 - **Seven-core cable and conductor colours** describe wiring, not equipment. The source gives blue, black and yellow cores for particular lighting paths; retain these in a future Circuit Register without turning each conductor into equipment.
 - The source refers to a **battery negative** and an **engine block** as return connection points but does not identify an individual battery or complete engine. Do not allocate a battery/engine asset ID from those incidental references until surveyed.
 - Verify whether the navigation-lights illuminated panel section and the four-way connector are distinct serviceable components, and whether terminal aliases `B2`, `Y2` and `Y3` map to the assumed DIN block numbers. Preserve physical aliases even if the interpretation changes.
 - Identify each downlight and deck light individually, confirm tentative bracketed entries, capture physical locations, models, serials and photographs, and record survey dates before marking anything as verified.
 
+
+## NMEA 2000 network hardware
+
+| ID | Equipment | Reported location | Status | Source / survey note |
+| --- | --- | --- | :---: | --- |
+| [`EQ-063`](/about/configuration/equipment/eq-063/) | [NMEA 2000 segment A/B power isolator](/about/configuration/equipment/eq-063/) | Not yet reported | {{< equipment-status id="EQ-063" >}} | Owner confirms CAN data passes and positive supplies are separated; model and physical location pending. |
