@@ -14,8 +14,8 @@ summary: N2K network design and configuration notes
 
 | Segment | Power injection location | Historical panel reference | Still to establish |
 | --- | --- | --- | --- |
-| A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and full device inventory (confirmed devices below) |
-| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and connected devices |
+| A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Actual source circuit, protection, feed wiring and power-injection hardware (complete device list below) |
+| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and device power classifications (inventory below) |
 
 The panel aliases come from the [historical connector schedule](/about/configuration/dc-terminal-schedule/); the latest confirmation establishes the **two segment names and injection locations**, not continuity through those particular connectors. `R1` and `Y1` identify clamp lever colours and group positions, not conductor insulation colours.
 
@@ -27,11 +27,11 @@ The panel aliases come from the [historical connector schedule](/about/configura
 - Link each connected device to its equipment record, segment and drop connection. Record **bus power**, **separate operating supply**, and any bus-interface power requirement independently; network attachment alone does not establish how a device is powered.
 - Record manufacturer power/load figures separately from onboard measurements and calculate segment loads once device allocation and power boundaries are known.
 
-A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A device allocation is being recorded below; remaining device allocation, cable lengths, protection ratings and the isolator’s model/location still require documentation.
+A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A and B device allocations are recorded below; power classifications for B, physical connections, cable lengths, protection ratings and the isolator’s model/location still require documentation.
 
 ## Segment A — connected equipment and power
 
-**Owner-confirmed, 6 November 2026:** Segment A provides **data-only connections** for the Icom M510 VHF and ATB-1 AIS, and **data plus bus power** for the previously documented Yacht Devices YDWG-02 wireless gateway. This is the confirmed inventory so far, not a claim that no other equipment is attached.
+**Owner-confirmed, 6 November 2026:** Segment A provides **data-only connections** for the Icom M510 VHF and ATB-1 AIS, and **data plus bus power** for the previously documented Yacht Devices YDWG-02 wireless gateway. The owner subsequently confirmed this is the complete segment A device list.
 
 | Equipment | NMEA 2000 segment | Connection role | Operating power source |
 | --- | --- | --- | --- |
@@ -40,6 +40,25 @@ A and B are **network segment labels**, not physical equipment IDs. The physical
 | [EQ-064 — Yacht Devices YDWG-02 wireless gateway](/about/configuration/equipment/eq-064/) | A | Data and power (owner-confirmed) | NMEA 2000 segment A bus supply, injected behind DCP |
 
 The data-only classifications above record the owner's installation description; interface/adapter details and pin-level power connections have not been traced. Gateway load/LEN, drop-cable routes, junction positions and the segment A injection circuit/protection remain to be documented. Separate COM power circuits remain distinct from the NMEA 2000 data connection.
+
+## Segment B — connected equipment
+
+**Owner-confirmed, 6 November 2026:** The following ten items are allocated to segment B. Unlike segment A, their individual bus-power versus separate-supply arrangements have **not yet been confirmed** in this inventory. Network attachment does not imply that all operating power comes from the bus.
+
+| Equipment / owner label | Segment | Bus power / separate supply |
+| --- | --- | --- |
+| [EQ-065 — Garmin GPS 24xd](/about/configuration/equipment/eq-065/) | B | To confirm |
+| [EQ-066 — B&G WS310](/about/configuration/equipment/eq-066/) | B | To confirm |
+| [EQ-067 — B&G DST-810](/about/configuration/equipment/eq-067/) | B | To confirm |
+| [EQ-068 — Orca Core 2](/about/configuration/equipment/eq-068/) | B | To confirm |
+| [EQ-069 — B&G Triton 2 autopilot controller](/about/configuration/equipment/eq-069/) | B | To confirm |
+| [EQ-070 — B&G Triton 2 MFD 1](/about/configuration/equipment/eq-070/) | B | To confirm |
+| [EQ-071 — B&G Triton 2 MFD 2](/about/configuration/equipment/eq-071/) | B | To confirm |
+| [EQ-072 — B&G Triton 2 MFD 3](/about/configuration/equipment/eq-072/) | B | To confirm |
+| [EQ-073 — B&G NAC-3](/about/configuration/equipment/eq-073/) | B | To confirm |
+| [EQ-074 — Yacht Devices “YD RA?” — model to confirm](/about/configuration/equipment/eq-074/) | B | To confirm |
+
+The three Triton 2 MFDs have separate stable equipment IDs. Their physical positions remain to be assigned to MFD 1, 2 and 3. “YD RA?” is retained as an uncertain owner label; YDRA-01 rudder adaptor is a tentative match to earlier discussion, pending model confirmation. Sensor interface hardware, including the WS310 connection into the network, has not yet been inventoried. Equipment names reproduce the owner’s labels; exact nameplate variants remain to be recorded.
 
 ## Historical configuration notes — July 2025
 

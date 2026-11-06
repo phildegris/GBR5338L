@@ -9,6 +9,16 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 
 | Equipment ID | Description | Documentation / survey status |
 | --- | --- | --- |
+| [`EQ-065`](/about/configuration/equipment/eq-065/) | [Garmin GPS 24xd](/about/configuration/equipment/eq-065/) | {{< equipment-status id="EQ-065" >}} |
+| [`EQ-066`](/about/configuration/equipment/eq-066/) | [B&G WS310](/about/configuration/equipment/eq-066/) | {{< equipment-status id="EQ-066" >}} |
+| [`EQ-067`](/about/configuration/equipment/eq-067/) | [B&G DST-810](/about/configuration/equipment/eq-067/) | {{< equipment-status id="EQ-067" >}} |
+| [`EQ-068`](/about/configuration/equipment/eq-068/) | [Orca Core 2](/about/configuration/equipment/eq-068/) | {{< equipment-status id="EQ-068" >}} |
+| [`EQ-069`](/about/configuration/equipment/eq-069/) | [B&G Triton 2 autopilot controller](/about/configuration/equipment/eq-069/) | {{< equipment-status id="EQ-069" >}} |
+| [`EQ-070`](/about/configuration/equipment/eq-070/) | [B&G Triton 2 MFD 1](/about/configuration/equipment/eq-070/) | {{< equipment-status id="EQ-070" >}} |
+| [`EQ-071`](/about/configuration/equipment/eq-071/) | [B&G Triton 2 MFD 2](/about/configuration/equipment/eq-071/) | {{< equipment-status id="EQ-071" >}} |
+| [`EQ-072`](/about/configuration/equipment/eq-072/) | [B&G Triton 2 MFD 3](/about/configuration/equipment/eq-072/) | {{< equipment-status id="EQ-072" >}} |
+| [`EQ-073`](/about/configuration/equipment/eq-073/) | [B&G NAC-3](/about/configuration/equipment/eq-073/) | {{< equipment-status id="EQ-073" >}} |
+| [`EQ-074`](/about/configuration/equipment/eq-074/) | [Yacht Devices “YD RA?” — model to confirm](/about/configuration/equipment/eq-074/) | {{< equipment-status id="EQ-074" >}} |
 | [`EQ-064`](/about/configuration/equipment/eq-064/) | [Yacht Devices YDWG-02 wireless gateway](/about/configuration/equipment/eq-064/) | {{< equipment-status id="EQ-064" >}} |
 | [`EQ-063`](/about/configuration/equipment/eq-063/) | [NMEA 2000 segment A/B power isolator](/about/configuration/equipment/eq-063/) | {{< equipment-status id="EQ-063" >}} |
 | [`EQ-059`](/about/configuration/equipment/eq-059/) | [House-bank aggregated source interface](/about/configuration/equipment/eq-059/) | {{< equipment-status id="EQ-059" >}} |
