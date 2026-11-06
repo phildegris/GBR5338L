@@ -171,3 +171,4 @@ This register uses the permanent equipment IDs in the [Electrical Reference Syst
 | ID | Equipment | Reported location | Status | Source / survey note |
 | --- | --- | --- | :---: | --- |
 | [`EQ-063`](/about/configuration/equipment/eq-063/) | [NMEA 2000 segment A/B power isolator](/about/configuration/equipment/eq-063/) | Not yet reported | {{< equipment-status id="EQ-063" >}} | Owner confirms CAN data passes and positive supplies are separated; model and physical location pending. |
+| [`EQ-064`](/about/configuration/equipment/eq-064/) | [Yacht Devices YDWG-02 wireless gateway](/about/configuration/equipment/eq-064/) | Not yet reported | {{< equipment-status id="EQ-064" >}} | Segment A data and bus power, owner-confirmed 6 November 2026; exact variant, load and drop route pending. |

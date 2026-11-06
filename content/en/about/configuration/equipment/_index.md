@@ -9,6 +9,7 @@ Equipment records are listed in the [Equipment Register](/about/configuration/eq
 
 | Equipment ID | Description | Documentation / survey status |
 | --- | --- | --- |
+| [`EQ-064`](/about/configuration/equipment/eq-064/) | [Yacht Devices YDWG-02 wireless gateway](/about/configuration/equipment/eq-064/) | {{< equipment-status id="EQ-064" >}} |
 | [`EQ-063`](/about/configuration/equipment/eq-063/) | [NMEA 2000 segment A/B power isolator](/about/configuration/equipment/eq-063/) | {{< equipment-status id="EQ-063" >}} |
 | [`EQ-059`](/about/configuration/equipment/eq-059/) | [House-bank aggregated source interface](/about/configuration/equipment/eq-059/) | {{< equipment-status id="EQ-059" >}} |
 | [`BB-003`](/about/configuration/equipment/bb-003/) | [House-bank positive six-service distribution](/about/configuration/equipment/bb-003/) | {{< equipment-status id="BB-003" >}} |
