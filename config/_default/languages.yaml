@@ -3,9 +3,9 @@ en:
   weight: 1
   ### copyright (markdown can be used) ###
   copyright: "Copyright &copy; {{< current_year >}} Company Name. All Rights Reserved. [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) for Hugo by [CNCF](https://www.cncf.io)."
-  title: "Site Title"
+  title: "Ragtime Documentation"
   params:
-    description: "Site Description"
+    description: "Technical records, vessel data and passage plans for Ragtime, Moody 336 GBR 5338L."
     ### accessibility ###
     accessibility:
       skip_text: "Skip to content"
@@ -27,7 +27,7 @@ en:
       url: "/about/"
       weight: 1
     - identifier: "data"
-      name: "data"
+      name: "Vessel data"
       url: "/about/data/"
       parent: "about"
       weight: 1
@@ -36,6 +36,16 @@ en:
       url: "/about/configuration/"
       weight: 2
       parent: "about"
+    - identifier: "equipment"
+      name: "Equipment Register"
+      url: "/about/configuration/equipment-register/"
+      parent: "about"
+      weight: 3
+    - identifier: "circuits"
+      name: "Circuit Register"
+      url: "/about/configuration/circuit-register/"
+      parent: "about"
+      weight: 4
     - identifier: "articles"
       name: "Articles"
       url: "/articles/"
@@ -50,17 +60,7 @@ en:
       url: "/articles/sailing"
       parent: "articles"
       weight: 1
-    - identifier: "logs"
-      name: "Logs"
-      url: "/logs/"
+    - identifier: "passage-plans"
+      name: "Passage Plans"
+      url: "/passage-plans/"
       weight: 4
-    - identifier: "technical-logs"
-      name: "Technical"
-      url: "/logs/technical"
-      parent: "logs"
-      weight: 2
-    - identifier: "sailing-logs"
-      name: "Sailing"
-      url: "/logs/sailing"
-      parent: "logs"
-      weight: 1

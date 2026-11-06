@@ -1,0 +1,16 @@
+/* Home-page navigation; keep the theme's article and diagram styles intact. */
+.ragtime-home h1 { margin-top: 0; }
+.ragtime-home .ragtime-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.ragtime-home .ragtime-section { display: flex; flex-direction: column; padding: 1.25rem; border: 1px solid #ccd8df; border-top: 4px solid #24566d; border-radius: .35rem; background: #f5f8fa; color: #243746; text-decoration: none; }
+.ragtime-home .ragtime-section h3 { margin: 0 0 .6rem; color: #173f53; font-size: 1.15rem; }
+.ragtime-home .ragtime-section p { margin: 0 0 1rem; }
+.ragtime-home .ragtime-section__action { margin-top: auto; color: #174f6b; font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+.ragtime-home .ragtime-section:hover { background: #e9f1f5; border-color: #24566d; }
+.ragtime-home .ragtime-section:focus-visible { outline: 3px solid #174f6b; outline-offset: 4px; }
+.ragtime-home figure { max-width: 34rem; margin: 1.5rem 0 0; }
+.ragtime-home figure img { width: 100%; height: auto; }
+.ragtime-home figcaption { font-size: .85rem; color: #52616b; }
+@media (max-width: 600px) {
+  .ragtime-home .ragtime-sections { grid-template-columns: minmax(0, 1fr); }
+  .ragtime-home .ragtime-section { padding: 1rem; }
+}

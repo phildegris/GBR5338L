@@ -1,0 +1,19 @@
+<nav class="ragtime-sections" aria-label="Documentation sections">
+  {{- $sections := slice
+    (dict "path" "/about/configuration" "title" "Systems & configuration" "text" "Understand how the onboard systems connect, with diagrams and reference notes." "label" "Browse systems")
+    (dict "path" "/about/configuration/equipment-register" "title" "Equipment register" "text" "Find a device, its stable reference, location and current documentation status." "label" "Find equipment")
+    (dict "path" "/about/configuration/circuit-register" "title" "Circuit register" "text" "Trace electrical supplies, protection and loads through linked circuit records." "label" "Find a circuit")
+    (dict "path" "/about/data" "title" "Vessel data" "text" "Look up Ragtime’s identification, build information and hull dimensions." "label" "View vessel data")
+    (dict "path" "/articles/technical" "title" "Technical articles" "text" "Read the background to upgrades, installation work and technical decisions." "label" "Read technical articles")
+    (dict "path" "/passage-plans" "title" "Passage plans" "text" "Browse recorded passage plans for sailing and preparation." "label" "Browse passage plans")
+  -}}
+  {{- range $sections -}}
+    {{- $page := site.GetPage .path -}}
+    {{- if not $page -}}{{ errorf "Home navigation target missing: %s" .path }}{{- end -}}
+    <a class="ragtime-section" href="{{ $page.RelPermalink }}">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      <span class="ragtime-section__action">{{ .label }} <span aria-hidden="true">&rarr;</span></span>
+    </a>
+  {{- end -}}
+</nav>

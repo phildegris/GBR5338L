@@ -6,10 +6,10 @@ logo_on_black: "/img/logo-w.svg"
 
 logo:
   title: "GBR 5338L"
-  subtitle: "This is the log of the sailing vessel Ragtime"
+  subtitle: "Ragtime · Moody 336 · Documentation"
 
 custom_js: []
-customCSS: ["/css/ragtime-circuit-diagrams.css"]
+customCSS: ["/css/ragtime-circuit-diagrams.css", "/css/ragtime-home.css"]
 
 ######################## custom config ####################
 

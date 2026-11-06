@@ -1,26 +1,25 @@
 ---
-title: GBR 5338L - Ragtime
-description: This is the web log of the sailing vessel Ragtime.
-showHeader: false
+title: "Ragtime documentation"
+description: "Find Ragtime’s equipment records, electrical systems, vessel data, technical articles and passage plans."
 ---
 
-**Ragtime** is a privately owned and operated Moody 336, built in 1989 by Marine Projects Ltd in Plymouth, England. She is mainly sailed in and across the western end of the English channel, and the Atlantic coast of France.
-***
+Ragtime is a Moody 336, built in Plymouth in 1989. Use this site to find her technical records, understand her systems and plan passages.
 
-{{< figure
-  src="/images/off-falmouth.jpg"
-  alt="A photograph of Ragtime under sail off Falmouth"
-  caption="Off Falmouth, July 2022"
-  width="50%"
-  attr=": David Royal - Serenity"
->}}
+## Explore the documentation
 
+{{< home-navigation >}}
 
-We are currently preparing ourselves and Ragtime for adventures further afield, to the Azores and Back, in the 2027 edition of this iconic ocean race.
-***
-Technical records and Log providing reference material to support operations, maintainance, and future upgrades.
+## Quick system references
 
-The Skippers logbook providing details of Ragtimes travels. 
+- [House-bank distribution](/about/configuration/house-bank-distribution/) — supplies, switching and battery monitoring.
+- [Navigation and deck lights](/about/configuration/navigation-lights/) — lighting circuits and connections.
+- [VHF and AIS](/about/configuration/com-frame/) — COM-frame power and antenna paths.
+- [NMEA 2000 network](/about/configuration/nmea2000-configuration/) — instruments and network configuration.
+- [Windlass](/about/configuration/equipment/eq-061/) — Lewmar HX1 equipment record and linked circuits.
+- [DC-panel connector schedule](/about/configuration/dc-terminal-schedule/) — terminal references and distribution notes.
 
-Our plans for future adventures including our entry in the 2027 AZAB race.
+## About Ragtime
 
+Privately owned and sailed around the western English Channel and the Atlantic coast of France, Ragtime is preparing for adventures further afield, including the 2027 Azores and Back race.
+
+{{< figure src="/images/off-falmouth.jpg" alt="Ragtime under sail off Falmouth" caption="Off Falmouth, July 2022. Photograph: David Royal — Serenity." >}}
