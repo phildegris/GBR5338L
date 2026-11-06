@@ -24,3 +24,7 @@ This circuit is a **functional link**, not evidence that a correctly rated prote
 ## Outstanding physical inspection
 
 Identify the fitted circuit protective device and rating, branch/feeder conductor cross-section, its DC panel or load endpoint, correct negative return via the [BMV-712 shunt](/about/configuration/equipment/eq-060/), and the controlling hardware where relevant.
+
+## NMEA 2000 power statement to reconcile
+
+On 6 November 2026 the owner included [NAC-3 EQ-073](/about/configuration/equipment/eq-073/) in the segment B inventory and described all listed devices as bus-powered. This does not supersede the separate autopilot supply recorded here. Clarify whether the statement concerns network-interface power or changes the operating-supply description; retain both pieces of owner evidence until resolved.

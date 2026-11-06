@@ -15,7 +15,7 @@ summary: N2K network design and configuration notes
 | Segment | Power injection location | Historical panel reference | Still to establish |
 | --- | --- | --- | --- |
 | A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Actual source circuit, protection, feed wiring and power-injection hardware (complete device list below) |
-| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and device power classifications (inventory below) |
+| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and clock identity and NAC-3 power clarification (inventory below) |
 
 The panel aliases come from the [historical connector schedule](/about/configuration/dc-terminal-schedule/); the latest confirmation establishes the **two segment names and injection locations**, not continuity through those particular connectors. `R1` and `Y1` identify clamp lever colours and group positions, not conductor insulation colours.
 
@@ -27,7 +27,7 @@ The panel aliases come from the [historical connector schedule](/about/configura
 - Link each connected device to its equipment record, segment and drop connection. Record **bus power**, **separate operating supply**, and any bus-interface power requirement independently; network attachment alone does not establish how a device is powered.
 - Record manufacturer power/load figures separately from onboard measurements and calculate segment loads once device allocation and power boundaries are known.
 
-A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A and B device allocations are recorded below; power classifications for B, physical connections, cable lengths, protection ratings and the isolator’s model/location still require documentation.
+A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A and B device allocations are recorded below; physical connections, cable lengths, protection ratings and the isolator’s model/location still require documentation.
 
 ## Segment A — connected equipment and power
 
@@ -43,20 +43,23 @@ The data-only classifications above record the owner's installation description;
 
 ## Segment B — connected equipment
 
-**Owner-confirmed, 6 November 2026:** The following ten items are allocated to segment B. Unlike segment A, their individual bus-power versus separate-supply arrangements have **not yet been confirmed** in this inventory. Network attachment does not imply that all operating power comes from the bus.
+**Owner-confirmed, 6 November 2026:** The owner reports that **all ten previously listed segment B devices are powered by the bus**, and additionally confirms the **companionway console clock is powered by segment B**. The NAC-3 statement needs reconciliation with the existing separate autopilot supply record, as noted below. Clock data connectivity has not been confirmed.
 
 | Equipment / owner label | Segment | Bus power / separate supply |
 | --- | --- | --- |
-| [EQ-065 — Garmin GPS 24xd](/about/configuration/equipment/eq-065/) | B | To confirm |
-| [EQ-066 — B&G WS310](/about/configuration/equipment/eq-066/) | B | To confirm |
-| [EQ-067 — B&G DST-810](/about/configuration/equipment/eq-067/) | B | To confirm |
-| [EQ-068 — Orca Core 2](/about/configuration/equipment/eq-068/) | B | To confirm |
-| [EQ-069 — B&G Triton 2 autopilot controller](/about/configuration/equipment/eq-069/) | B | To confirm |
-| [EQ-070 — B&G Triton 2 MFD 1](/about/configuration/equipment/eq-070/) | B | To confirm |
-| [EQ-071 — B&G Triton 2 MFD 2](/about/configuration/equipment/eq-071/) | B | To confirm |
-| [EQ-072 — B&G Triton 2 MFD 3](/about/configuration/equipment/eq-072/) | B | To confirm |
-| [EQ-073 — B&G NAC-3](/about/configuration/equipment/eq-073/) | B | To confirm |
-| [EQ-074 — Yacht Devices “YD RA?” — model to confirm](/about/configuration/equipment/eq-074/) | B | To confirm |
+| [EQ-065 — Garmin GPS 24xd](/about/configuration/equipment/eq-065/) | B | Segment B bus — owner-confirmed |
+| [EQ-066 — B&G WS310](/about/configuration/equipment/eq-066/) | B | Segment B bus — owner-confirmed |
+| [EQ-067 — B&G DST-810](/about/configuration/equipment/eq-067/) | B | Segment B bus — owner-confirmed |
+| [EQ-068 — Orca Core 2](/about/configuration/equipment/eq-068/) | B | Segment B bus — owner-confirmed |
+| [EQ-069 — B&G Triton 2 autopilot controller](/about/configuration/equipment/eq-069/) | B | Segment B bus — owner-confirmed |
+| [EQ-070 — B&G Triton 2 MFD 1](/about/configuration/equipment/eq-070/) | B | Segment B bus — owner-confirmed |
+| [EQ-071 — B&G Triton 2 MFD 2](/about/configuration/equipment/eq-071/) | B | Segment B bus — owner-confirmed |
+| [EQ-072 — B&G Triton 2 MFD 3](/about/configuration/equipment/eq-072/) | B | Segment B bus — owner-confirmed |
+| [EQ-073 — B&G NAC-3](/about/configuration/equipment/eq-073/) | B | Owner reports bus power; separate autopilot supply also recorded — clarification outstanding |
+| [EQ-074 — Yacht Devices “YD RA?” — model to confirm](/about/configuration/equipment/eq-074/) | B | Segment B bus — owner-confirmed |
+| [EQ-075 — Companionway console clock](/about/configuration/equipment/eq-075/) | B power connection; data connection not confirmed | Segment B — owner-confirmed |
+
+**NAC-3 supply distinction:** [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) already names NAC-3 and steering-drive equipment on the separate autopilot distribution. The latest bus-power statement is recorded as owner evidence, with its scope unresolved; it does not establish that the bus supplies NAC-3 operating/drive power.
 
 The three Triton 2 MFDs have separate stable equipment IDs. Their physical positions remain to be assigned to MFD 1, 2 and 3. “YD RA?” is retained as an uncertain owner label; YDRA-01 rudder adaptor is a tentative match to earlier discussion, pending model confirmation. Sensor interface hardware, including the WS310 connection into the network, has not yet been inventoried. Equipment names reproduce the owner’s labels; exact nameplate variants remain to be recorded.
 
