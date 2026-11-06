@@ -37,6 +37,8 @@ A crossed-out mark between `Y4` and `R4` **does not justify allocating an additi
 
 **NMEA 2000 clarification (owner, 6 November 2026):** A and B are two segments of one network; each has power injection behind DCP. The owner also confirms a [power isolator (EQ-063)](/about/configuration/equipment/eq-063/) between the segments, passing CAN data while separating positive supplies. This does not independently verify the historical `R1`/`Y1` connections; the isolator’s physical location and model remain unreported. See the [network and power record](/about/configuration/nmea2000-configuration/).
 
+**Supply clarification (owner, 6 November 2026):** Both A and B power injections share one **10 A NAV INSTR breaker [CB-007](/about/configuration/equipment/cb-007/)**. Its panel coordinate, downstream split and the R1/Y1 continuity remain untraced. See [DC-N2K-01](/about/configuration/circuits/dc-n2k-01/).
+
 ## Oceanflex 7 × 1.5 mm² distribution trunk
 
 The owner explicitly confirms that **7×** denotes one **Oceanflex 7-core cable**, with **1.5 mm² cross-section for each conductor**. All seven panel-end core identities are now accounted for:

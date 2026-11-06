@@ -14,20 +14,26 @@ summary: N2K network design and configuration notes
 
 | Segment | Power injection location | Historical panel reference | Still to establish |
 | --- | --- | --- | --- |
-| A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Actual source circuit, protection, feed wiring and power-injection hardware (complete device list below) |
-| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and clock identity and detailed supply wiring (inventory below) |
+| A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Shared 10 A CB-007 confirmed; local fuses, feed wiring and injection hardware untraced |
+| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Shared 10 A CB-007 confirmed; local fuses, feed wiring, injection hardware and clock identity untraced |
 
 The panel aliases come from the [historical connector schedule](/about/configuration/dc-terminal-schedule/); the latest confirmation establishes the **two segment names and injection locations**, not continuity through those particular connectors. `R1` and `Y1` identify clamp lever colours and group positions, not conductor insulation colours.
+
+### Shared NAV INSTR supply
+
+**Owner-confirmed, 6 November 2026:** Both segment A and segment B power injections are fed by **one common 10 A NAV INSTR breaker [CB-007](/about/configuration/equipment/cb-007/)** on the main DC panel. [DC-N2K-01](/about/configuration/circuits/dc-n2k-01/) identifies the common protected supply; [DC-N2K-02](/about/configuration/circuits/dc-n2k-02/) and [DC-N2K-03](/about/configuration/circuits/dc-n2k-03/) identify the feeds to A and B respectively. These are functional circuit identities, not additional protective devices.
+
+The two segments share that breaker’s switching/protection; their positive backbone supplies remain separated at the A/B power isolator. Separate downstream fuses, any additional switches, split-point wiring, conductor sizes and negative-return routes have not yet been established. The 10 A breaker rating is owner-reported, not an assessment of cable or network component protection suitability.
 
 ### Network and equipment inventory to complete
 
 - Record the physical backbone and drop routes, junctions and terminator positions.
 - Identify the power isolator’s manufacturer/model and physical location, and document its pin-level connections. CAN data continuity and positive-supply separation are owner-confirmed; negative/shield continuity and galvanic isolation have not been established.
-- Identify the supply circuit, fuse/breaker, switching and return path for each injection point; allocate circuit and physical component IDs once identified.
+- Trace the common CB-007 output to the two injection feeds, identify any local fuses/additional switches and record conductor sizes and return paths. The shared 10 A NAV INSTR breaker is now owner-confirmed.
 - Link each connected device to its equipment record, segment and drop connection. Record **bus power**, **separate operating supply**, and any bus-interface power requirement independently; network attachment alone does not establish how a device is powered.
 - Record manufacturer power/load figures separately from onboard measurements and calculate segment loads once device allocation and power boundaries are known.
 
-A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A and B device allocations are recorded below; physical connections, cable lengths, protection ratings and the isolator’s model/location still require documentation.
+A and B are **network segment labels**, not physical equipment IDs. The physical power isolator is recorded separately as EQ-063. Segment A and B device allocations are recorded below; physical connections, cable lengths, any local protection and the isolator’s model/location still require documentation.
 
 ## Segment A — connected equipment and power
 
@@ -39,7 +45,7 @@ A and B are **network segment labels**, not physical equipment IDs. The physical
 | [EQ-004 — ATB-1 AIS](/about/configuration/equipment/eq-004/) | A | Data only (owner-confirmed) | Separate DC supply: [DC-COM-04](/about/configuration/circuits/dc-com-04/), FU-003, EQ-057 way 3 |
 | [EQ-064 — Yacht Devices YDWG-02 wireless gateway](/about/configuration/equipment/eq-064/) | A | Data and power (owner-confirmed) | NMEA 2000 segment A bus supply, injected behind DCP |
 
-The data-only classifications above record the owner's installation description; interface/adapter details and pin-level power connections have not been traced. Gateway load/LEN, drop-cable routes, junction positions and the segment A injection circuit/protection remain to be documented. Separate COM power circuits remain distinct from the NMEA 2000 data connection.
+The data-only classifications above record the owner's installation description; interface/adapter details and pin-level power connections have not been traced. Gateway load/LEN, drop-cable routes, junction positions and segment A injection hardware and any local protection remain to be documented. Separate COM power circuits remain distinct from the NMEA 2000 data connection.
 
 ## Segment B — connected equipment
 

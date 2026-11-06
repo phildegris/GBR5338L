@@ -41,3 +41,13 @@ The NAV LTS panel contains four owner-confirmed **10 A** branch breakers. The se
 ## Communications power distribution
 
 CB-003 protects the **DC-COM-01 feeder**. The **10 A / 3 A / 3 A branch fuses**, allocated as FU-001–FU-003, protect their respective outgoing circuits. **The 10 A VHF branch fuse equals the upstream 10 A breaker nominal rating**; selectivity is not established without fuse/breaker characteristics. EQ-057's fourth position is not confirmed as occupied or spare.
+
+## NMEA 2000 power injection
+
+| Circuit | Protection | Functional destination | Evidence / outstanding detail |
+| --- | --- | --- | --- |
+| [DC-N2K-01](/about/configuration/circuits/dc-n2k-01/) | [CB-007](/about/configuration/equipment/cb-007/) — one shared **10 A NAV INSTR breaker** | Common supply to A and B injection feeds | Owner-confirmed; split point and wiring untraced |
+| [DC-N2K-02](/about/configuration/circuits/dc-n2k-02/) | Shared upstream CB-007; local fuse unknown | Segment A power injection behind DCP | Owner-confirmed functional feed; historical R1 alias untraced |
+| [DC-N2K-03](/about/configuration/circuits/dc-n2k-03/) | Shared upstream CB-007; local fuse unknown | Segment B power injection behind DCP | Owner-confirmed functional feed; historical Y1 alias untraced |
+
+The A/B power isolator separates positive supplies at the network interconnection; it does not give these two feeds independent upstream breaker protection. Local protective devices and conductor suitability have not been surveyed.
