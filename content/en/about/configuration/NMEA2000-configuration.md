@@ -15,7 +15,7 @@ summary: N2K network design and configuration notes
 | Segment | Power injection location | Historical panel reference | Still to establish |
 | --- | --- | --- | --- |
 | A | Behind DCP — owner-confirmed | `R1`, handwritten “NMEA 2K A” under NAV INSTR | Actual source circuit, protection, feed wiring and power-injection hardware (complete device list below) |
-| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and clock identity and NAC-3 power clarification (inventory below) |
+| B | Behind DCP — owner-confirmed | `Y1`, handwritten “NMEA 2K B” under NAV INSTR | Actual source circuit, protection, feed wiring, power-injection hardware and clock identity and detailed supply wiring (inventory below) |
 
 The panel aliases come from the [historical connector schedule](/about/configuration/dc-terminal-schedule/); the latest confirmation establishes the **two segment names and injection locations**, not continuity through those particular connectors. `R1` and `Y1` identify clamp lever colours and group positions, not conductor insulation colours.
 
@@ -43,7 +43,7 @@ The data-only classifications above record the owner's installation description;
 
 ## Segment B — connected equipment
 
-**Owner-confirmed, 6 November 2026:** The owner reports that **all ten previously listed segment B devices are powered by the bus**, and additionally confirms the **companionway console clock is powered by segment B**. The NAC-3 statement needs reconciliation with the existing separate autopilot supply record, as noted below. Clock data connectivity has not been confirmed.
+**Owner-confirmed, 6 November 2026:** The owner confirms that the listed segment B devices are bus-powered **except NAC-3**, whose **segment B connection is for data and whose operating power comes from its separate autopilot feed**. The **companionway console clock is also powered by segment B**; its data connectivity has not been confirmed. This clarification supersedes the earlier blanket “all powered by the bus” description for NAC-3.
 
 | Equipment / owner label | Segment | Bus power / separate supply |
 | --- | --- | --- |
@@ -55,11 +55,11 @@ The data-only classifications above record the owner's installation description;
 | [EQ-070 — B&G Triton 2 MFD 1](/about/configuration/equipment/eq-070/) | B | Segment B bus — owner-confirmed |
 | [EQ-071 — B&G Triton 2 MFD 2](/about/configuration/equipment/eq-071/) | B | Segment B bus — owner-confirmed |
 | [EQ-072 — B&G Triton 2 MFD 3](/about/configuration/equipment/eq-072/) | B | Segment B bus — owner-confirmed |
-| [EQ-073 — B&G NAC-3](/about/configuration/equipment/eq-073/) | B | Owner reports bus power; separate autopilot supply also recorded — clarification outstanding |
+| [EQ-073 — B&G NAC-3](/about/configuration/equipment/eq-073/) | B | Data only; separate autopilot operating supply via DC-PIL-01 — owner-confirmed |
 | [EQ-074 — Yacht Devices “YD RA?” — model to confirm](/about/configuration/equipment/eq-074/) | B | Segment B bus — owner-confirmed |
 | [EQ-075 — Companionway console clock](/about/configuration/equipment/eq-075/) | B power connection; data connection not confirmed | Segment B — owner-confirmed |
 
-**NAC-3 supply distinction:** [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) already names NAC-3 and steering-drive equipment on the separate autopilot distribution. The latest bus-power statement is recorded as owner evidence, with its scope unresolved; it does not establish that the bus supplies NAC-3 operating/drive power.
+**NAC-3 supply distinction, owner-confirmed:** [DC-PIL-01](/about/configuration/circuits/dc-pil-01/) supplies NAC-3 operating power separately from its segment B data connection. Exact power wiring, protection and any network-interface consumption remain to be documented; no measured zero bus load is claimed.
 
 The three Triton 2 MFDs have separate stable equipment IDs. Their physical positions remain to be assigned to MFD 1, 2 and 3. “YD RA?” is retained as an uncertain owner label; YDRA-01 rudder adaptor is a tentative match to earlier discussion, pending model confirmation. Sensor interface hardware, including the WS310 connection into the network, has not yet been inventoried. Equipment names reproduce the owner’s labels; exact nameplate variants remain to be recorded.
 
