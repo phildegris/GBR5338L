@@ -18,8 +18,8 @@ The handwritten columns are **CB / rail / circuit**. The middle column uses the 
 | Handwritten CB/function | Rail connector | Handwritten circuit / cable | Interpretation or uncertainty |
 | --- | --- | --- | --- |
 | NAV LTS (stern, partially overwritten) | `B1` | “RG STERN LT” | Stern-light label; “RG” prefix uncertain |
-| NAV INSTR | `Y1` | “NMEA 2K B” | NMEA 2000 network B legacy label |
-| NAV INSTR | `R1` | “NMEA 2K A” | NMEA 2000 network A legacy label |
+| NAV INSTR | `Y1` | “NMEA 2K B” | NMEA 2000 segment B historical label; injection behind DCP owner-confirmed, connector continuity untraced |
+| NAV INSTR | `R1` | “NMEA 2K A” | NMEA 2000 segment A historical label; injection behind DCP owner-confirmed, connector continuity untraced |
 | MAST HD | `B2` | “7× BLUE” | Handwritten masthead label preserved; owner says **NASA switched pair is R3/B4**, not B2 |
 | STEAM. | `Y2` | “7× YELLOW” | Oceanflex yellow core, originally labelled steaming |
 | DECK | `R2` | “7× RED” | Oceanflex red core, originally labelled deck |
@@ -34,6 +34,8 @@ The handwritten columns are **CB / rail / circuit**. The middle column uses the 
 | BUNK LIGHTS | `R5` | “AFT CABIN” | Aft cabin label; route unknown |
 
 A crossed-out mark between `Y4` and `R4` **does not justify allocating an additional rail position**. The first-row lettering and corrected lower-left labels should be treated as provisional until the owner confirms them. `NC` is **not** automatically “spare”, “not connected” or “disconnected”.
+
+**NMEA 2000 clarification (owner, 6 November 2026):** A and B are two segments of one network; each has power injection behind DCP. This does not independently verify the historical `R1`/`Y1` connections or establish power isolation between segments. See the [network and power record](/about/configuration/nmea2000-configuration/).
 
 ## Oceanflex 7 × 1.5 mm² distribution trunk
 
